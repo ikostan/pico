@@ -16,12 +16,25 @@ import machine
 from time import sleep
 
 pin_read = machine.ADC(28)
-bit_to_volt_ratio = 19859.09  # 65,535 / 3.3
+# bit_to_volt_ratio = 19859.09  # 65,535 / 3.3
+
+x_min = 208  # min readings
+x_max = 65535
+
+min_read = x_max
+
+max_v = 3.3  # max voltage
+min_v = 0.0
+
+slope = (max_v - min_v) / (x_max - x_min)
 
 
 if __name__ == '__main__':
 
     while True:
-        v = pin_read.read_u16()
-        print(f'voltage: {round(v / bit_to_volt_ratio, 2)}')
+        x = pin_read.read_u16()
+        voltage = (slope * x) - (slope * max_v)
+        if min_read > x:
+            min_read = x
+        print(f'voltage: {round(voltage, 2)}, x: {x}, min: {min_read}')
         sleep(0.3)
