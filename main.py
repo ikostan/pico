@@ -16,7 +16,7 @@ import machine
 from time import sleep
 
 pin_read = machine.ADC(28)
-bit_to_volt_ratio = 18724.28
+bit_to_volt_ratio = 19859.09
 
 
 if __name__ == '__main__':
