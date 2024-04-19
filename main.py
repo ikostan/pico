@@ -18,7 +18,7 @@ from time import sleep
 pin_read = machine.ADC(28)
 # bit_to_volt_ratio = 19859.09  # 65,535 / 3.3
 
-x_min = 208  # min readings
+x_min = 96  # min readings
 x_max = 65535
 
 min_read = x_max
@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
     while True:
         x = pin_read.read_u16()
-        voltage = (slope * x) - (slope * max_v)
+        voltage = (slope * x) - (slope * x_min)
         if min_read > x:
             min_read = x
         print(f'voltage: {round(voltage, 2)}, x: {x}, min: {min_read}')
