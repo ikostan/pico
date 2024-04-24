@@ -66,23 +66,23 @@ def turn_led_on(color):
     pin.value(1)
 
 
-def converter(v):
+def converter(read_value):
     """
     Converts potentiometer value to integer between 0 and 100
     x min = 0, x max = 65535
     y min = 0, y max = 100
-    :param v:
+    :param read_value:
     :return:
     """
     slope = (100 - 0) / (65535 - 0)
-    return int(slope * (v - 0))
+    return int(slope * (read_value - 0))
 
 
 if __name__ == '__main__':
     # Main loop
     while True:
         all_led_off()                                # Turn off all LEDs
-        v = potentiometer.read_u16()                 # Read potentiometer value
+        v = potentiometer.read_u16()                 # Read potentiometer value -> v
         value = converter(v)                         # Convert potentiometer value into integer between 0 and 100
         led_color = value_to_color(value)            # Get color based on converted value
         turn_led_on(led_color)                       # Turn ON corresponding LED
