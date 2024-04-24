@@ -15,7 +15,7 @@ Enjoy!
 from time import sleep
 from machine import Pin, ADC
 
-
+# Mapping pins by color/name
 Pins = {
     'READ': 28,      # Potentiometer
     'GREEN': 10,     # Green LED
@@ -23,39 +23,63 @@ Pins = {
     'RED': 12,       # Red LED
 }
 
+# Mapping colors to potentiometer values
 COLORS = {
     'GREEN': range(0, 80),
     'YELLOW': range(80, 95),
     'RED': range(95, 101),
 }
 
+# Set up pin for potentiometer
 potentiometer = ADC(Pins['READ'])
 
 
 def all_led_off():
+    """
+    Turns all leds off
+    :return:
+    """
     for color in COLORS:
         pin = Pin(Pins[color], Pin.OUT)
         pin.value(0)
 
 
 def value_to_color(v_value):
+    """
+    Mapping pin name/color by potentiometer number
+    COLORS[color] => range of integers
+    :param v_value:
+    :return:
+    """
     for color in COLORS:
         if v_value in COLORS[color]:
             return color
 
 
 def turn_led_on(color):
+    """
+    Turns LED on based on color/name
+    :param color:
+    :return:
+    """
     pin = Pin(Pins[color], Pin.OUT)
     pin.value(1)
 
 
 def converter(v):
+    """
+    Converts potentiometer value to integer between 0 and 100
+    x min = 0, x max = 65535
+    y min = 0, y max = 100
+    :param v:
+    :return:
+    """
     slope = (100 - 0) / (65535 - 0)
     return int(slope * (v - 0))
 
 
 if __name__ == '__main__':
-
+    # Main loop
     while True:
         all_led_off()                                # Turn off all LEDs
         v = potentiometer.read_u16()                 # Read potentiometer value
