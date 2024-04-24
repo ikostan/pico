@@ -32,7 +32,7 @@ COLORS = {
 potentiometer = ADC(Pins['READ'])
 
 
-def led_off():
+def all_led_off():
     for color in COLORS:
         pin = Pin(Pins[color], Pin.OUT)
         pin.value(0)
@@ -57,7 +57,7 @@ def converter(v):
 if __name__ == '__main__':
 
     while True:
-        led_off()                                    # Turn off all LEDs
+        all_led_off()                                # Turn off all LEDs
         v = potentiometer.read_u16()                 # Read potentiometer value
         value = converter(v)                         # Convert potentiometer value into integer between 0 and 100
         led_color = value_to_color(value)            # Get color based on converted value
