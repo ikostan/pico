@@ -74,8 +74,8 @@ def converter(read_value):
     :param read_value:
     :return:
     """
-    slope = (100 - 0) / (65535 - 0)
-    return int(slope * (read_value - 0))
+    slope = (100 - 0) / (65535 - 0)       # calculate slope
+    return int(slope * (read_value - 0))  # calculate Y and converted to integer value
 
 
 if __name__ == '__main__':
