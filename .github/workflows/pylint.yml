@@ -16,13 +16,11 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt -y install micropython
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install pylint
     - name: Check to make sure that the module is in your Python path
-      run:
+      run: |
         echo $PYTHONPATH
     - name: Analysing the code with pylint
       run: |
