@@ -21,13 +21,13 @@ from machine import Pin
 random.randrange(0,1)
 
 led = Pin("LED", Pin.OUT)
-pin_value = 0
+PIN_VALUE = 0
 
 if __name__ == '__main__':
     while True:
         t = random.random()
         t = round(t, 2)
-        led.value(pin_value)
+        led.value(PIN_VALUE)
         time.sleep(t)
-        pin_value = 1 if pin_value == 0 else 0
-        print(f"sleep: {t}, LED:{'ON' if pin_value == 1 else 'OFF'}")
+        PIN_VALUE = 1 if PIN_VALUE == 0 else 0
+        print(f"sleep: {t}, LED:{'ON' if PIN_VALUE == 1 else 'OFF'}")
