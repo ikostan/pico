@@ -12,6 +12,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/lessons" />
+      <excludeFolder url="file://$MODULE_DIR$/.github" />
+      <excludePattern pattern="requirements.txt" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
