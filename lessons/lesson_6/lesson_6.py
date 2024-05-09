@@ -16,16 +16,14 @@ Find more great content at my website,
 from machine import Pin  # pylint: disable=import-error
 
 
-pin_n = 14
-led = Pin(pin_n, Pin.OUT)
+PIN_N = 14 
+led = Pin(PIN_N, Pin.OUT)
 
 
 if __name__ == '__main__':
-    
     led.value(0)
 
     while True:
-        
         cmd_input = input("What would you like LED to be (On/Off/Toggle)? ")
         print(cmd_input)
         
@@ -37,4 +35,3 @@ if __name__ == '__main__':
             led.toggle()
         else:
             print(f"{cmd_input} is unspecified...")
-            
