@@ -93,7 +93,7 @@ if __name__ == '__main__':
         v = potentiometer.read_u16()                 # Read potentiometer value -> v
         # Convert potentiometer value into integer between 0 and 100
         value = converter(v)
-        led_color = value_to_color(value)            # Get color based on converted value
-        turn_led_on(led_color)                       # Turn ON corresponding LED
-        print(f'value: {value}, LED: {led_color}')   # DEBUG output
+        LED_COLOR = value_to_color(value)            # Get color based on converted value
+        turn_led_on(LED_COLOR)                       # Turn ON corresponding LED
+        print(f'value: {value}, LED: {LED_COLOR}')   # DEBUG output
         sleep(0.25)                                  # Sleep 0.25 seconds

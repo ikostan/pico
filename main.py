@@ -9,11 +9,10 @@ LED using If Statements. I will also show how to get input from the user in
 micropython using a potentiometer and the analog read function. This class is
 for absolute beginners, and I do not assume you already understand the material
 I am presenting. My goal is not to 'Show Off', but to genuinely teach you how
-you can do this type of work and projects on your own. I will show all work step-by-step,
-with clear instructions.
+you can do this type of work and projects on your own. I will show all work
+step-by-step, with clear instructions.
 Enjoy!
 """
-
 
 from time import sleep
 from machine import Pin, ADC  # pylint: disable=import-error
@@ -55,9 +54,14 @@ def value_to_color(v_value):
     :param v_value:
     :return:
     """
-    for color in COLORS:
-        if v_value in COLORS[color]:
-            return color
+    new_color = ''
+
+    for color, values in COLORS.items():
+        if v_value in values:
+            new_color = color
+            break
+
+    return new_color
 
 
 def turn_led_on(color):
@@ -78,8 +82,8 @@ def converter(read_value):
     :param read_value:
     :return:
     """
-    slope = (100 - 0) / (65535 - 0)        # calculate slope
-    return int(slope * (read_value - 0))   # calculate Y and converted to integer value
+    slope = (100 - 0) / (65535 - 0)       # calculate slope
+    return int(slope * (read_value - 0))  # calculate Y and converted to integer value
 
 
 if __name__ == '__main__':
@@ -87,8 +91,9 @@ if __name__ == '__main__':
     while True:
         all_led_off()                                # Turn off all LEDs
         v = potentiometer.read_u16()                 # Read potentiometer value -> v
-        value = converter(v)                         # Convert potentiometer value into integer between 0 and 100
-        led_color = value_to_color(value)            # Get color based on converted value
-        turn_led_on(led_color)                       # Turn ON corresponding LED
-        print(f'value: {value}, LED: {led_color}')   # DEBUG output
+        # Convert potentiometer value into integer between 0 and 100
+        value = converter(v)
+        LED_COLOR = value_to_color(value)            # Get color based on converted value
+        turn_led_on(LED_COLOR)                       # Turn ON corresponding LED
+        print(f'value: {value}, LED: {LED_COLOR}')   # DEBUG output
         sleep(0.25)                                  # Sleep 0.25 seconds
