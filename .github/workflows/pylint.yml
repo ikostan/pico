@@ -24,4 +24,4 @@ jobs:
         echo $PYTHONPATH
     - name: Analysing the code with pylint
       run: |
-        pylint --ignored-modules machine $(git ls-files '*.py')
+        pylint --ignored-modules $(git ls-files '*.py')
