@@ -15,7 +15,7 @@ Enjoy!
 
 import time
 import random
-from machine import Pin  # pylint: disable=import-error
+from machine import Pin
 
 
 random.randrange(0, 1)
