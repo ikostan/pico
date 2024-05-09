@@ -25,7 +25,6 @@ if __name__ == '__main__':
     while True:
         cmd_input = input("What would you like LED to be (On/Off/Toggle)? ")
         print(cmd_input)
-        
         if cmd_input.lower() == 'on':
             led.value(1)
         elif cmd_input.lower() == 'off':
