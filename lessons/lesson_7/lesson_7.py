@@ -42,7 +42,7 @@ def all_led_off():
     Turns all leds off
     :return:
     """
-    for color in COLORS.keys():
+    for color in COLORS:
         pin = Pin(Pins[color], Pin.OUT)
         pin.value(0)
 
@@ -56,7 +56,7 @@ def value_to_color(v_value):
     """
     new_color = ''
 
-    for color in COLORS.keys():
+    for color in COLORS:
         if v_value in COLORS[color]:
             new_color = color
             break
