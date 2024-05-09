@@ -18,7 +18,7 @@ import random
 from machine import Pin  # pylint: disable=import-error
 
 
-random.randrange(0, 1)
+random.randrange(0,1)
 
 led = Pin("LED", Pin.OUT)
 PIN_VALUE = 0
