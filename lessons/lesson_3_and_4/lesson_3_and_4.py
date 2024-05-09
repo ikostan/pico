@@ -85,9 +85,9 @@ def set_all_pins(all_pins, vals):
     :param vals:
     :return:
     """
-    for i, v in enumerate(vals):
+    for index, v in enumerate(vals):
         val = get_val(v)
-        pin = all_pins[i]
+        pin = all_pins[index]
         set_pin_val(pin, val)
 
 
