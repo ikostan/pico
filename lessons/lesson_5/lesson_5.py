@@ -11,9 +11,9 @@ step-by-step, with clear instructions.
 Enjoy!
 """
 
-
-import machine
 from time import sleep
+import machine  # pylint: disable=import-error
+
 
 pin_read = machine.ADC(28)
 # bit_to_volt_ratio = 19859.09  # 65,535 / 3.3

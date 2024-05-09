@@ -13,7 +13,8 @@ Enjoy!
 """
 
 from time import sleep
-from machine import Pin, ADC
+from machine import Pin, ADC  # pylint: disable=import-error
+
 
 # Mapping pins by color/name
 Pins = {

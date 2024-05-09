@@ -11,7 +11,9 @@ step-by-step, with clear instructions Enjoy!
 
 Find more great content at my website,
 """
-from machine import Pin
+
+from machine import Pin  # pylint: disable=import-error
+
 
 pin_n = 14
 led = Pin(pin_n, Pin.OUT)
