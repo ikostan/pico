@@ -24,4 +24,4 @@ jobs:
         echo $PYTHONPATH
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py') --version
+        pylint $(git ls-files '*.py' --version) 
