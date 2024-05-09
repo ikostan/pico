@@ -1,4 +1,4 @@
-name: Pylint
+name: Flkake8
 
 on: [push]
 
