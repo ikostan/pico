@@ -56,8 +56,8 @@ def value_to_color(v_value):
     """
     new_color = ''
 
-    for color in COLORS:
-        if v_value in COLORS[color]:
+    for color, values in COLORS:
+        if v_value in values:
             new_color = color
             break
 
