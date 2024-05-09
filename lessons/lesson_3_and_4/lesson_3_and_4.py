@@ -5,11 +5,13 @@
 In this introductory video, I will show the fundamentals of Binary Numbers.
 I will describe our modern computers are all based on the binary number system.
 Modern computers are simply very large numbers of very simple on off switches.
-I will show how any number can be represented in binary, and hence can be realized by on off switches.
-I show how to count in binary, add, subtract and multiply in binary. I show how to convert numbers from
-decimal to binary and from binary to decimal. This class is  for absolute beginners, and I do not assume
-you already understand the material I am presenting. My goal is not to 'Show Off', but to genuinely teach
-you how you can do this type of work and projects on your own. Enjoy!
+I will show how any number can be represented in binary, and hence can be realized
+by on/off switches. I show how to count in binary, add, subtract and multiply in binary.
+I show how to convert numbers from decimal to binary and from binary to decimal.
+This class is  for absolute beginners, and I do not assume
+you already understand the material I am presenting. My goal is not to 'Show Off',
+but to genuinely teach you how you can do this type of work and projects on your own.
+Enjoy!
 """
 
 # Raspberry Pi Pico W LESSON 4: Create a Binary Counter Using the Pico W
@@ -17,25 +19,25 @@ you how you can do this type of work and projects on your own. Enjoy!
 
 """
 In this introductory video, I will show the fundamentals of Binary Numbers. 
-I will show you my solution to the homework assignment. We will create a 4 bit binary counter. 
-Modern computers are simply very large numbers of very simple on off switches. I will show how any number 
-can be represented in binary, and hence can be realized by on off switches. I show how to count in binary, 
-add, subtract and multiply in binary. I show how to convert numbers from decimal to binary and from binary to decimal. 
-This class is  for absolute beginners, and I do not assume you already understand the material I am presenting. 
-My goal is not to 'Show Off', but to genuinely teach you how you can do this type of work and projects on your own. 
+I will show you my solution to the homework assignment. We will create a 4 
+bit binary counter. Modern computers are simply very large numbers of very simple on off switches. 
+I will show how any number can be represented in binary, and hence can be realized by on off switches. 
+I show how to count in binary, add, subtract and multiply in binary. I show how to convert numbers 
+from decimal to binary and from binary to decimal. This class is  for absolute beginners, and I do not 
+assume you already understand the material I am presenting. My goal is not to 'Show Off', but to 
+genuinely teach you how you can do this type of work and projects on your own. 
 Enjoy!
 """
 
-
-from machine import Pin
 import time
+from machine import Pin  # pylint: disable=import-error
+
 
 pin1 = Pin(13, Pin.OUT)
 pin2 = Pin(12, Pin.OUT)
 pin4 = Pin(11, Pin.OUT)
 pin8 = Pin(10, Pin.OUT)
 pins = [pin8, pin4, pin2, pin1]
-# binary = [8, 4, 2, 1]  # binary values
 
 numbers = {
     0: [False, False, False, False],
