@@ -60,13 +60,13 @@ numbers = {
 }
 
 
-def get_val(n):
+def get_val(n_val):
     """
     Convert TRUE to 1 and FALSE to 0
     :param n:
     :return:
     """
-    return 1 if n is True else 0
+    return 1 if n_val is True else 0
 
 
 def set_pin_val(pin, val):
