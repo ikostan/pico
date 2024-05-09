@@ -7,9 +7,9 @@ and connecting it to the Pico W. We will blink an external LED from the Pico W. 
 'Show Off', but to genuinely teach you how you can do this type of work and projects on your own.
 Enjoy!
 """
-
-from machine import Pin
 import time
+from machine import Pin  # pylint: disable=import-error
+
 
 led = Pin(15, Pin.OUT)
 
