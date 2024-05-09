@@ -20,12 +20,13 @@ Enjoy!
 """
 In this introductory video, I will show the fundamentals of Binary Numbers. 
 I will show you my solution to the homework assignment. We will create a 4 
-bit binary counter. Modern computers are simply very large numbers of very simple on off switches. 
-I will show how any number can be represented in binary, and hence can be realized by on off switches. 
-I show how to count in binary, add, subtract and multiply in binary. I show how to convert numbers 
-from decimal to binary and from binary to decimal. This class is  for absolute beginners, and I do not 
-assume you already understand the material I am presenting. My goal is not to 'Show Off', but to 
-genuinely teach you how you can do this type of work and projects on your own. 
+bit binary counter. Modern computers are simply very large numbers of very 
+simple on off switches. I will show how any number can be represented in binary, 
+and hence can be realized by on off switches. I show how to count in binary, add, 
+subtract and multiply in binary. I show how to convert numbers from decimal to 
+binary and from binary to decimal. This class is  for absolute beginners, and I do not 
+assume you already understand the material I am presenting. My goal is not to 'Show Off', 
+but to genuinely teach you how you can do this type of work and projects on your own. 
 Enjoy!
 """
 
