@@ -25,13 +25,13 @@ X_MAX = 65535
 V_MAX = 3.3  # max voltage
 V_MIN = 0.0
 
-slope = (V_MAX - V_MIN) / (X_MAX - X_MIN)
+SLOPE = (V_MAX - V_MIN) / (X_MAX - X_MIN)
 
 
 if __name__ == '__main__':
 
     while True:
         x = pin_read.read_u16()
-        voltage = (slope * x) - (slope * x_min)
+        voltage = (SLOPE * x) - (SLOPE * X_MIN)
         print(f'voltage: {round(voltage, 2)}, x: {x}')
         sleep(0.3)
