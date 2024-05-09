@@ -19,15 +19,13 @@ import machine  # pylint: disable=import-error
 pin_read = machine.ADC(28)
 # bit_to_volt_ratio = 19859.09  # 65,535 / 3.3
 
-x_min = 96  # min readings
-x_max = 65535
+X_MIN = 96  # min readings
+X_MAX = 65535
 
-min_read = x_max
+V_MAX = 3.3  # max voltage
+V_MIN = 0.0
 
-max_v = 3.3  # max voltage
-min_v = 0.0
-
-slope = (max_v - min_v) / (x_max - x_min)
+slope = (V_MAX - V_MIN) / (X_MAX - X_MIN)
 
 
 if __name__ == '__main__':
@@ -35,7 +33,5 @@ if __name__ == '__main__':
     while True:
         x = pin_read.read_u16()
         voltage = (slope * x) - (slope * x_min)
-        if min_read > x:
-            min_read = x
-        print(f'voltage: {round(voltage, 2)}, x: {x}, min: {min_read}')
+        print(f'voltage: {round(voltage, 2)}, x: {x}')
         sleep(0.3)
