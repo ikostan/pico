@@ -49,6 +49,13 @@ class Pin():
         """
         print(f"pin value is {val}")
 
+    def toggle(self):
+        """
+        n/a
+        :return:
+        """
+        pass
+
 
 class PWM():
     """
@@ -107,7 +114,29 @@ class ADC():
         self.pin = pin
 
     def read(self):
+        """
+        n/a
+        :return:
+        """
         return 1024
+
+    def read_16(self):
+        """
+        Take an analog reading and return an integer in the range 0-65535.
+        The return value represents the raw reading taken by the ADC, scaled
+        such that the minimum value is 0 and the maximum value is 65535.
+        :return:
+        """
+        pass
+
+    def read_uv(self):
+        """
+        Take an analog reading and return an integer value with units of micro volts.
+        It is up to the particular port whether or not this value is calibrated,
+        and how calibration is done.
+        :return:
+        """
+        pass
 
 
 class I2C():
