@@ -4,6 +4,7 @@ Created for testing purposes only.
 """
 # machine stubb
 
+
 class Pin():
     """
     A pin object is used to control I/O pins
@@ -120,14 +121,14 @@ class ADC():
         """
         return 1024
 
-    def read_16(self):
+    def read_u16(self):
         """
         Take an analog reading and return an integer in the range 0-65535.
         The return value represents the raw reading taken by the ADC, scaled
         such that the minimum value is 0 and the maximum value is 65535.
         :return:
         """
-        pass
+        return 0
 
     def read_uv(self):
         """
@@ -136,7 +137,7 @@ class ADC():
         and how calibration is done.
         :return:
         """
-        pass
+        return 0
 
 
 class I2C():
