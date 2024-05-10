@@ -62,7 +62,7 @@ numbers = {
 def get_val(n_val):
     """
     Convert TRUE to 1 and FALSE to 0
-    :param n:
+    :param n_val:
     :return:
     """
     return 1 if n_val is True else 0
