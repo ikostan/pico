@@ -29,7 +29,7 @@ class Pin():
         """
         print("pin on")
 
-    def off(self)
+    def off(self):
         """
         Set pin to “0” output level.
         :return: 
@@ -77,10 +77,20 @@ class PWM():
 
 
 class ADC():
+    """
+    The ADC class provides an interface to analog-to-digital converters,
+    and represents a single endpoint that can sample a continuous voltage
+    and convert it to a discrete value.
+    """
     # fake ADC to Digital convertor
     pin = 0
 
     def __init__(self, pin):
+        """
+        Apply the given settings to the ADC. Only those arguments that are
+        specified will be changed. See the ADC constructor above for what the arguments are.
+        :param pin:
+        """
         self.pin = pin
 
     def read(self):
@@ -88,6 +98,14 @@ class ADC():
 
 
 class I2C():
+    """
+    I2C is a two-wire protocol for communicating between devices.
+    At the physical level it consists of 2 wires: SCL and SDA, the clock and data lines respectively.
 
+    I2C objects are created attached to a specific bus.
+    They can be initialised when created, or initialised later on.
+
+    Printing the I2C object gives you information about its configuration.
+    """
     def __init__(id=None, sda=None, scl=None):
         pass
