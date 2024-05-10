@@ -95,5 +95,5 @@ if __name__ == '__main__':
         VALUE = converter(V)
         LED_COLOR = value_to_color(VALUE)            # Get color based on converted value
         turn_led_on(LED_COLOR)                       # Turn ON corresponding LED
-        print(f'value: {value}, LED: {LED_COLOR}')   # DEBUG output
+        print(f'value: {VALUE}, LED: {LED_COLOR}')   # DEBUG output
         sleep(0.25)                                  # Sleep 0.25 seconds

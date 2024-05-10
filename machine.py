@@ -161,7 +161,9 @@ class I2C():
         :param scl:
         :param freq:
         """
-        pass
+        self.sda = sda
+        self.scl = scl
+        self.freq = freq
 
     def deinit(self):
         """
@@ -169,7 +171,7 @@ class I2C():
         :return:
         """
         print("Turn off the I2C bus.")
-        
+
     def scan(self):
         """
         Scan all I2C addresses between 0x08 and 0x77 inclusive and return
@@ -178,4 +180,4 @@ class I2C():
         :return:
         """
 
-        return list()
+        return []

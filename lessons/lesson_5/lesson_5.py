@@ -32,6 +32,6 @@ if __name__ == '__main__':
 
     while True:
         X = pin_read.read_u16()
-        VOLTAGE = (SLOPE * x) - (SLOPE * X_MIN)
+        VOLTAGE = (SLOPE * X) - (SLOPE * X_MIN)
         print(f'voltage: {round(VOLTAGE, 2)}, x: {X}')
         sleep(0.3)
