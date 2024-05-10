@@ -109,12 +109,13 @@ class ADC():
 class I2C():
     """
     I2C is a two-wire protocol for communicating between devices.
-    At the physical level it consists of 2 wires: SCL and SDA, the clock and data lines respectively.
+    At the physical level it consists of 2 wires: SCL and SDA,
+    the clock and data lines respectively.
 
     I2C objects are created attached to a specific bus.
     They can be initialised when created, or initialised later on.
 
     Printing the I2C object gives you information about its configuration.
     """
-    def __init__(id=None, sda=None, scl=None):
+    def __init__(self, id=None, sda=None, scl=None):
         pass
