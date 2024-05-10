@@ -34,4 +34,4 @@ jobs:
         pip install -r requirements.txt
     - name: Unitest with pytest
       run: |
-        pytest
+        python -m pytest
