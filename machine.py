@@ -1,3 +1,7 @@
+"""
+This is machine module stubb.
+Created for testing purposes only.
+"""
 # machine stubb
 
 class Pin():
