@@ -36,6 +36,15 @@ class Pin():
         """
         print("pin off")
 
+    def value(self, val):
+        """
+        This method allows to set and get the value of the pin,
+        depending on whether the argument x is supplied or not.
+        :param val:
+        :return:
+        """
+        print(f"pin value is {val}")
+
 
 class PWM():
     """
