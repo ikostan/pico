@@ -55,7 +55,7 @@ class Pin():
         n/a
         :return:
         """
-        pass
+        return 0
 
 
 class PWM():
@@ -151,5 +151,31 @@ class I2C():
 
     Printing the I2C object gives you information about its configuration.
     """
-    def __init__(self, id=None, sda=None, scl=None):
+    def __init__(self, sda=None, scl=None, freq=400000):
+        """
+        Initialise the I2C bus with the given arguments:
+            - scl is a pin object for the SCL line
+            - sda is a pin object for the SDA line
+            - freq is the SCL clock rate
+        :param sda:
+        :param scl:
+        :param freq:
+        """
         pass
+
+    def deinit(self):
+        """
+        Turn off the I2C bus.
+        :return:
+        """
+        print("Turn off the I2C bus.")
+        
+    def scan(self):
+        """
+        Scan all I2C addresses between 0x08 and 0x77 inclusive and return
+        a list of those that respond. A device responds if it pulls the SDA
+        line low after its address (including a write bit) is sent on the bus.
+        :return:
+        """
+
+        return list()
