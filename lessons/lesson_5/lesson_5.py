@@ -31,7 +31,7 @@ SLOPE = (V_MAX - V_MIN) / (X_MAX - X_MIN)
 if __name__ == '__main__':
 
     while True:
-        x = pin_read.read_u16()
-        voltage = (SLOPE * x) - (SLOPE * X_MIN)
-        print(f'voltage: {round(voltage, 2)}, x: {x}')
+        X = pin_read.read_u16()
+        VOLTAGE = (SLOPE * x) - (SLOPE * X_MIN)
+        print(f'voltage: {round(VOLTAGE, 2)}, x: {X}')
         sleep(0.3)
