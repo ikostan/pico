@@ -3,7 +3,7 @@ Unit testing lessons 3 and 4.
 """
 
 import unittest
-from lessons.lesson_3_and_4.lesson_3_and_4 import get_val
+from lessons.lesson_3_and_4.lesson_3_and_4 import get_val  # pylint: disable=import-error
 
 
 class Lesson3and4TestCase(unittest.TestCase):
