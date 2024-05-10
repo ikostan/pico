@@ -32,7 +32,7 @@ class Pin():
     def off(self):
         """
         Set pin to “0” output level.
-        :return: 
+        :return:
         """
         print("pin off")
 
