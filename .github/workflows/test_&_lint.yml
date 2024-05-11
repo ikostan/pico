@@ -43,6 +43,9 @@ jobs:
     - name: Analysing the code with pylint
       run: |
            pylint $(git ls-files '*.py')
+    - name: pytest version check
+      run: |
+            pytest --version
     - name: Unitest with pytest
       run: |
            python -m pytest -v -rP
