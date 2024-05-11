@@ -25,7 +25,7 @@ class Pin():
         :param value:
         :param pin_type:
         """
-        self.value = 0
+        self._value = 0
         self.pin_n = pin_n
         self.pin_type = pin_type
 
@@ -34,15 +34,24 @@ class Pin():
         Set pin to “1” output level.
         :return:
         """
-        self.value = 1
+        self._value = 1
 
     def off(self):
         """
         Set pin to “0” output level.
         :return:
         """
-        self.value = 0
+        self._value = 0
 
+    @property
+    def value(self):
+        """
+        Property for _value
+        :return:
+        """
+        return self._value
+
+    @value.setter
     def value(self, val):
         """
         This method allows to set and get the value of the pin,
@@ -50,7 +59,10 @@ class Pin():
         :param val:
         :return:
         """
-        self.value = val
+        if val in (0, 1):
+            self._value = val
+        else:
+            raise ValueError(f"ERROR: invalid value: {val}. Only 1 or 0 accepted.")
 
     def toggle(self):
         """
