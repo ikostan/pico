@@ -14,6 +14,7 @@ class Pin():
     set the mode of the pin (IN, OUT, etc) and methods to get and set the
     digital logic level. For analog control of a pin, see the ADC class.
     """
+    OUT = 1
 
     def __init__(self, pin_n, pin_type):
         """
