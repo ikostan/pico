@@ -2,9 +2,10 @@ name: Test & Lint Pipeline
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    branches:
+      - main
+      - alpha
+      - beta
 
 jobs:
   flake8:
