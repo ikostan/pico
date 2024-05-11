@@ -1,8 +1,13 @@
+"""
+Test suite for lesson 7.
+"""
+
 import unittest
 from lessons.lesson_7.lesson_7 import (  # pylint: disable=import-error
-    all_led_off,
+    COLORS,
+    # all_led_off,
     value_to_color,
-    turn_led_on,
+    # turn_led_on,
     converter
 )
 
@@ -11,6 +16,39 @@ class Lesson7TestCase(unittest.TestCase):
     """
     Test case for lesson 7.
     """
+
+    def test_value_to_color_green_min(self):
+        """
+        Zero should correspond to green color
+        :return:
+        """
+        expected = "GREEN"
+        test_val = 0
+        result = value_to_color(test_val)
+        msg = f'expected: {expected}, results: {result}, test_val: {test_val}'
+        self.assertEqual(result, expected, msg)
+
+    def test_value_to_color_green_max(self):
+        """
+        79 should correspond to green color
+        :return:
+        """
+        expected = "GREEN"
+        test_val = 79
+        result = value_to_color(test_val)
+        msg = f'expected: {expected}, results: {result}, test_val: {test_val}'
+        self.assertEqual(result, expected, msg)
+
+    def test_value_to_color_green_mid(self):
+        """
+        40 should correspond to green color
+        :return:
+        """
+        expected = "GREEN"
+        test_val = 40
+        result = value_to_color(test_val)
+        msg = f'expected: {expected}, results: {result}, test_val: {test_val}'
+        self.assertEqual(result, expected, msg)
 
     def test_converter_max(self):
         """
