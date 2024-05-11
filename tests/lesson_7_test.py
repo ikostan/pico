@@ -16,9 +16,87 @@ class Lesson7TestCase(unittest.TestCase):
     Test case for lesson 7.
     """
 
+    def test_value_to_color_return_type(self):
+        """
+        Return type should be string.
+        :return:
+        """
+        expected = type("YELLOW")
+        test_val = 80
+        result = value_to_color(test_val)
+        t = type(result)
+        msg = f'expected: {expected}, results: {t}, test_val: {test_val}'
+        self.assertEqual(t, expected, msg)
+
+    def test_value_to_color_red_min(self):
+        """
+        95 should correspond to red color.
+        :return:
+        """
+        expected = "RED"
+        test_val = 95
+        result = value_to_color(test_val)
+        msg = f'expected: {expected}, results: {result}, test_val: {test_val}'
+        self.assertEqual(result, expected, msg)
+
+    def test_value_to_color_red_max(self):
+        """
+        100 should correspond to red color.
+        :return:
+        """
+        expected = "RED"
+        test_val = 100
+        result = value_to_color(test_val)
+        msg = f'expected: {expected}, results: {result}, test_val: {test_val}'
+        self.assertEqual(result, expected, msg)
+
+    def test_value_to_color_red_mid(self):
+        """
+        97 should correspond to red color.
+        :return:
+        """
+        expected = "RED"
+        test_val = 97
+        result = value_to_color(test_val)
+        msg = f'expected: {expected}, results: {result}, test_val: {test_val}'
+        self.assertEqual(result, expected, msg)
+
+    def test_value_to_color_yellow_min(self):
+        """
+        80 should correspond to yellow color.
+        :return:
+        """
+        expected = "YELLOW"
+        test_val = 80
+        result = value_to_color(test_val)
+        msg = f'expected: {expected}, results: {result}, test_val: {test_val}'
+        self.assertEqual(result, expected, msg)
+
+    def test_value_to_color_yellow_max(self):
+        """
+        94 should correspond to yellow color.
+        :return:
+        """
+        expected = "YELLOW"
+        test_val = 94
+        result = value_to_color(test_val)
+        msg = f'expected: {expected}, results: {result}, test_val: {test_val}'
+        self.assertEqual(result, expected, msg)
+
+    def test_value_to_color_yellow_mid(self):
+        """
+        87 should correspond to yellow color.
+        :return:
+        """
+        expected = "YELLOW"
+        test_val = 87
+        result = value_to_color(test_val)
+        msg = f'expected: {expected}, results: {result}, test_val: {test_val}'
+        self.assertEqual(result, expected, msg)
+
     def test_value_to_color_green_min(self):
         """
-        Zero should correspond to green color
+        Zero should correspond to green color.
         :return:
         """
         expected = "GREEN"
@@ -29,7 +107,7 @@ class Lesson7TestCase(unittest.TestCase):
 
     def test_value_to_color_green_max(self):
         """
-        79 should correspond to green color
+        79 should correspond to green color.
         :return:
         """
         expected = "GREEN"
@@ -40,7 +118,7 @@ class Lesson7TestCase(unittest.TestCase):
 
     def test_value_to_color_green_mid(self):
         """
-        40 should correspond to green color
+        40 should correspond to green color.
         :return:
         """
         expected = "GREEN"
@@ -93,7 +171,7 @@ class Lesson7TestCase(unittest.TestCase):
         msg = f"read_value: {read_value}, val{val}, expected: {expected}"
         self.assertEqual(val, expected, msg)
 
-    def test_converter_type(self):
+    def test_converter_return_type(self):
         """
         Converter output type should be integer.
         :return:
