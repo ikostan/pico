@@ -9,10 +9,10 @@ on:
 jobs:
   flake8:
     name: Lint with flake8
-    uses: ikostan/pico/blob/master/.github/workflows/flake8.yml
+    uses: ikostan/pico/blob/master/.github/workflows/flake8.yml@main
   pylint:
     name: Lint with pylint
-    uses: ikostan/pico/blob/master/.github/workflows/pylint.yml
+    uses: ikostan/pico/blob/master/.github/workflows/pylint.yml@main
   pytest:
     name: Unitest with pytest
-    uses: ikostan/pico/blob/master/.github/workflows/pytest.yml
+    uses: ikostan/pico/blob/master/.github/workflows/pytest.yml@main
