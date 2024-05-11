@@ -4,3 +4,4 @@ lessons/lesson_3_and_4/__pycache__/__init__.cpython-312.pyc
 __pycache__/machine.cpython-312.pyc
 .idea/workspace.xml~
 lessons/__pycache__/__init__.cpython-312.pyc
+*.pyc
