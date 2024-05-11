@@ -6,6 +6,7 @@ on:
       - main
       - alpha
       - beta
+      - master
 
 jobs:
   flake8:
