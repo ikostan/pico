@@ -14,9 +14,8 @@ class Pin():
     set the mode of the pin (IN, OUT, etc) and methods to get and set the
     digital logic level. For analog control of a pin, see the ADC class.
     """
-    OUT = 1
 
-    def __init__(self, value, pin_type):
+    def __init__(self, pin_n, pin_type):
         """
         Re-initialise the pin using the given parameters.
         Only those arguments that are specified will be set.
@@ -25,21 +24,23 @@ class Pin():
         :param value:
         :param pin_type:
         """
-        print('created Pin', value, pin_type)
+        self.value = 0
+        self.pin_n = pin_n
+        self.pin_type = pin_type
 
     def on(self):
         """
         Set pin to “1” output level.
         :return:
         """
-        print("pin on")
+        self.value = 1
 
     def off(self):
         """
         Set pin to “0” output level.
         :return:
         """
-        print("pin off")
+        self.value = 0
 
     def value(self, val):
         """
@@ -48,14 +49,17 @@ class Pin():
         :param val:
         :return:
         """
-        print(f"pin value is {val}")
+        self.value = val
 
     def toggle(self):
         """
         n/a
         :return:
         """
-        return 0
+        if self.value == 1:
+            self.value = 0
+        elif self.value == 0:
+            self.value = 1
 
 
 class PWM():
