@@ -3,18 +3,15 @@ name: Test & Lint Pipeline
 on:
   push:
     branches:
-      - main
-      - alpha
-      - beta
       - master
 
 jobs:
   flake8:
     name: Lint with flake8
-    uses: ikostan/pico/.github/workflows/flake8.yml@main
+    uses: ikostan/pico/.github/workflows/flake8.yml@master
   pylint:
     name: Lint with pylint
-    uses: ikostan/pico/.github/workflows/pylint.yml@main
+    uses: ikostan/pico/.github/workflows/pylint.yml@master
   pytest:
     name: Unitest with pytest
-    uses: ikostan/pico/.github/workflows/pytest.yml@main
+    uses: ikostan/pico/.github/workflows/pytest.yml@master
