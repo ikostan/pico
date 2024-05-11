@@ -1,0 +1,18 @@
+name: Test and Lint Pipeline
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  flake8:
+    name: Lint with flake8
+    uses: pico/.github/workflows/flake8.yml@main
+  pylint:
+    name: Lint with pylint
+    uses: pico/.github/workflows/pylint.yml@main
+  pytest:
+    name: Unitest with pytest
+    uses: pico/.github/workflows/pytest.yml@main
