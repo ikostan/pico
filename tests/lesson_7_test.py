@@ -26,7 +26,7 @@ class Lesson7TestCase(unittest.TestCase):
         result = value_to_color(test_val)
         t = type(result)
         msg = f'expected: {expected}, results: {t}, test_val: {test_val}'
-        self.assertEqual(t, expected, msg)
+        self.assertIsInstance(result, str, msg)
 
     def test_value_to_color_red_min(self):
         """
@@ -181,7 +181,7 @@ class Lesson7TestCase(unittest.TestCase):
         t = type(val)
         expected = type(0)
         msg = f"read_value: {read_value}, val{val}, t: {t}, expected: {expected}"
-        self.assertEqual(t, expected, msg)
+        self.assertIsInstance(val, int, msg)
 
 
 if __name__ == '__main__':

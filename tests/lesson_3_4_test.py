@@ -8,8 +8,21 @@ from lessons.lesson_3_and_4.lesson_3_and_4 import get_val  # pylint: disable=imp
 
 class Lesson3and4TestCase(unittest.TestCase):
     """
-    Lessons 3 and for test case.
+    Lessons 3 and 4 test case.
     """
+
+    def test_get_val_return_type(self):
+        """
+        Testing get_val function.
+        Return type should be int.
+        :return:
+        """
+        n_val = True
+        result = get_val(n_val)
+        expected = type(1)
+        msg = f'n_val: {n_val}, result: {result}, expected: {expected}'
+        self.assertIsInstance(result, int, msg)
+
     def test_get_val_true(self):
         """
         Testing get_val function.
