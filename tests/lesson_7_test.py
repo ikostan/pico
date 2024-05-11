@@ -4,7 +4,6 @@ Test suite for lesson 7.
 
 import unittest
 from lessons.lesson_7.lesson_7 import (  # pylint: disable=import-error
-    COLORS,
     # all_led_off,
     value_to_color,
     # turn_led_on,
