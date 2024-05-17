@@ -1,4 +1,4 @@
-name: Test & Lint Pipeline
+name: Unit Test & Lint Pipeline
 
 on:
   push:
