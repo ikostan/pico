@@ -26,11 +26,10 @@ V_MIN = 0.0
 
 SLOPE = (V_MAX - V_MIN) / (X_MAX - X_MIN)
 
-
 if __name__ == '__main__':
 
     while True:
-        X = pin_read.read_u16()
+        X = pin_read.read_u16()  # pylint: disable=E1111
         VOLTAGE = (SLOPE * X) - (SLOPE * X_MIN)
         print(f'voltage: {round(VOLTAGE, 2)}, x: {X}')
         sleep(0.3)
