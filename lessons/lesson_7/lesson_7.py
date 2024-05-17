@@ -90,7 +90,8 @@ if __name__ == '__main__':
     # Main loop
     while True:
         all_led_off()                                # Turn off all LEDs
-        V = potentiometer.read_u16()                 # Read potentiometer value -> v
+        # Read potentiometer value -> v
+        V = potentiometer.read_u16()                 # pylint: disable=E1111
         # Convert potentiometer value into integer between 0 and 100
         VALUE = converter(V)
         LED_COLOR = value_to_color(VALUE)            # Get color based on converted value
