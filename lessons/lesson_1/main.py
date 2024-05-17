@@ -9,15 +9,17 @@ from machine import Pin
 
 
 random.randrange(0, 1)
-
-led = Pin("LED", Pin.OUT)
-PIN_VALUE = 0
+led = Pin(6, Pin.OUT)
 
 if __name__ == '__main__':
     while True:
+        is_on = 1
+        led.value(is_on)
         t = random.random()
         t = round(t, 2)
-        led.value(PIN_VALUE)
+        print(f"sleep: {t}, LED: {is_on}.")
         time.sleep(t)
-        PIN_VALUE = 1 if PIN_VALUE == 0 else 0
-        print(f"sleep: {t}, LED:{'ON' if PIN_VALUE == 1 else 'OFF'}")
+        is_on = 0
+        led.value(is_on)
+        print(f"sleep: {t}, LED: {is_on}.")
+
