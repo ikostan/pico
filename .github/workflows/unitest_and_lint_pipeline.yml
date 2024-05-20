@@ -18,3 +18,8 @@ jobs:
       - flake8
       - pylint
     uses: ikostan/pico/.github/workflows/pytest.yml@master
+  codeql:
+    name: CodeQL for a new buuild
+    needs:
+      - pytest
+    uses: ikostan/pico/.github/workflows/codeql_build.yml@master
