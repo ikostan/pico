@@ -1,5 +1,5 @@
 [wokwi]
-[wokwi]
 version = 1
-firmware = "build/blink.uf2"
-elf = "build/blink.elf"
+elf = "RPI_PICO_W-20240222-v1.22.2.uf2"
+firmware = "RPI_PICO_W-20240222-v1.22.2.uf2"
+rfc2217ServerPort = 4000
