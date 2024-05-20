@@ -1,4 +1,4 @@
-name: Unit Test & Lint Pipeline
+name: Lint, Test & CodeQL Pipeline
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       - pylint
     uses: ikostan/pico/.github/workflows/pytest.yml@master
   codeql:
-    name: CodeQL for a new buuild
+    name: CodeQL for a new build
     needs:
       - pytest
     uses: ikostan/pico/.github/workflows/codeql_build.yml@master
