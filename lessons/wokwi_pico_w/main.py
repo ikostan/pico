@@ -1,5 +1,5 @@
 """
-WOKWI testing library
+WOKWI testing library for Pi Pico W
 """
 
 import time
