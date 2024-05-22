@@ -41,4 +41,4 @@ jobs:
         pytest --version
     - name: Unitest with pytest
       run: |
-        python -m pytest -v -rP
+        python -m pytest --cov -v -rP
