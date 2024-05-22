@@ -15,14 +15,20 @@ class Lesson1TestCase(unittest.TestCase):
     """
 
     def test_led_on(self):
-        # Mock the led.value() function and return 1 always
+        """
+        Mock the led.value() function and return 1 always
+        """
+
         led.value = MagicMock()
         led.value(1)
         led.value.return_value = 1
         self.assertEqual(led.value(), 1)
 
     def test_led_off(self):
-        # Mock the led.value() function and return 0 always
+        """
+        Mock the led.value() function and return 0 always
+        """
+
         led.value = MagicMock()
         led.value(0)
         led.value.return_value = 0
