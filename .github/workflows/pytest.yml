@@ -41,4 +41,4 @@ jobs:
         pytest --version
     - name: Unitest with pytest
       run: |
-        python -m pytest --cov -v -rP
+        python -m pytest --cov-report  term-missing --cov=lessons tests/ -v -rP
