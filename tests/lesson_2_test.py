@@ -20,7 +20,7 @@ class Lesson1TestCase(unittest.TestCase):
         """
 
         led.value = MagicMock()
-        led.value(1)
+        led.on()
         led.value.return_value = 1
         self.assertEqual(led.value(), 1)
 
@@ -30,7 +30,7 @@ class Lesson1TestCase(unittest.TestCase):
         """
 
         led.value = MagicMock()
-        led.value(0)
+        led.off()
         led.value.return_value = 0
         self.assertEqual(led.value(), 0)
 
