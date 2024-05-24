@@ -9,7 +9,7 @@ from lessons.lesson_2.main import (  # pylint: disable=import-error
 )
 
 
-class Lesson1TestCase(unittest.TestCase):
+class Lesson2TestCase(unittest.TestCase):
     """
     Testing led functionality by mocking Pin methods
     """
