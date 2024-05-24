@@ -3,13 +3,28 @@ Unit testing lessons 3 and 4.
 """
 
 import unittest
-from lessons.lesson_3_and_4.lesson_3_and_4 import get_val  # pylint: disable=import-error
+from lessons.lesson_3_and_4.main import (
+    get_val,  # pylint: disable=import-error
+    numbers,  # pylint: disable=import-error
+)
 
 
 class Lesson3and4TestCase(unittest.TestCase):
     """
     Lessons 3 and 4 test case.
     """
+
+    def test_numbers_data_type(self):
+        """
+        Testing numbers dictionary -> datatype should be dict
+        """
+        self.assertIsInstance(numbers, dict)
+
+    def test_numbers_0(self):
+        """
+        Testing numbers dictionary -> key 0
+        """
+        self.assertIsInstance(numbers[0], tuple)
 
     def test_get_val_return_type(self):
         """
