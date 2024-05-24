@@ -29,6 +29,17 @@ class Lesson3and4TestCase(unittest.TestCase):
         led.value.return_value = 0
         self.assertEqual(led.value(), 0)
 
+    def test_set_pin_value_on(self):
+        """
+        Pin value should return 1 after it was updated by
+        set_pin_value function
+        """
+        led = pins[0]
+        set_pin_val(led, 1)
+        led.value = MagicMock()
+        led.value.return_value = 1
+        self.assertEqual(led.value(), 1)
+
     def test_numbers_data_type(self):
         """
         Testing numbers dictionary -> datatype should be dict
