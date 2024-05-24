@@ -25,14 +25,14 @@ class Lesson3and4TestCase(unittest.TestCase):
         Testing numbers dictionary -> key 0
         """
         self.assertIsInstance(numbers[0], tuple)
-        self.assertTupleEqual(numbers[0], (False, True, True, True))
+        self.assertTupleEqual(numbers[0], (False, False, False, False))
 
     def test_numbers_7(self):
         """
         Testing numbers dictionary -> key 7
         """
         self.assertIsInstance(numbers[7], tuple)
-        self.assertTupleEqual(numbers[7], (False, False, False, False))
+        self.assertTupleEqual(numbers[7], (False, True, True, True))
 
     def test_numbers_15(self):
         """
