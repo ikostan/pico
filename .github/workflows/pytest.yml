@@ -47,10 +47,11 @@ jobs:
     - name: Unitest with pytest
       run: |
         python -m pytest --cov-report  term-missing --cov=lessons tests/ -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.python-version }}.xml
-    - name: Upload pytest test results
+    - name: Merge & Upload pytest test results
       # Merge multiple Actions Artifacts in Workflow Runs. Internally powered by @actions/artifact package.
       uses: actions/upload-artifact/merge@v4
       with:
+          separate-directories: true
           name: pytest-results-${{ matrix.python-version }}
           path: junit/test-results-${{ matrix.python-version }}.xml
           overwrite: true
