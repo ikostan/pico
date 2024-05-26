@@ -60,6 +60,6 @@ jobs:
           # If false, the action will fail if an artifact for the given name already exists.
           # Does not fail if the artifact does not exist.
           # Optional. Default is 'false'
-          overwrite: True
+          overwrite: False
       # Use always() to always run this step to publish test results when there are test failures
       if: ${{ always() }}
