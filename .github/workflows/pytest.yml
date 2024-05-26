@@ -58,7 +58,7 @@ jobs:
 
           # A glob pattern matching the artifacts that should be merged.
           # Optional. Default is '*'
-          pattern: pytest-results-*
+          pattern: test-results-*
 
           # If true, the artifacts will be merged into separate directories.
           # If false, the artifacts will be merged into the root of the destination.
