@@ -45,7 +45,7 @@ jobs:
         pytest --version
     - name: Unitest with pytest
       run: |
-        python -m pytest tests/ -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.html --cov-report term-missing --cov=lessons --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
+        python -m pytest tests/ -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov=lessons --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
     - name: Upload pytest test results
       uses: actions/upload-artifact@v4
       with:
@@ -54,7 +54,7 @@ jobs:
           name: pytest-results-${{ matrix.os }}-${{ matrix.python-version }}
           # A file, directory or wildcard pattern that describes what to upload
           # Required.
-          path: junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.html
+          path: junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml
           # If true, an artifact with a matching name will be deleted before a new one is uploaded.
           # If false, the action will fail if an artifact for the given name already exists.
           # Does not fail if the artifact does not exist.
