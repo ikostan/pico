@@ -9,15 +9,12 @@ permissions:
   pull-requests: read
 
 jobs:
-  markdown-lint:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout Repository'
-        uses: actions/checkout@v4
-      
-      # lint markdown
-      - uses: actions/setup-node@master
-      - name: "Lint Markdown"
-        run: |
-          npm install -g markdownlint-cli
-          markdownlint '**.md' --ignore node_modules --disable MD013
+    - uses: actions/checkout@v4
+    - uses: DavidAnson/markdownlint-cli2-action@v16
+      with:
+        globs: |
+          *.md
+          !test/*.md
