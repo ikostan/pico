@@ -13,12 +13,12 @@ led = Pin(6, Pin.OUT)
 
 if __name__ == '__main__':
     while True:
-        IS_ON = 1
+        IS_ON = 0
         led.value(IS_ON)
         t = random.random()
         t = round(t, 2)
         print(f"sleep: {t}, LED: {IS_ON}.")
         time.sleep(t)
-        IS_ON = 0
+        IS_ON = 1
         led.value(IS_ON)
         print(f"sleep: {t}, LED: {IS_ON}.")
