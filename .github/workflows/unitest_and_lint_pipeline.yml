@@ -20,10 +20,10 @@ jobs:
     needs:
       - flake8
       - pylint
+      - markdown-lint
     uses: ikostan/pico/.github/workflows/pytest.yml@master
   codeql:
     name: CodeQL for a new build
     needs:
-      - markdown-lint
       - pytest
     uses: ikostan/pico/.github/workflows/codeql_build.yml@master
