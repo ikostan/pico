@@ -17,6 +17,7 @@ genuinely teach you how you can do this type of work and projects on your own.
 ## [Raspberry Pi Pico W LESSON 4: Create a Binary Counter Using the Pico W](https://www.youtube.com/watch?v=P1dzHNgAtvg&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=4)
 
 ### Description
+
 In this introductory video, I will show the fundamentals of Binary Numbers.
 I will show you my solution to the homework assignment. We will create a 4 bit
 binary counter. Modern computers are simply very large numbers of very simple
@@ -30,5 +31,5 @@ work and projects on your own.
 
 ### Source material
 
-[Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5) by
-[Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
+[Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5)
+by [Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
