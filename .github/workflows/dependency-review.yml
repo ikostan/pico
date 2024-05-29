@@ -21,9 +21,15 @@ on:
 #
 # https://docs.github.com/en/enterprise-cloud@latest/code-security/supply-chain-security/understanding-your-software-supply-chain/using-the-dependency-submission-api
 permissions:
+  # required for all workflows
+  security-events: write
+
+  # required to fetch internal or private CodeQL packs
+  packages: read
+
+  # only required for workflows in private repositories
+  actions: read
   contents: read
-  # Write permissions for pull-requests are required for using the `comment-summary-in-pr` option, comment out if you aren't using this option
-  pull-requests: write
 
 jobs:
   dependency-review:
