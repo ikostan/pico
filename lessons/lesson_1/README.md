@@ -12,5 +12,5 @@ how you can do this type of work and projects on your own.
 
 ### Source material
 
-[Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5) by
-[Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
+[Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5)
+by [Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
