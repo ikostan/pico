@@ -8,7 +8,7 @@ on:
 jobs:
   markdown-lint:
     name: Markdown Lint
-    uses: ikostan/pico/blob/master/.github/workflows/markdown-lint.yml@master
+    uses: ikostan/pico/.github/workflows/markdown-lint.yml@master
   flake8:
     name: Lint with flake8
     uses: ikostan/pico/.github/workflows/flake8.yml@master
