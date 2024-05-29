@@ -8,5 +8,6 @@ from the Pico W. My goal is not to 'Show Off', but to genuinely teach you how yo
 can do this type of work and projects on your own. Enjoy!
 
 ### Source material
+
 [Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5) by
 [Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
