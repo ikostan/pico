@@ -23,6 +23,7 @@ just great for life long learners.
 6. [Controlling 3 LED with a Potentiometer in Micropython](https://github.com/ikostan/pico/tree/master/lessons/lesson_7)
 
 
-**Source material:** 
+**Source material:**
+
 [Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5)
 [by Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
