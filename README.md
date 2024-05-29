@@ -1,9 +1,7 @@
 # PiPico W training
 
----
 [![Lint, Test & CodeQL Pipeline](https://github.com/ikostan/pico/actions/workflows/unitest_and_lint_pipeline.yml/badge.svg?branch=master)](https://github.com/ikostan/pico/actions/workflows/unitest_and_lint_pipeline.yml)
 [![CodeQL](https://github.com/ikostan/pico/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/ikostan/pico/actions/workflows/codeql.yml)
----
 
 ## About
 
