@@ -15,7 +15,5 @@ jobs:
     - uses: actions/checkout@v4
     - uses: DavidAnson/markdownlint-cli2-action@v16
       with:
-        globs: |
-          *.md
-          tests/*.md
-          lessons/*.md
+        fix: true
+        globs: '**/*.md'
