@@ -18,6 +18,7 @@ jobs:
   pytest:
     name: Unitest with pytest
     needs:
+      - dependency
       - flake8
       - pylint
     uses: ikostan/pico/.github/workflows/pytest.yml@master
