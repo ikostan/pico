@@ -17,4 +17,5 @@ jobs:
       with:
         globs: |
           *.md
-          !test/*.md
+          tests/*.md
+          lessons/*.md
