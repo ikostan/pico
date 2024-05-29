@@ -6,6 +6,9 @@ on:
       - master
 
 jobs:
+  dependency:
+    name: Dependency review
+    uses: ikostan/pico/.github/workflows/dependency-review.yml@master
   flake8:
     name: Lint with flake8
     uses: ikostan/pico/.github/workflows/flake8.yml@master
