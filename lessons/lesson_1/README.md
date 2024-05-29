@@ -25,7 +25,7 @@ how you can do this type of work and projects on your own.
 3. Select one of the directories to simulate, e.g. "esp32".
 4. While the simulator is running, open a command prompt, and type:
 
-```python
+```bash
 python -m mpremote connect port:rfc2217://localhost:4000 run main.py
 ```
 
