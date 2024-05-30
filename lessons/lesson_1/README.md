@@ -1,6 +1,6 @@
 # [Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners](https://www.youtube.com/watch?v=SL4_oU9t8Ss&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=1)
 
-![PiPico W LED](https://github.com/ikostan/pico/lessons/lesson_1/wokwi_pi_pico_w_led.gif)
+![PiPico W LED](https://github.com/ikostan/pico/blob/master/lessons/lesson_1/wokwi_pi_pico_w_led.gif)
 
 ## Description
 
