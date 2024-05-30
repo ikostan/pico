@@ -36,7 +36,7 @@ This will connect to the simulator and run the main.py file on the board.
 **Note:** keep the simulator tab visible while running the command,
 otherwise the simulator will pause and the command will timeout.
 
-For more detailed informations see [source here](https://github.com/wokwi/wokwi-vscode-micropython/tree/main).
+For more detailed information see [source here](https://github.com/wokwi/wokwi-vscode-micropython/tree/main).
 
 ### Source material
 
