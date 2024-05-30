@@ -13,14 +13,7 @@ projects on your own. This will serve as an excellent curriculum for a STEM prog
 and is appropriate for use in the public schools, private schools, homeschooling,
 or just great for life long learners.
 
-## Lessons
-
-1. [Write Your First Program for Absolute Beginners](https://github.com/ikostan/pico/tree/master/lessons/lesson_1)
-2. [Understanding and Using Breadboards](https://github.com/ikostan/pico/tree/master/lessons/lesson_2)
-3. [Binary Numbers](https://github.com/ikostan/pico/tree/master/lessons/lesson_3_and_4)
-4. [Reading Analog Voltages Using a Potentiometer](https://github.com/ikostan/pico/tree/master/lessons/lesson_5)
-5. [Understanding If Statements in MicroPython](https://github.com/ikostan/pico/tree/master/lessons/lesson_6)
-6. [Controlling 3 LED with a Potentiometer in Micropython](https://github.com/ikostan/pico/tree/master/lessons/lesson_7)
+Full Raspberry Pi Pico W lessons list is [here](https://github.com/ikostan/pico/tree/master/lessons).
 
 ### Source material
 
