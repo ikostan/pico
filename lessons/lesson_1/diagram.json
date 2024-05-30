@@ -26,9 +26,9 @@
     }
   ],
   "connections": [
-    [ "led1:C", "pico:GND.1", "green", [ "v0" ] ],
-    [ "r1:1", "led1:A", "green", [ "v0" ] ],
-    [ "r1:2", "pico:GP6", "green", [ "v0" ] ]
+    [ "led1:C", "pico:GND.1", "yellow", [ "v0" ] ],
+    [ "r1:1", "led1:A", "red", [ "v0" ] ],
+    [ "r1:2", "pico:GP6", "red", [ "v0" ] ]
   ],
   "dependencies": {}
 }
