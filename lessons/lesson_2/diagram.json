@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "Egor Kostan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 73.8, "left": -131.6, "attrs": {} },
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 63.95,
+      "left": 291.55,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 150,
+      "left": 42.6,
+      "attrs": { "color": "red", "flip": "1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 225.6,
+      "left": 28.25,
+      "rotate": 90,
+      "attrs": { "value": "220000" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP15", "bb1:bp.25", "red", [ "h-124.8", "v0.04" ] ],
+    [ "bb1:19b.g", "bb1:bn.16", "blue", [ "v0" ] ],
+    [ "led1:A", "bb1:18b.f", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:19b.f", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:18b.g", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:bp.15", "", [ "$bb" ] ],
+    [ "bb1:bn.25", "pico:GND.1", "yellow", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
