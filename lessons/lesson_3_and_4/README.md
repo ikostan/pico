@@ -1,5 +1,7 @@
 # Raspberry Pi Pico W LESSON 3 and 4: Binary Numbers
 
+![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/lessons/lesson_3_and_4/binary_numbers.gif)
+
 ## [Raspberry Pi Pico W LESSON 3: Understanding and Using Binary Numbers](https://www.youtube.com/watch?v=C_xiDka0Nm0&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=3)
 
 ### Lesson #3 Description
