@@ -2,6 +2,7 @@
 
 [![Lint, Test & CodeQL Pipeline](https://github.com/ikostan/pico/actions/workflows/unitest_and_lint_pipeline.yml/badge.svg?branch=master)](https://github.com/ikostan/pico/actions/workflows/unitest_and_lint_pipeline.yml)
 [![CodeQL](https://github.com/ikostan/pico/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/ikostan/pico/actions/workflows/codeql.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/1be92dcf40834e51bced743c6f8bbec6)](https://app.codacy.com/gh/ikostan/pico/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 Full Raspberry Pi Pico W lessons list is [here](https://github.com/ikostan/pico/tree/master/lessons).
 
