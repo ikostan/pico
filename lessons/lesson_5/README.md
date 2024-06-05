@@ -2,6 +2,8 @@
 
 ![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/lessons/lesson_5/potentiometer_read.gif)
 
+[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
+
 ## Description
 
 In this introductory video, I will show how to read analog voltages
