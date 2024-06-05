@@ -1,5 +1,7 @@
 # [Raspberry Pi Pico W LESSON 5: Reading Analog Voltages Using a Potentiometer](https://www.youtube.com/watch?v=ODWwErH_iGA&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=5)
 
+![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/lessons/lesson_5/potentiometer_read.gif)
+
 ## Description
 
 In this introductory video, I will show how to read analog voltages
