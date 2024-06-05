@@ -1,5 +1,7 @@
 # [Raspberry Pi Pico W LESSON 6: Understanding If Statements in MicroPython](https://www.youtube.com/watch?v=mS4YcJ0FcOU&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=6)
 
+[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
+
 ## Description
 
 In this introductory video, I will show you how to do IF
