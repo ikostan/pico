@@ -2,6 +2,8 @@
 
 ![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/lessons/lesson_2/wokwi_pi_pico_w_led_breadboard.gif)
 
+[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
+
 ## Description
 
 In this introductory video, I will show you how to build your first circuit using

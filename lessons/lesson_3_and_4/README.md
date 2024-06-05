@@ -2,9 +2,9 @@
 
 ![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/lessons/lesson_3_and_4/binary_numbers.gif)
 
-## [Raspberry Pi Pico W LESSON 3: Understanding and Using Binary Numbers](https://www.youtube.com/watch?v=C_xiDka0Nm0&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=3)
+[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
 
-### Lesson #3 Description
+## [Raspberry Pi Pico W LESSON 3: Understanding and Using Binary Numbers](https://www.youtube.com/watch?v=C_xiDka0Nm0&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=3)
 
 In this introductory video, I will show the fundamentals of Binary Numbers.
 I will describe our modern computers are all based on the binary number system.
@@ -17,8 +17,6 @@ understand the material I am presenting. My goal is not to 'Show Off', but to
 genuinely teach you how you can do this type of work and projects on your own.
 
 ## [Raspberry Pi Pico W LESSON 4: Create a Binary Counter Using the Pico W](https://www.youtube.com/watch?v=P1dzHNgAtvg&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=4)
-
-### Lesson #4 Description
 
 In this introductory video, I will show the fundamentals of Binary Numbers.
 I will show you my solution to the homework assignment. We will create a 4 bit

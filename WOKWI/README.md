@@ -4,12 +4,12 @@ Wokwi is an online Electronics simulator. You can
 use it to simulate Arduino, ESP32, STM32, and many
 other popular boards, parts and sensors.
 
-### Prerequisites
+## Prerequisites
 
 1. Install the Wokwi for VS Code extension.
 2. Install the mpremote tool, e.g. pip install mpremote.
 
-### Usage
+## Usage
 
 1. Clone this project and open it in VS Code.
 2. From the command palette, select "Wokwi: Start Simulator".

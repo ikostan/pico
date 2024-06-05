@@ -2,6 +2,8 @@
 
 ![PiPico W LED](https://github.com/ikostan/pico/blob/master/lessons/lesson_1/wokwi_pi_pico_w_led.gif)
 
+[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
+
 ## Description
 
 In this introductory video, I will show you how to install micropython on the Raspberry
