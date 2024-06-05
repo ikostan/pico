@@ -68,3 +68,11 @@ jobs:
         overwrite: False
       # Use always() to always run this step to publish test results when there are test failures
       if: ${{ always() }}
+      # https://github.com/paambaati/codeclimate-action
+    - name: Test & publish code coverage
+      uses: paambaati/codeclimate-action@v6.0.0
+      env:
+        CC_TEST_REPORTER_ID: 44d834637557f78627da2973e1169fb8729bd587fd07b3bbe15571aa850ee957
+      with:
+        coverageCommand: coverage run -m pytest tests/
+        debug: true
