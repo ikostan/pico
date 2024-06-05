@@ -1,5 +1,7 @@
 # [Raspberry Pi Pico W LESSON 7: Controlling 3 LED with a Potentiometer in Micropython](https://www.youtube.com/watch?v=YqvcSnGd_HQ&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=7)
 
+[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
+
 ## Description
 
 In this introductory video, I will show you how to use IF
