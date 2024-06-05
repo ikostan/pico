@@ -74,5 +74,5 @@ jobs:
       env:
         CC_TEST_REPORTER_ID: 787d3429d0d88b8a3835590c72b1925765b12fb7650e81b0094bd5c09d8fcb31
       with:
-        coverageCommand: coverage run -m pytest tests/
+        coverageCommand: npm run coverage
         debug: true
