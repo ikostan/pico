@@ -1,6 +1,6 @@
 # Raspberry Pi Pico W LESSON 3 and 4: Binary Numbers
 
-![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/lessons/lesson_3_and_4/binary_numbers.gif)
+![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/binary_numbers.gif)
 
 [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
 
