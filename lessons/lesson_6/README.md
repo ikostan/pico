@@ -1,5 +1,7 @@
 # [Raspberry Pi Pico W LESSON 6: Understanding If Statements in MicroPython](https://www.youtube.com/watch?v=mS4YcJ0FcOU&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=6)
 
+![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/led_terminal.gif)
+
 [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
 
 ## Description
