@@ -1,9 +1,9 @@
 """
-Test suite for lesson 7.
+Test suite for lesson 7 and 8.
 """
 
 import unittest
-from lessons.lesson_7.main import (  # pylint: disable=import-error
+from lessons.lesson_7_and_8.main import (  # pylint: disable=import-error
     # all_led_off,
     value_to_color,
     # turn_led_on,
@@ -13,7 +13,7 @@ from lessons.lesson_7.main import (  # pylint: disable=import-error
 
 class Lesson7TestCase(unittest.TestCase):
     """
-    Test case for lesson 7.
+    Test case for lesson 7 and 8.
     """
 
     def test_value_to_color_return_type(self):
