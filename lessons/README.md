@@ -19,7 +19,9 @@ or just great for life long learners.
    - Create a Binary Counter Using the Pico W
 4. [Raspberry Pi Pico W LESSON 5: Reading Analog Voltages Using a Potentiometer](https://github.com/ikostan/pico/tree/master/lessons/lesson_5)
 5. [Raspberry Pi Pico W LESSON 6: Understanding If Statements in MicroPython](https://github.com/ikostan/pico/tree/master/lessons/lesson_6)
-6. [Raspberry Pi Pico W LESSON 7: Controlling 3 LED with a Potentiometer in Micropython](https://github.com/ikostan/pico/tree/master/lessons/lesson_7)
+6. [Raspberry Pi Pico W LESSON 7 and 8](https://github.com/ikostan/pico/tree/master/lessons/lesson_7_and_8):
+   - Controlling 3 LED with a Potentiometer in Micropython
+   - Compound Conditionals and If Statements in MicroPython
 
 ### Source materials
 
