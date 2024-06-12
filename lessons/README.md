@@ -22,7 +22,10 @@ or just great for life long learners.
 6. [Raspberry Pi Pico W LESSON 7 and 8](https://github.com/ikostan/pico/tree/master/lessons/lesson_7_and_8):
    - Controlling 3 LED with a Potentiometer in Micropython
    - Compound Conditionals and If Statements in MicroPython
-7. [Raspberry Pi Pico W LESSON 9: Getting Analog Output Using PWM (Pulse Width Modulation)](https://github.com/ikostan/pico/tree/master/lessons/lesson_9)
+7. [Raspberry Pi Pico W LESSON 9 and 10](https://github.com/ikostan/pico/tree/master/lessons/lesson_9and_10):
+   - Raspberry Pi Pico W LESSON 9: Getting Analog Output Using PWM (Pulse Width Modulation)
+   - Raspberry Pi Pico W LESSON 10: Create a Dimmable LED in Micropython
+
 
 ### Source materials
 
