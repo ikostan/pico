@@ -1,4 +1,4 @@
-# Raspberry Pi Pico W LESSON 9 and 10: Getting Analog Output Using PWM (Pulse Width Modulation)
+# Raspberry Pi Pico W LESSON 9 and 10: using PWM (Pulse Width Modulation)
 
 ![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/pwm.gif)
 
