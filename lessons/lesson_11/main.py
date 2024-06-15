@@ -15,15 +15,15 @@ analogOut = PWM(Pin(PIN_NUM))
 analogOut.freq(1000)
 analogOut.duty_u16(0)
 
-steps = 50            # n of steps for max brightness
-max_read_val = 65550  # max potentiometer value
-constant = 1.248336   # (constant) ** steps = max_read_val
+STEPS = 50            # n of steps for max brightness
+MAX_READ_VAL = 65550  # max potentiometer value
+CONSTANT = 1.248336   # (constant) ** steps = max_read_val
 
 while True:
         
     read = potentiometer.read_u16()         # pylint: disable=E1111
-    exp = (steps / max_read_val) * read
-    brightness = round(constant ** exp)
+    exp = (STEPS / MAX_READ_VAL) * read
+    brightness = round(CONSTANT ** exp)
     analogOut.duty_u16(brightness)
     print(f"read: {read}, exp: {exp}, brightness: {brightness}")
     sleep(0.1)
