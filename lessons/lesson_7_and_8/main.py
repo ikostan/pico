@@ -2,7 +2,6 @@
 Raspberry Pi Pico W LESSON 7: Controlling 3 LED with a Potentiometer in Micropython
 https://www.youtube.com/watch?v=YqvcSnGd_HQ&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=7
 """
-
 from time import sleep
 from machine import Pin, ADC  # pylint: disable=import-error
 
