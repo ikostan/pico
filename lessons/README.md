@@ -25,6 +25,7 @@ or just great for life long learners.
 7. [Raspberry Pi Pico W LESSON 9 and 10](https://github.com/ikostan/pico/tree/master/lessons/lesson_9_and_10):
    - Raspberry Pi Pico W LESSON 9: Getting Analog Output Using PWM (Pulse Width Modulation)
    - Raspberry Pi Pico W LESSON 10: Create a Dimmable LED in Micropython
+8. [Raspberry Pi Pico W LESSON 11: Controlling a Dimmable LED with a Potentiometer](https://github.com/ikostan/pico/tree/master/lessons/lesson_11)
 
 
 ### Source materials

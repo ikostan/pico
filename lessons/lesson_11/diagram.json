@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "Egor Kostan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-mini", "id": "bb1", "top": 56.2, "left": -60, "attrs": {} },
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 15.95,
+      "left": 205.15,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 54, "left": -63.4, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 129.6,
+      "left": -67.75,
+      "rotate": 90,
+      "attrs": { "value": "220000" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 65.9, "left": 38.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "bb1:2b.j", "pico:GP16", "red", [ "v0" ] ],
+    [ "bb1:1t.a", "pico:GND.1", "blue", [ "v0" ] ],
+    [ "pico:3V3_EN", "bb1:13b.g", "red", [ "h0" ] ],
+    [ "bb1:15b.g", "bb1:1t.e", "blue", [ "v-38.4", "h-134.4" ] ],
+    [ "pico:GP28", "bb1:14b.g", "yellow", [ "h0" ] ],
+    [ "led1:A", "bb1:2t.d", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:1t.d", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:2t.e", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:2b.i", "", [ "$bb" ] ],
+    [ "pot1:GND", "bb1:13b.f", "", [ "$bb" ] ],
+    [ "pot1:SIG", "bb1:14b.f", "", [ "$bb" ] ],
+    [ "pot1:VCC", "bb1:15b.f", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
