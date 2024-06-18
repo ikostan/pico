@@ -21,26 +21,29 @@ analogOut = PWM(Pin(PIN_NUM))
 analogOut.freq(1000)
 analogOut.duty_u16(0)
 
-while True:
-    try:
-        user_input = input("Please enter voltage output between"
-                           " 0 and 3.3 or type exit to stop the execution: ")
+if __name__ == '__main__':
 
-        if user_input.lower() == 'exit':
-            print("Exiting program now...")
-            analogOut.duty_u16(0)
-            break
+    while True:
 
-        user_input = float(user_input)
+        try:
+            user_input = input("Please enter voltage output between"
+                               " 0 and 3.3 or type exit to stop the execution: ")
 
-        if user_input < 0 or user_input > 3.3:
-            raise VoltageError(f"Invalid voltage value -> {user_input}.")
+            if user_input.lower() == 'exit':
+                print("Exiting program now...")
+                analogOut.duty_u16(0)
+                break
 
-        pwm_val = int((65550 / 3.3) * user_input)
-        analogOut.duty_u16(pwm_val)
+            user_input = float(user_input)
 
-    except VoltageError as e:
-        print(e)
+            if user_input < 0 or user_input > 3.3:
+                raise VoltageError(f"Invalid voltage value -> {user_input}.")
 
-    finally:
-        sleep(0.4)
+            pwm_val = int((65550 / 3.3) * user_input)
+            analogOut.duty_u16(pwm_val)
+
+        except VoltageError as e:
+            print(e)
+
+        finally:
+            sleep(0.4)

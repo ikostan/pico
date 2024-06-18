@@ -19,10 +19,12 @@ STEPS = 50            # n of steps for max brightness
 MAX_READ_VAL = 65550  # max potentiometer value
 CONSTANT = 1.248336   # (constant) ** steps = max_read_val
 
-while True:
-    READ = potentiometer.read_u16()         # pylint: disable=E1111
-    exp = (STEPS / MAX_READ_VAL) * READ
-    brightness = round(CONSTANT ** exp)
-    analogOut.duty_u16(brightness)
-    print(f"read: {READ}, exp: {exp}, brightness: {brightness}")
-    sleep(0.1)
+if __name__ == '__main__':
+
+    while True:
+        READ = potentiometer.read_u16()         # pylint: disable=E1111
+        exp = (STEPS / MAX_READ_VAL) * READ
+        brightness = round(CONSTANT ** exp)
+        analogOut.duty_u16(brightness)
+        print(f"read: {READ}, exp: {exp}, brightness: {brightness}")
+        sleep(0.1)
