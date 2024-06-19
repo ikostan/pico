@@ -18,30 +18,45 @@ pwms = [PWM(Pin(pins[RED])),
 
 
 def pwms_off():
+    """
+    Turn all colors off
+    """
     # noinspection PyTypeChecker
     for pwm in pwms:
         pwm.duty_u16(0)
 
 
 def initial_setup(val=1000):
+    """
+    Initial frequency setup
+    """
     # noinspection PyTypeChecker
     for pwm in pwms:
         pwm.freq(val)
 
 
 def red_on(val=65550):
+    """
+    Turn red on
+    """
     pwms_off()
     pwms[RED].duty_u16(val)
     print('Red')
 
 
 def green_on(val=65550):
+    """
+    Turn green on
+    """
     pwms_off()
     pwms[GREEN].duty_u16(val)
     print('Green')
 
 
 def blue_on(val=65550):
+    """
+    Turn blue on
+    """
     pwms_off()
     pwms[BLUE].duty_u16(val)
     print('Blue')
