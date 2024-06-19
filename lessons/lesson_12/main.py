@@ -29,7 +29,7 @@ def calc_pwm(color_value):
     """
     Calculate PWM value
     """
-    return (65550 * color_value) // 100
+    return int(color_value * (65550 / 255))
 
 
 def pwms_off():
@@ -55,9 +55,14 @@ def led_on(led_color):
     Turn led on based on user choose
     """
     pwms_off()
+    rgb = [0, 0, 0]
     # noinspection PyTypeChecker
     for i, c in enumerate(colors[led_color]):
-        pwms[i].duty_u16(calc_pwm(c))
+        x = calc_pwm(c)
+        pwms[i].duty_u16(x)
+        rgb[i] = x
+
+    print(f"\nDEBUG -> R: {rgb[0]}, G: {rgb[1]}, B: {rgb[2]}\n")
 
 
 def get_color():
@@ -67,8 +72,8 @@ def get_color():
     while True:
         # noinspection PyTypeChecker
         all_colors = '\n'.join(c for c in colors)
-        rgb_color = input(f"\nPlease enter color of your choice \
-                      from the list below:\n\n{all_colors}\n\ntype here -> ").lower()
+        rgb_color = input("\nPlease enter color of your choice "
+                          f"from the list below:\n\n{all_colors}\n\ntype here -> ").lower()
 
         if rgb_color == 'exit':
             return rgb_color
