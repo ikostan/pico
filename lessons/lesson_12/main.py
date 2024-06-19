@@ -6,6 +6,16 @@ https://www.youtube.com/watch?v=yZkx-KWbATY&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyA
 from time import sleep
 from machine import (Pin, PWM)
 
+
+colors = {'red': (255,0,0),
+          'green': (0,128,0),
+          'blue': (0,0,255),
+          'cyan': (0,255,255),
+          'magenta': (255,0,255),
+          'yellow': (255,255,0),
+          'orange': (255,165,0),
+          'white': (255,255,255)}
+
 pins = {'RED': 13,
         'GREEN': 14,
         'BLUE': 15}
@@ -13,6 +23,13 @@ pins = {'RED': 13,
 pwms = [PWM(Pin(pins['RED'])),
         PWM(Pin(pins['GREEN'])),
         PWM(Pin(pins['BLUE']))]
+
+
+def calc_pwm(color_value):
+    """
+    Calculate PWM value
+    """
+    return (65550 * color_value) // 100
 
 
 def pwms_off():
@@ -33,14 +50,34 @@ def initial_setup(val=1000):
         pwm.freq(val)
 
 
-def led_on(color, val=65550):
+def led_on(led_color, val=65550):
     """
-    Turn led on
+    Turn led on based on user choose
     """
     pwms_off()
-    i = list(pins.keys()).index(color)
-    pwms[i].duty_u16(val)
-    print(f"i: {i}, color: {color}")
+    # noinspection PyTypeChecker
+    for i, c in enumerate(colors[led_color]):
+        pwms[i].duty_u16(calc_pwm(c))
+       
+
+def get_color():
+    """
+    Ask user to choose a color
+    """
+    while True:
+        all_colors = '\n'.join(c for c in colors.keys())
+        color = input(f"\nPlease enter color of your choice \
+                      from the list below:\n\n{all_colors}\n\ntype here -> ").lower()
+        
+        if color == 'exit':
+            return color
+        
+        if color in colors:
+            return color
+        
+        print("\nPlease choose your color only from the listed options "
+              "or type 'exit' to stop the execution.")
+        sleep(2)
 
 
 if __name__ == '__main__':
@@ -49,6 +86,8 @@ if __name__ == '__main__':
 
     while True:
         # noinspection PyTypeChecker
-        for c in pins:
-            led_on(c)
-            sleep(0.5)
+        color = get_color()
+        if color == 'exit':
+            print('\nThe program will stop the execution now...')
+            break
+        led_on(color)
