@@ -6,15 +6,13 @@ https://www.youtube.com/watch?v=yZkx-KWbATY&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyA
 from time import sleep
 from machine import (Pin, PWM)
 
-RED = 0
-GREEN = 1
-BLUE = 2
+pins = {'RED': 13,
+        'GREEN': 14,
+        'BLUE': 15}
 
-pins = (13, 14, 15)
-
-pwms = [PWM(Pin(pins[RED])),
-        PWM(Pin(pins[GREEN])),
-        PWM(Pin(pins[BLUE]))]
+pwms = [PWM(Pin(pins['RED'])),
+        PWM(Pin(pins['GREEN'])),
+        PWM(Pin(pins['BLUE']))]
 
 
 def pwms_off():
@@ -35,31 +33,14 @@ def initial_setup(val=1000):
         pwm.freq(val)
 
 
-def red_on(val=65550):
+def led_on(color, val=65550):
     """
-    Turn red on
-    """
-    pwms_off()
-    pwms[RED].duty_u16(val)
-    print('Red')
-
-
-def green_on(val=65550):
-    """
-    Turn green on
+    Turn led on
     """
     pwms_off()
-    pwms[GREEN].duty_u16(val)
-    print('Green')
-
-
-def blue_on(val=65550):
-    """
-    Turn blue on
-    """
-    pwms_off()
-    pwms[BLUE].duty_u16(val)
-    print('Blue')
+    i = list(pins.keys()).index(color)
+    pwms[i].duty_u16(val)
+    print(f"i: {i}, color: {color}")
 
 
 if __name__ == '__main__':
@@ -67,11 +48,7 @@ if __name__ == '__main__':
     initial_setup()
 
     while True:
-        red_on()
-        sleep(0.5)
-
-        green_on()
-        sleep(0.5)
-
-        blue_on()
-        sleep(0.5)
+        # noinspection PyTypeChecker
+        for c in pins:
+            led_on(c)
+            sleep(0.5)
