@@ -50,7 +50,7 @@ def initial_setup(val=1000):
         pwm.freq(val)
 
 
-def led_on(led_color, val=65550):
+def led_on(led_color):
     """
     Turn led on based on user choose
     """
@@ -58,23 +58,24 @@ def led_on(led_color, val=65550):
     # noinspection PyTypeChecker
     for i, c in enumerate(colors[led_color]):
         pwms[i].duty_u16(calc_pwm(c))
-       
+
 
 def get_color():
     """
     Ask user to choose a color
     """
     while True:
-        all_colors = '\n'.join(c for c in colors.keys())
-        color = input(f"\nPlease enter color of your choice \
+        # noinspection PyTypeChecker
+        all_colors = '\n'.join(c for c in colors)
+        rgb_color = input(f"\nPlease enter color of your choice \
                       from the list below:\n\n{all_colors}\n\ntype here -> ").lower()
-        
-        if color == 'exit':
-            return color
-        
-        if color in colors:
-            return color
-        
+
+        if rgb_color == 'exit':
+            return rgb_color
+
+        if rgb_color in colors:
+            return rgb_color
+
         print("\nPlease choose your color only from the listed options "
               "or type 'exit' to stop the execution.")
         sleep(2)
