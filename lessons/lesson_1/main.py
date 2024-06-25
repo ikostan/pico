@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=SL4_oU9t8Ss&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyA
 
 import time
 import random
-from machine import Pin
+from machine import Pin  # pylint: disable=import-error
 
 
 random.randrange(0, 1)
