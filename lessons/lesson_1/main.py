@@ -31,4 +31,4 @@ if __name__ == '__main__':
     while True:
         toggle_led(IS_ON)
         time.sleep(0.3)
-        IS_ON = toggle_is_on(is_on)
+        IS_ON = toggle_is_on(IS_ON)
