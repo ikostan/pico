@@ -23,6 +23,7 @@ def toggle_led(IS_ON) -> None:
     """
     LED.value(IS_ON)
 
+
 if __name__ == '__main__':
     while True:
         toggle_led(IS_ON)
