@@ -17,7 +17,7 @@ def toggle_is_on(val: int) -> int:
     return 1 if is val == 0 else 0
 
 
-def toggle_led(val) -> None:
+def toggle_led(val: int) -> None:
     """
     Toggle LED
     """
@@ -28,4 +28,4 @@ if __name__ == '__main__':
     while True:
         toggle_led(is_on)
         time.sleep(0.3)
-        is_on = toggle_is_on(IS_ON)
+        is_on = toggle_is_on(is_on)
