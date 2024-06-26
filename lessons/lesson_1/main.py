@@ -19,6 +19,7 @@ def toggle_is_on(val: int) -> int:
 
 
 def toggle_led(val: int) -> None:
+
     """
     Toggle LED
     """
