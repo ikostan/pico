@@ -15,7 +15,7 @@ def toggle_is_on(val: int) -> int:
     """
     Update ISA_ON value
     """
-    return 1 if is val == 0 else 0
+    return 1 if val == 0 else 0
 
 
 def toggle_led(val: int) -> None:
