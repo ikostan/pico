@@ -11,14 +11,13 @@ LED = Pin(6, Pin.OUT)
 IS_ON = 0
 
 
-def toggle_led() -> None:
+def toggle_led(IS_ON) -> int:
     """
     Toggle LED
     """
-    global IS_ON
     IS_ON = 1 if IS_ON == 0 else 0
     LED.value(IS_ON)
-
+    return IS_ON
 
 if __name__ == '__main__':
     while True:
