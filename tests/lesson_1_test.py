@@ -4,9 +4,8 @@ Test suite for lesson 1.
 
 import unittest
 from unittest.mock import MagicMock
-from lessons.lesson_1.main import (  # pylint: disable=import-error
-    LED
-)
+# pylint: disable=import-error
+from lessons.lesson_1.main import LED
 
 
 class Lesson1TestCase(unittest.TestCase):
