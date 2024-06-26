@@ -9,7 +9,7 @@ from machine import Pin  # pylint: disable=import-error
 
 
 LED = Pin(6, Pin.OUT)
-is_on = 0
+IS_ON = 0
 
 
 def toggle_is_on(val: int) -> int:
@@ -29,6 +29,6 @@ def toggle_led(val: int) -> None:
 
 if __name__ == '__main__':
     while True:
-        toggle_led(is_on)
+        toggle_led(IS_ON)
         time.sleep(0.3)
-        is_on = toggle_is_on(is_on)
+        IS_ON = toggle_is_on(is_on)
