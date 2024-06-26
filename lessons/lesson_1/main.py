@@ -4,21 +4,23 @@ https://www.youtube.com/watch?v=SL4_oU9t8Ss&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyA
 """
 
 import time
-import random
 from machine import Pin  # pylint: disable=import-error
 
 
-random.randrange(0, 1)
-led = Pin(6, Pin.OUT)
+LED = Pin(6, Pin.OUT)
+IS_ON = 0
+
+
+def toggle_led() -> None:
+    """
+    Toggle LED
+    """
+    global IS_ON
+    IS_ON = 1 if IS_ON == 0 else 0
+    LED.value(IS_ON)
+
 
 if __name__ == '__main__':
     while True:
-        IS_ON = 0
-        led.value(IS_ON)
-        t = random.random()
-        t = round(t, 2)
-        print(f"sleep: {t}, LED: {IS_ON}.")
-        time.sleep(t)
-        IS_ON = 1
-        led.value(IS_ON)
-        print(f"sleep: {t}, LED: {IS_ON}.")
+        toggle_led()
+        time.sleep(0.3)
