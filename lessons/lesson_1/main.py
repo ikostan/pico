@@ -10,7 +10,7 @@ from machine import Pin  # pylint: disable=import-error
 
 LED = Pin(6, Pin.OUT)
 # fmt: off
-# Black will not reformat lines that contain fmt: skip or blocks that start with 
+# Black will not reformat lines that contain fmt: skip or blocks that start with
 IS_ON = 0
 # fmt: on
 
