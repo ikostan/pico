@@ -28,7 +28,6 @@ def toggle_led(val: int) -> None:
 
 
 if __name__ == '__main__':
-    
     while True:
         toggle_led(is_on)
         time.sleep(0.3)
