@@ -5,17 +5,17 @@ https://www.youtube.com/watch?v=eGdrtikKc5U&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyA
 """
 
 import time
-from machine import Pin
+from machine import Pin  # pylint: disable=import-error
 
 
-led = Pin(15, Pin.OUT)
+LED = Pin(15, Pin.OUT)
 
 if __name__ == '__main__':
 
     while True:
         print("LED is off")
-        led.value(0)
+        LED.value(0)
         time.sleep(0.5)
         print("LED is on")
-        led.value(1)
-        time.sleep(1)
+        LED.value(1)
+        time.sleep(1)  # fmt: skip
