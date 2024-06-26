@@ -8,24 +8,24 @@ from machine import Pin  # pylint: disable=import-error
 
 
 LED = Pin(6, Pin.OUT)
-IS_ON = 0
+is_on = 0
 
-def toggle_is_on(IS_ON) -> int:
+def toggle_is_on(val: int) -> int:
     """
     Update ISA_ON value
     """
-    return 1 if IS_ON == 0 else 0
+    return 1 if is val == 0 else 0
 
 
-def toggle_led(IS_ON) -> None:
+def toggle_led(val) -> None:
     """
     Toggle LED
     """
-    LED.value(IS_ON)
+    LED.value(val)
 
 
 if __name__ == '__main__':
     while True:
-        toggle_led(IS_ON)
+        toggle_led(is_on)
         time.sleep(0.3)
-        IS_ON = toggle_is_on(IS_ON)
+        is_on = toggle_is_on(IS_ON)
