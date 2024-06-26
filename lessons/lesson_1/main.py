@@ -10,6 +10,7 @@ from machine import Pin  # pylint: disable=import-error
 LED = Pin(6, Pin.OUT)
 is_on = 0
 
+
 def toggle_is_on(val: int) -> int:
     """
     Update ISA_ON value
@@ -25,6 +26,7 @@ def toggle_led(val: int) -> None:
 
 
 if __name__ == '__main__':
+    
     while True:
         toggle_led(is_on)
         time.sleep(0.3)
