@@ -1,6 +1,7 @@
 """
 Unit testing for lesson 5
 """
+
 import unittest
 from unittest.mock import MagicMock
 from lessons.lesson_5.main import (  # pylint: disable=import-error
@@ -14,10 +15,12 @@ class Lesson5TestCase(unittest.TestCase):
     """
     Lesson 5 test case
     """
+
     def test_voltage_0(self):
         """
         Reading Analog Voltage -> min value is 96
         Should be converted to 0 volt
+        :return:
         """
         PIN_READ.read_u16 = MagicMock()
         PIN_READ.read_u16.return_value = 96
@@ -29,6 +32,7 @@ class Lesson5TestCase(unittest.TestCase):
         """
         Reading Analog Voltage -> mid-value
         Should be converted to 1.65 volt
+        :return:
         """
         PIN_READ.read_u16 = MagicMock()
         PIN_READ.read_u16.return_value = (65535 - 96) / 2
@@ -40,6 +44,7 @@ class Lesson5TestCase(unittest.TestCase):
         """
         Reading Analog Voltage -> max value is 65535
         Should be converted to 3.3 volt
+        :return:
         """
         PIN_READ.read_u16 = MagicMock()
         PIN_READ.read_u16.return_value = 65535
