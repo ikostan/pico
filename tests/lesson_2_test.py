@@ -17,8 +17,8 @@ class Lesson2TestCase(unittest.TestCase):
     def test_led_on(self):
         """
         Mock the led.value() function and return 1 always
+        :return:
         """
-
         LED.value = MagicMock()
         LED.on()
         LED.value.return_value = 1
@@ -27,8 +27,8 @@ class Lesson2TestCase(unittest.TestCase):
     def test_led_off(self):
         """
         Mock the led.value() function and return 0 always
+        :return:
         """
-
         LED.value = MagicMock()
         LED.off()
         LED.value.return_value = 0
