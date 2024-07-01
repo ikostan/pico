@@ -6,9 +6,8 @@ import unittest
 from unittest.mock import MagicMock
 from lessons.lesson_3_and_4.main import (  # pylint: disable=import-error
     get_val,        # pylint: disable=import-error
-    numbers,        # pylint: disable=import-error
-    pins,           # pylint: disable=import-error
-    # set_all_pins,   # pylint: disable=import-error
+    NUMBERS,        # pylint: disable=import-error
+    PINS,           # pylint: disable=import-error
     set_pin_val,    # pylint: disable=import-error
 )
 
@@ -23,7 +22,7 @@ class Lesson3and4TestCase(unittest.TestCase):
         Pin value should return 0 after it was updated by
         set_pin_value function
         """
-        led = pins[0]
+        led = PINS[0]
         set_pin_val(led, 0)
         led.value = MagicMock()
         led.value.return_value = 0
@@ -34,7 +33,7 @@ class Lesson3and4TestCase(unittest.TestCase):
         Pin value should return 1 after it was updated by
         set_pin_value function
         """
-        led = pins[0]
+        led = PINS[0]
         set_pin_val(led, 1)
         led.value = MagicMock()
         led.value.return_value = 1
@@ -44,28 +43,28 @@ class Lesson3and4TestCase(unittest.TestCase):
         """
         Testing numbers dictionary -> datatype should be dict
         """
-        self.assertIsInstance(numbers, dict)
+        self.assertIsInstance(NUMBERS, dict)
 
     def test_numbers_0(self):
         """
         Testing numbers dictionary -> key 0
         """
-        self.assertIsInstance(numbers[0], tuple)
-        self.assertTupleEqual(numbers[0], (False, False, False, False))
+        self.assertIsInstance(NUMBERS[0], tuple)
+        self.assertTupleEqual(NUMBERS[0], (False, False, False, False))
 
     def test_numbers_7(self):
         """
         Testing numbers dictionary -> key 7
         """
-        self.assertIsInstance(numbers[7], tuple)
-        self.assertTupleEqual(numbers[7], (False, True, True, True))
+        self.assertIsInstance(NUMBERS[7], tuple)
+        self.assertTupleEqual(NUMBERS[7], (False, True, True, True))
 
     def test_numbers_15(self):
         """
         Testing numbers dictionary -> key 15
         """
-        self.assertIsInstance(numbers[15], tuple)
-        self.assertTupleEqual(numbers[15], (True, True, True, True))
+        self.assertIsInstance(NUMBERS[15], tuple)
+        self.assertTupleEqual(NUMBERS[15], (True, True, True, True))
 
     def test_get_val_return_type(self):
         """
