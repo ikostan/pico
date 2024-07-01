@@ -41,7 +41,7 @@ def get_val(n_val):
     Convert TRUE to 1 and FALSE to 0
     :param n_val:
     :return:
-    """
+    """https://github.com/ikostan/pico/actions
     return 1 if n_val is True else 0
 
 
@@ -71,7 +71,7 @@ def set_all_pins(vals):
 if __name__ == '__main__':
 
     while True:
-        for i, item in enumerate(NUMBERS.items()):
-            set_all_pins(NUMBERS[i])
-            print(f"number: {i}, pins: {item}")
+        for item in NUMBERS.items():
+            set_all_pins(NUMBERS[item[0]])
+            print(f"number: {item[0]}, pins: {item}")
             time.sleep(3)
