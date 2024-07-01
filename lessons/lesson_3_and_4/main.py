@@ -55,7 +55,7 @@ def set_pin_val(pin, val):
     pin.value(val)
 
 
-def set_all_pins(vals, all_pins=PINS):
+def set_all_pins(vals):
     """
     Turn all pins OFF
     :param all_pins:
@@ -64,7 +64,7 @@ def set_all_pins(vals, all_pins=PINS):
     """
     for index, v in enumerate(vals):
         val = get_val(v)
-        pin = all_pins[index]
+        pin = PINS[index]
         set_pin_val(pin, val)
 
 
