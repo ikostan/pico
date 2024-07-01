@@ -10,13 +10,13 @@ import time
 from machine import Pin  # pylint: disable=import-error
 
 
-pin1 = Pin(13, Pin.OUT)
-pin2 = Pin(12, Pin.OUT)
-pin4 = Pin(11, Pin.OUT)
-pin8 = Pin(10, Pin.OUT)
-pins = [pin8, pin4, pin2, pin1]
+PIN1 = Pin(13, Pin.OUT)
+PIN2 = Pin(12, Pin.OUT)
+PIN4 = Pin(11, Pin.OUT)
+PIN8 = Pin(10, Pin.OUT)
+PINS = [PIN8, PIN4, PIN2, PIN1]
 
-numbers = {
+NUMBERS = {
     0: (False, False, False, False),
     1: (False, False, False, True),
     2: (False, False, True, False),
@@ -71,8 +71,8 @@ def set_all_pins(all_pins, vals):
 if __name__ == '__main__':
 
     while True:
-        for i in range(0, 16):
-            n = numbers[i]
-            set_all_pins(pins, n)
+        for i in range(0, len(NUMBERS)):
+            n = NUMBERS[i]
+            set_all_pins(PINS, n)
             print(f"number: {i}, pins: {n}")
             time.sleep(3)
