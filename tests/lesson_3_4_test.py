@@ -21,6 +21,7 @@ class Lesson3and4TestCase(unittest.TestCase):
         """
         Pin value should return 0 after it was updated by
         set_pin_value function
+        :return:
         """
         led = PINS[0]
         set_pin_val(led, 0)
@@ -32,6 +33,7 @@ class Lesson3and4TestCase(unittest.TestCase):
         """
         Pin value should return 1 after it was updated by
         set_pin_value function
+        :return:
         """
         led = PINS[0]
         set_pin_val(led, 1)
@@ -42,12 +44,14 @@ class Lesson3and4TestCase(unittest.TestCase):
     def test_numbers_data_type(self):
         """
         Testing numbers dictionary -> datatype should be dict
+        :return:
         """
         self.assertIsInstance(NUMBERS, dict)
 
     def test_numbers_0(self):
         """
         Testing numbers dictionary -> key 0
+        :return:
         """
         self.assertIsInstance(NUMBERS[0], tuple)
         self.assertTupleEqual(NUMBERS[0], (False, False, False, False))
@@ -55,6 +59,7 @@ class Lesson3and4TestCase(unittest.TestCase):
     def test_numbers_7(self):
         """
         Testing numbers dictionary -> key 7
+        :return:
         """
         self.assertIsInstance(NUMBERS[7], tuple)
         self.assertTupleEqual(NUMBERS[7], (False, True, True, True))
@@ -62,6 +67,7 @@ class Lesson3and4TestCase(unittest.TestCase):
     def test_numbers_15(self):
         """
         Testing numbers dictionary -> key 15
+        :return:
         """
         self.assertIsInstance(NUMBERS[15], tuple)
         self.assertTupleEqual(NUMBERS[15], (True, True, True, True))
