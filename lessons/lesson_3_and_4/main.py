@@ -60,8 +60,8 @@ def set_all_pins(pin_vals: list) -> None:
     :param pin_vals:
     :return:
     """
-    for index, v in enumerate(pin_vals):
-        val = get_val(v)
+    for index, pin_val in enumerate(pin_vals):
+        val = get_val(pin_val)
         pin = PINS[index]
         set_pin_val(pin, val)
 
