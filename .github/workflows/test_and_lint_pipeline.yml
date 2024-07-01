@@ -15,12 +15,16 @@ jobs:
   pylint:
     name: Lint with pylint
     uses: ikostan/pico/.github/workflows/pylint.yml@master
+  mypy:
+    name: Python Data Type Checking
+    uses: ikostan/pico/.github/workflows/mypy.yml@master
   pytest:
     name: Unitest with pytest
     needs:
       - flake8
       - pylint
       - markdown-lint
+      - mypy
     uses: ikostan/pico/.github/workflows/pytest.yml@master
   codeql:
     name: CodeQL for a new build
