@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "author": "Egor Kostan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": 121.8, "left": -266, "attrs": {} },
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": 390.35,
+      "left": -6.05,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 216,
+      "left": 133.85,
+      "rotate": 90,
+      "attrs": { "value": "220000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 216,
+      "left": 153.05,
+      "rotate": 90,
+      "attrs": { "value": "220000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 216,
+      "left": 162.65,
+      "rotate": 90,
+      "attrs": { "value": "220000" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 181.1, "left": -144.2, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": 181.1, "left": -240.2, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot3", "top": 181.1, "left": -48.2, "attrs": {} },
+    { "type": "wokwi-rgb-led", "id": "rgb1", "top": 128.8, "left": 154.7, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GND.8", "bb1:bn.50", "black", [ "h0" ] ],
+    [ "pico:3V3_EN", "bb1:bp.49", "red", [ "h0" ] ],
+    [ "bb1:4b.h", "bb1:bp.2", "red", [ "v0" ] ],
+    [ "bb1:14b.h", "bb1:bp.10", "red", [ "v0" ] ],
+    [ "bb1:24b.h", "bb1:bp.18", "red", [ "v0" ] ],
+    [ "bb1:44t.e", "bb1:bn.43", "black", [ "v0" ] ],
+    [ "bb1:6b.h", "bb1:bn.5", "black", [ "v0" ] ],
+    [ "pot2:VCC", "bb1:6b.g", "", [ "$b" ] ],
+    [ "bb1:16b.h", "bb1:bn.13", "black", [ "v0" ] ],
+    [ "bb1:26b.h", "bb1:bn.21", "black", [ "v0" ] ],
+    [ "bb1:5b.j", "pico:GP26", "red", [ "v0" ] ],
+    [ "bb1:15b.j", "pico:GP27", "green", [ "v0" ] ],
+    [ "bb1:25b.j", "pico:GP28", "blue", [ "v0" ] ],
+    [ "pico:GP13", "bb1:43b.j", "red", [ "h0" ] ],
+    [ "pico:GP14", "bb1:45b.j", "green", [ "h0" ] ],
+    [ "pico:GP15", "bb1:46b.j", "blue", [ "h0" ] ],
+    [ "r1:1", "bb1:43t.c", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:43b.g", "", [ "$bb" ] ],
+    [ "r2:1", "bb1:45t.c", "", [ "$bb" ] ],
+    [ "r2:2", "bb1:45b.g", "", [ "$bb" ] ],
+    [ "r3:1", "bb1:46t.c", "", [ "$bb" ] ],
+    [ "r3:2", "bb1:46b.g", "", [ "$bb" ] ],
+    [ "pot1:GND", "bb1:14b.g", "", [ "$bb" ] ],
+    [ "pot1:SIG", "bb1:15b.g", "", [ "$bb" ] ],
+    [ "pot1:VCC", "bb1:16b.g", "", [ "$bb" ] ],
+    [ "pot2:GND", "bb1:4b.g", "", [ "$bb" ] ],
+    [ "pot2:SIG", "bb1:5b.g", "", [ "$bb" ] ],
+    [ "pot3:GND", "bb1:24b.g", "", [ "$bb" ] ],
+    [ "pot3:SIG", "bb1:25b.g", "", [ "$bb" ] ],
+    [ "pot3:VCC", "bb1:26b.g", "", [ "$bb" ] ],
+    [ "rgb1:R", "bb1:43t.a", "", [ "$bb" ] ],
+    [ "rgb1:COM", "bb1:44t.b", "", [ "$bb" ] ],
+    [ "rgb1:G", "bb1:45t.a", "", [ "$bb" ] ],
+    [ "rgb1:B", "bb1:46t.a", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
