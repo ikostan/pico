@@ -3,7 +3,7 @@
 Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners
 https://www.youtube.com/watch?v=SL4_oU9t8Ss&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5
 """
-import machine
+
 import time
 from machine import Pin  # pylint: disable=import-error
 
