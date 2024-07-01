@@ -19,6 +19,8 @@ My goal is not to 'Show Off', but to genuinely teach you how you can do
 this type of work and projects on your own. I will show all work step-by-step, 
 with clear instructions.
 
+[Same project on WOKWI](https://wokwi.com/projects/400456203538769921)
+
 ### Source material
 
 [Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5)
