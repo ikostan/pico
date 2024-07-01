@@ -9,7 +9,6 @@
 import time
 from machine import Pin  # pylint: disable=import-error
 
-
 PIN1 = Pin(13, Pin.OUT)
 PIN2 = Pin(12, Pin.OUT)
 PIN4 = Pin(11, Pin.OUT)
@@ -45,7 +44,7 @@ def get_val(n_val):
     return 1 if n_val is True else 0
 
 
-def set_pin_val(pin, val):
+def set_pin_val(pin, val) -> None:
     """
     Set Pin value -> ON/OFF
     :param pin:
@@ -55,14 +54,13 @@ def set_pin_val(pin, val):
     pin.value(val)
 
 
-def set_all_pins(vals):
+def set_all_pins(pin_vals: list) -> None:
     """
     Turn all pins OFF
-    :param all_pins:
-    :param vals:
+    :param pin_vals:
     :return:
     """
-    for index, v in enumerate(vals):
+    for index, v in enumerate(pin_vals):
         val = get_val(v)
         pin = PINS[index]
         set_pin_val(pin, val)
