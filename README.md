@@ -1,6 +1,6 @@
 # PiPico W training
 
-[![Lint, Test & CodeQL Pipeline](https://github.com/ikostan/pico/actions/workflows/unitest_and_lint_pipeline.yml/badge.svg?branch=master)](https://github.com/ikostan/pico/actions/workflows/unitest_and_lint_pipeline.yml)
+[![Lint, Test & CodeQL Pipeline](https://github.com/ikostan/pico/actions/workflows/test_and_lint_pipeline.yml/badge.svg?branch=master)](https://github.com/ikostan/pico/actions/workflows/unitest_and_lint_pipeline.yml)
 [![CodeQL](https://github.com/ikostan/pico/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/ikostan/pico/actions/workflows/codeql.yml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/1be92dcf40834e51bced743c6f8bbec6)](https://app.codacy.com/gh/ikostan/pico/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/10d3376c6ce70ffc363a/maintainability)](https://codeclimate.com/github/ikostan/pico/maintainability)
