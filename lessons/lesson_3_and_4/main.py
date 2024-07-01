@@ -55,7 +55,7 @@ def set_pin_val(pin, val):
     pin.value(val)
 
 
-def set_all_pins(all_pins, vals):
+def set_all_pins(vals):
     """
     Turn all pins OFF
     :param all_pins:
@@ -64,15 +64,14 @@ def set_all_pins(all_pins, vals):
     """
     for index, v in enumerate(vals):
         val = get_val(v)
-        pin = all_pins[index]
+        pin = PINS[index]
         set_pin_val(pin, val)
 
 
 if __name__ == '__main__':
 
     while True:
-        for i in NUMBERS:
-            n = NUMBERS[i]
-            set_all_pins(PINS, n)
-            print(f"number: {i}, pins: {n}")
+        for i, vals in NUMBERS.items():
+            set_all_pins(vals)
+            print(f"number: {i}, pins: {vals}")
             time.sleep(3)

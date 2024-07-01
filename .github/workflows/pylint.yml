@@ -5,8 +5,8 @@ on:
     types:
       - opened
       - edited
-      - synchronize
       - reopened
+      - synchronize
   workflow_call:
 
 jobs:
