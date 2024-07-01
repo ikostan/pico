@@ -27,6 +27,7 @@ or just great for life long learners.
    - Raspberry Pi Pico W LESSON 10: Create a Dimmable LED in Micropython
 8. [Raspberry Pi Pico W LESSON 11: Controlling a Dimmable LED with a Potentiometer](https://github.com/ikostan/pico/tree/master/lessons/lesson_11)
 9. [Raspberry Pi Pico W LESSON 12: Understanding and Controlling an RGB LED in MicroPython](https://github.com/ikostan/pico/tree/master/lessons/lesson_12)
+10. [Raspberry Pi Pico W LESSON 13: User Specified RGB LED Colors Using Micropython](https://github.com/ikostan/pico/tree/master/lessons/lesson_13)
 
 
 ### Source materials
