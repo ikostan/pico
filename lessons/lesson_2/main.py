@@ -15,7 +15,7 @@ if __name__ == '__main__':
     while True:
         print("LED is off")
         LED.value(0)
-        time.sleep(0.5)  # fmt: skip;
+        time.sleep(0.5)
         print("LED is on")
         LED.value(1)
-        time.sleep(1)  # fmt: skip;
+        time.sleep(1)
