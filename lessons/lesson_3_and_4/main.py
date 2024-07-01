@@ -71,7 +71,7 @@ def set_all_pins(all_pins, vals):
 if __name__ == '__main__':
 
     while True:
-        for i in range(0, len(NUMBERS)):
+        for i in NUMBERS:
             n = NUMBERS[i]
             set_all_pins(PINS, n)
             print(f"number: {i}, pins: {n}")
