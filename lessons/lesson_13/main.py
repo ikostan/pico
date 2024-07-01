@@ -17,7 +17,7 @@ led_red.duty_u16(0)
 
 led_green = PWM(Pin(14))
 led_green.freq(1000)
-led_green.duty_u16(0)                                                 
+led_green.duty_u16(0)
 
 led_blue = PWM(Pin(15))
 led_blue.freq(1000)
