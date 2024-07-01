@@ -8,7 +8,7 @@ import time
 from machine import Pin  # pylint: disable=import-error
 
 
-LED: machine.Pin = Pin(6, Pin.OUT)
+LED: Pin = Pin(6, Pin.OUT)
 IS_ON: int = 0
 
 
