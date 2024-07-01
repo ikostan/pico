@@ -6,20 +6,20 @@ https://www.youtube.com/watch?v=ODWwErH_iGA&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyA
 from time import sleep
 import machine  # pylint: disable=import-error
 
-PIN_READ = machine.ADC(28)
+PIN_READ: machine.ADC = machine.ADC(28)
 
-X_MIN = 96  # min readings
-X_MAX = 65535
+X_MIN: int = 96  # min readings
+X_MAX: int = 65535
 
-V_MAX = 3.3  # max voltage
-V_MIN = 0.0
+V_MAX: float = 3.3  # max voltage
+V_MIN: float = 0.0
 
-SLOPE = (V_MAX - V_MIN) / (X_MAX - X_MIN)
+SLOPE: float = (V_MAX - V_MIN) / (X_MAX - X_MIN)
 
 if __name__ == '__main__':
 
     while True:
-        X = PIN_READ.read_u16()  # pylint: disable=E1111
-        VOLTAGE = (SLOPE * X) - (SLOPE * X_MIN)
+        X: int = PIN_READ.read_u16()  # pylint: disable=E1111
+        VOLTAGE: float = (SLOPE * X) - (SLOPE * X_MIN)
         print(f'voltage: {round(VOLTAGE, 2)}, x: {X}')
         sleep(0.3)
