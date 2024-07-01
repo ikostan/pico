@@ -4,9 +4,8 @@ Test suite for lesson 1.
 
 import unittest
 from unittest.mock import MagicMock
-from lessons.lesson_1.main import (  # pylint: disable=import-error
-    led
-)
+# pylint: disable=import-error
+from lessons.lesson_1.main import LED
 
 
 class Lesson1TestCase(unittest.TestCase):
@@ -19,20 +18,20 @@ class Lesson1TestCase(unittest.TestCase):
         Mock the led.value() function and return 1 always
         """
 
-        led.value = MagicMock()
-        led.value(1)
-        led.value.return_value = 1
-        self.assertEqual(led.value(), 1)
+        LED.value = MagicMock()
+        LED.value(1)
+        LED.value.return_value = 1
+        self.assertEqual(LED.value(), 1)
 
     def test_led_off(self):
         """
         Mock the led.value() function and return 0 always
         """
 
-        led.value = MagicMock()
-        led.value(0)
-        led.value.return_value = 0
-        self.assertEqual(led.value(), 0)
+        LED.value = MagicMock()
+        LED.value(0)
+        LED.value.return_value = 0
+        self.assertEqual(LED.value(), 0)
 
 
 if __name__ == '__main__':
