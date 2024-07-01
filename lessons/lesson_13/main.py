@@ -4,30 +4,30 @@ https://www.youtube.com/watch?v=FLMPjwXqXVw&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyA
 """
 
 from time import sleep
-from machine import (PWM, Pin, ADC)
+from machine import (PWM, Pin, ADC)  # pylint: disable=import-error
 
 
-pot_red = ADC(26)
-pot_green = ADC(27)
-pot_blue = ADC(28)
+pot_red: ADC = ADC(26)
+pot_green: ADC = ADC(27)
+pot_blue: ADC = ADC(28)
 
-led_red = PWM(Pin(13))
+led_red: PWM = PWM(Pin(13))
 led_red.freq(1000)
 led_red.duty_u16(0)
 
-led_green = PWM(Pin(14))
+led_green: PWM = PWM(Pin(14))
 led_green.freq(1000)
 led_green.duty_u16(0)
 
-led_blue = PWM(Pin(15))
+led_blue: PWM = PWM(Pin(15))
 led_blue.freq(1000)
 led_blue.duty_u16(0)
 
 
 while True:
-    READ_R = pot_red.read_u16()  # pylint: disable=E1111
-    READ_G = pot_green.read_u16()  # pylint: disable=E1111
-    READ_B = pot_blue.read_u16()  # pylint: disable=E1111
+    READ_R: int = pot_red.read_u16()  # pylint: disable=E1111
+    READ_G: int = pot_green.read_u16()  # pylint: disable=E1111
+    READ_B: int = pot_blue.read_u16()  # pylint: disable=E1111
 
     led_red.duty_u16(READ_R)
     led_green.duty_u16(READ_G)
