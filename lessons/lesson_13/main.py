@@ -25,9 +25,9 @@ led_blue.duty_u16(0)
 
 
 while True:
-    READ_R = pot_red.read_u16()
-    READ_G = pot_green.read_u16()
-    READ_B = pot_blue.read_u16()
+    READ_R = pot_red.read_u16()  # pylint: disable=E1111
+    READ_G = pot_green.read_u16()  # pylint: disable=E1111
+    READ_B = pot_blue.read_u16()  # pylint: disable=E1111
 
     led_red.duty_u16(READ_R)
     led_green.duty_u16(READ_G)
