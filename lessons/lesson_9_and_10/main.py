@@ -34,12 +34,12 @@ if __name__ == '__main__':
                 analogOut.duty_u16(0)
                 break
 
-            user_input = float(user_input)
+            user_input: float = float(user_input)
 
             if user_input < 0 or user_input > 3.3:
                 raise VoltageError(f"Invalid voltage value -> {user_input}.")
 
-            pwm_val = int((65550 / 3.3) * user_input)
+            pwm_val: int = int((65550 / 3.3) * user_input)
             analogOut.duty_u16(pwm_val)
 
         except VoltageError as e:

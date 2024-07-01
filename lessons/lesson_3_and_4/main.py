@@ -54,7 +54,7 @@ def set_pin_val(pin, val) -> None:
     pin.value(val)
 
 
-def set_all_pins(pin_vals: list) -> None:
+def set_all_pins(pin_vals: tuple) -> None:
     """
     Turn all pins OFF
     :param pin_vals:
