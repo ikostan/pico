@@ -19,9 +19,9 @@ pins: dict = {'RED': 13,
               'GREEN': 14,
               'BLUE': 15}
 
-pwms: tuple= (PWM(Pin(pins['RED'])),
-        PWM(Pin(pins['GREEN'])),
-        PWM(Pin(pins['BLUE'])))
+pwms: tuple = (PWM(Pin(pins['RED'])),
+               PWM(Pin(pins['GREEN'])),
+               PWM(Pin(pins['BLUE'])))
 
 
 def calc_pwm(color_value) -> int:
