@@ -16,7 +16,7 @@ I am presenting. My goal is not to 'Show Off', but to genuinely teach you
 how you can do this type of work and projects on your own. I will show
 all work step-by-step, with clear instructions.
 
-[Raspberry Pi Pico W LESSON 10: Create a Dimmable LED in Micropython](https://www.youtube.com/watch?v=DJhoUklKidc&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=10)
+## [Raspberry Pi Pico W LESSON 10: Create a Dimmable LED in Micropython](https://www.youtube.com/watch?v=DJhoUklKidc&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=10)
 
 In this introductory video, I will show you how to create a dimmable LED on
 the Pico W using micropython. I will explain that the pico W simulates analog
@@ -27,6 +27,8 @@ brightness. This class is  for absolute beginners, and I do not assume you alrea
 understand the material I am presenting. My goal is not to 'Show Off', but to
 genuinely teach you how you can do this type of work and projects on your own.
 I will show all work step-by-step, with clear instructions.
+
+[Same project on WOKWI](https://wokwi.com/projects/400450055427737601)
 
 ### Source material
 

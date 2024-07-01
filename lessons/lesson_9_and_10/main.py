@@ -1,9 +1,12 @@
 """
 Raspberry Pi Pico W LESSON 9: Getting Analog Output Using PWM (Pulse Width Modulation)
 https://www.youtube.com/watch?v=GXA1Y6lA14A&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=10
+
+Raspberry Pi Pico W LESSON 10: Create a Dimmable LED in Micropython
+https://www.youtube.com/watch?v=DJhoUklKidc&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=11
 """
 from time import sleep
-from machine import (PWM, Pin)
+from machine import (PWM, Pin)  # pylint: disable=import-error
 
 
 class VoltageError(Exception):
@@ -12,13 +15,16 @@ class VoltageError(Exception):
     Raises an error with regards to voltage input.
     """
 
-    def __init__(self, message):
-        # Call the base class constructor with the parameters it needs
+    def __init__(self, message) -> None:
+        """
+        Call the base class constructor with the parameters it needs
+        :param message:
+        """
         super().__init__(message)
 
 
-PIN_NUM = 16
-analogOut = PWM(Pin(PIN_NUM))
+PIN_NUM: int = 16
+analogOut: PWM = PWM(Pin(PIN_NUM))
 analogOut.freq(1000)
 analogOut.duty_u16(0)
 
