@@ -1,4 +1,4 @@
-name: MyPi
+name: MyPy
 
 on:
   pull_request_target:
