@@ -11,6 +11,7 @@ class VoltageError(Exception):
     Custom exception.
     Raises an error with regards to voltage input.
     """
+
     def __init__(self, message):
         # Call the base class constructor with the parameters it needs
         super().__init__(message)
@@ -26,17 +27,16 @@ if __name__ == '__main__':
     while True:
 
         try:
-            user_input = input("Please enter voltage output between"
-                               " 0 and 3.3 or type exit to stop the execution: ")
+            user_input: str = input("Please enter voltage output between"
+                                    " 0 and 3.3 or type exit to stop the execution: ")
 
             if user_input.lower() == 'exit':
                 print("Exiting program now...")
                 analogOut.duty_u16(0)
                 break
 
-            user_input: float = float(user_input)
-
-            if user_input < 0 or user_input > 3.3:
+            user_input_flt: float = float(user_input)
+            if user_input_flt < 0.0 or user_input_flt > 3.3:
                 raise VoltageError(f"Invalid voltage value -> {user_input}.")
 
             pwm_val: int = int((65550 / 3.3) * user_input)
