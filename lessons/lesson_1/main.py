@@ -15,14 +15,17 @@ IS_ON: int = 0
 def toggle_is_on(val: int) -> int:
     """
     Update IS_ON value
+    :param val:
+    :return:
     """
     return 1 if val == 0 else 0
 
 
 def toggle_led(val: int) -> None:
-
     """
     Toggle LED
+    :param val:
+    :return:
     """
     LED.value(val)
 
