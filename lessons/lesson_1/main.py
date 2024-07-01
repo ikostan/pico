@@ -9,10 +9,7 @@ from machine import Pin  # pylint: disable=import-error
 
 
 LED = Pin(6, Pin.OUT)
-# fmt: off
-# Black will not reformat lines that contain fmt
 IS_ON = 0
-# fmt: on
 
 
 def toggle_is_on(val: int) -> int:
@@ -34,4 +31,4 @@ if __name__ == '__main__':
     while True:
         toggle_led(IS_ON)
         time.sleep(0.3)
-        IS_ON = toggle_is_on(IS_ON)  # fmt: skip
+        IS_ON = toggle_is_on(IS_ON)
