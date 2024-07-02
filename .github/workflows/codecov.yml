@@ -6,6 +6,8 @@ on:
       - edited
       - synchronize
       - reopened
+  # Why is Codecov upload step in GitHub Actions not finding the token?
+  # https://stackoverflow.com/questions/78298827/why-is-codecov-upload-step-in-github-actions-not-finding-the-token
   workflow_call:
     secrets:
       codecov_token:
@@ -34,6 +36,7 @@ jobs:
       uses: codecov/codecov-action@v4.4.1
       with:
         token: ${{ secrets.codecov_token }}
+        files: coverage.xml
         fail_ci_if_error: true # optional (default = false)
         verbose: true # optional (default = false)
         attempt_limit: 5
