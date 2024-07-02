@@ -31,6 +31,8 @@ jobs:
         pip install pytest-cov
     - name: Upload coverage to Code Climate
       uses: paambaati/codeclimate-action@v8.0.0
+      env:
+        CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
         token: ${{ secrets.cc_test_reporter_id }}
         coverageCommand: pytest --cov=./ --cov-report=xml
