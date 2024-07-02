@@ -1,4 +1,4 @@
-name: Lint, Test & CodeQL Pipeline
+name: Lint, Test, CodeQL & Build Pipeline
 
 on:
   push:
@@ -47,4 +47,4 @@ jobs:
     needs:
       - codecov
       - codeclimate
-    uses: ikostan/pico/.github/workflows/codeql_build.yml@master
+    uses: ikostan/pico/.github/workflows/codeql.yml@master
