@@ -29,7 +29,6 @@ or just great for life long learners.
 9. [Raspberry Pi Pico W LESSON 12: Understanding and Controlling an RGB LED in MicroPython](https://github.com/ikostan/pico/tree/master/lessons/lesson_12)
 10. [Raspberry Pi Pico W LESSON 13: User Specified RGB LED Colors Using Micropython](https://github.com/ikostan/pico/tree/master/lessons/lesson_13)
 
-
 ### Source materials
 
 [Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5)
