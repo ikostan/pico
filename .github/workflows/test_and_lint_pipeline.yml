@@ -35,9 +35,14 @@ jobs:
     # https://stackoverflow.com/questions/78298827/why-is-codecov-upload-step-in-github-actions-not-finding-the-token
     secrets:
       codecov_token: ${{ secrets.CODECOV_TOKEN }}
+  codeclimate:
+    name: Codeclimate Github Action
+    needs:
+      - pytest
+    uses: ikostan/pico/.github/workflows/codeclimate_coverage.yml@master
   codeql:
     name: CodeQL for a new build
     needs:
-      - pytest
       - codecov
+      - codeclimate
     uses: ikostan/pico/.github/workflows/codeql_build.yml@master
