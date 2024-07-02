@@ -6,6 +6,10 @@ on:
       - edited
       - synchronize
       - reopened
+  workflow_call:
+    secrets:
+      cc_test_reporter_id:
+        required: true
 jobs:
   test:
     strategy:
@@ -36,7 +40,6 @@ jobs:
     - run: yarn install
     - run: yarn build
     - uses: paambaati/codeclimate-action@v8.0.0
-      env:
-        CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
+        token: ${{ secrets.cc_test_reporter_id }}
         coverageCommand: yarn coverage
