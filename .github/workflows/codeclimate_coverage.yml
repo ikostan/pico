@@ -15,7 +15,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [windows-latest]
         python-version: [ "3.x" ]
     steps:
     - uses: actions/checkout@main
@@ -36,3 +36,4 @@ jobs:
       with:
         token: ${{ secrets.cc_test_reporter_id }}
         coverageCommand: pytest --cov=./ --cov-report=xml
+        debug: true
