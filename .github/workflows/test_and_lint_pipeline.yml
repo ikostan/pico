@@ -31,6 +31,8 @@ jobs:
     needs:
       - pytest
     uses: ikostan/pico/.github/workflows/codecov.yml@master
+    with:
+      codecov_token: ${{ secrets.CODECOV_TOKEN }}
   codeql:
     name: CodeQL for a new build
     needs:
