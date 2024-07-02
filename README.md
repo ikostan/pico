@@ -7,6 +7,8 @@
 
 Full Raspberry Pi Pico W lessons list is [here](https://github.com/ikostan/pico/tree/master/lessons).
 
+[Repo stats with RepoTracker](https://repo-tracker.com/r/gh/ikostan/pico?utm_source=github-stats)
+
 ## Source materials
 
 [Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5)
