@@ -7,12 +7,6 @@ on:
       - synchronize
       - reopened
   workflow_call:
-
-env:
-    CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-    TOKEN: ${{ secrets.CODECOV_TOKEN }}
-    token: ${{ secrets.CODECOV_TOKEN }}
-
 jobs:
   run:
     runs-on: ${{ matrix.os }}
@@ -40,3 +34,7 @@ jobs:
         verbose: true # optional (default = false)
         attempt_limit: 5
         attempt_delay: 30000
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        token: ${{ secrets.CODECOV_TOKEN }}
