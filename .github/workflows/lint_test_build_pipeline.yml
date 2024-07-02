@@ -1,4 +1,4 @@
-name: Lint, Test, CodeQL & Build Pipeline
+name: Main Build Pipeline
 
 on:
   push:
