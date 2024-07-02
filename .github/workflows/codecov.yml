@@ -1,5 +1,13 @@
 name: Codecov Workflow
-on: [push]
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+  workflow_call:
+    
 jobs:
   run:
     runs-on: ${{ matrix.os }}
