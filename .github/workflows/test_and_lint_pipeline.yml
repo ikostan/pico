@@ -26,8 +26,14 @@ jobs:
       - markdown-lint
       - mypy
     uses: ikostan/pico/.github/workflows/pytest.yml@master
+  codecov:
+    name: Codecov GitHub Action
+    needs:
+      - pytest
+    uses: ikostan/pico/.github/workflows/codecov.yml@master
   codeql:
     name: CodeQL for a new build
     needs:
       - pytest
+      - codecov
     uses: ikostan/pico/.github/workflows/codeql_build.yml@master
