@@ -10,7 +10,7 @@ LED: Pin = Pin(6, Pin.OUT)
 IS_ON: int = 0
 
 
-def check_toggle_val(val: int) -> None | ValueError | TypeError:
+def check_toggle_val(val: int) -> None:
     """
     Valid val: 1, 0.
     Raises exception in case of invalid val.
@@ -22,8 +22,6 @@ def check_toggle_val(val: int) -> None | ValueError | TypeError:
 
     if val not in (0, 1):
         raise ValueError(f"Invalid parameter: {val}! Only 1 and 0 allowed.")
-
-    return None
 
 
 def toggle_is_on(val: int) -> int:
@@ -44,7 +42,6 @@ def toggle_led(val: int) -> None:
     """
     check_toggle_val(val)
     LED.value(val)
-    return None
 
 
 if __name__ == '__main__':
