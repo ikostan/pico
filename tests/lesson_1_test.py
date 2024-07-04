@@ -18,6 +18,38 @@ class Lesson1TestCase(unittest.TestCase):
     Testing led functionality by mocking Pin methods
     """
 
+    def test_check_toggle_val_0(self):
+        """
+        Pass 0 as a parameter.
+        No errors.
+        Returns None.
+        :return:
+        """
+        t = check_toggle_val(0)
+        self.assertIsNone(t)
+
+    def test_check_toggle_val_1(self):
+        """
+        Pass 1 as a parameter.
+        No errors.
+        Returns None.
+        :return:
+        """
+        t = check_toggle_val(1)
+        self.assertIsNone(t)
+
+    def test_check_toggle_val_error(self):
+        """
+        Pass string as a parameter.
+        Verify exception text.
+        :return:
+        """
+        val = '0'
+        f"Invalid parameter type: {type(val)}! Only integers allowed."
+        with self.assertRaises(TypeError) as e:
+            check_toggle_val(val)
+        self.assertEqual(str(e.exception), err)
+
     def test_toggle_led_off(self):
         """
         Turn LED off.
