@@ -7,7 +7,9 @@ from unittest.mock import MagicMock
 # pylint: disable=import-error
 from lessons.lesson_1.main import (
     LED,
-    toggle_is_on
+    toggle_is_on,
+    toggle_led,
+    check_toggle_val
 )
 
 
@@ -15,6 +17,48 @@ class Lesson1TestCase(unittest.TestCase):
     """
     Testing led functionality by mocking Pin methods
     """
+
+    def test_toggle_led_off(self):
+        """
+        Turn LED off.
+        Check function return value is None.
+        Check led return value.
+        :return:
+        """
+        t = toggle_led(0)
+        LED.value = MagicMock()
+        LED.value(0)
+        LED.value.return_value = 0
+        self.assertEqual(LED.value(), 0)
+        self.assertIsNone(t)
+
+    def test_toggle_led_on(self):
+        """
+        Turn LED on.
+        Check function return value is None.
+        Check led return value.
+        :return:
+        """
+        t = toggle_led(1)
+        LED.value = MagicMock()
+        LED.value(1)
+        LED.value.return_value = 1
+        self.assertEqual(LED.value(), 1)
+        self.assertIsNone(t)
+
+    def test_toggle_led_error(self):
+        """
+        Pass invalid param value.
+        Verify error.
+        :return:
+        """
+        val = 3
+        err = f"Invalid parameter: {val}! Only 1 and 0 allowed."
+
+        with self.assertRaises(ValueError) as e:
+            toggle_led(3)
+
+        self.assertEqual(str(e.exception), err)
 
     def test_toggle_is_on_0(self):
         """
