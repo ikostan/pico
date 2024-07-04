@@ -26,7 +26,7 @@ def check_toggle_val(val: int) -> None | ValueError | TypeError:
     return None
 
 
-def toggle_is_on(val: int) -> int | ValueError | TypeError:
+def toggle_is_on(val: int) -> int:
     """
     Convert 1 to 0 and vice versa.
     :param val:
@@ -36,7 +36,7 @@ def toggle_is_on(val: int) -> int | ValueError | TypeError:
     return 1 if val == 0 else 0
 
 
-def toggle_led(val: int) -> None | ValueError | TypeError:
+def toggle_led(val: int) -> None:
     """
     Toggle LED
     :param val:
