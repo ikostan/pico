@@ -1,3 +1,17 @@
+[run]
+# include = */src/*
+# omit anything in a virtualenv directory anywhere
+omit =
+    /home/travis/virtualenv/*
+    *.yml
+    /home/travis/img/*
+    __init__*
+    *.md
+    docs/*
+    venv/*
+    *.gif
+    *.html
+
 [report]
 ; Regexes for lines to exclude from consideration
 
