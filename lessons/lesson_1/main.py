@@ -17,7 +17,7 @@ def check_toggle_val(val: int) -> (None, ValueError, TypeError):
     :param val:
     :return:
     """
-    if not isistance(int, val):
+    if not isinstance(int, val):
         raise TypeError(f"Invalid parameter type: {type(val)}! Only integers allowed.")
 
     if val not in (0, 1):

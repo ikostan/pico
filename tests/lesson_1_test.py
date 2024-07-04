@@ -38,14 +38,14 @@ class Lesson1TestCase(unittest.TestCase):
         t = check_toggle_val(1)
         self.assertIsNone(t)
 
-    def test_check_toggle_val_error(self):
+    def test_check_toggle_val_type_error(self):
         """
         Pass string as a parameter.
         Verify exception text.
         :return:
         """
         val = '0'
-        f"Invalid parameter type: {type(val)}! Only integers allowed."
+        err = f"Invalid parameter type: {type(val)}! Only integers allowed."
         with self.assertRaises(TypeError) as e:
             check_toggle_val(val)
         self.assertEqual(str(e.exception), err)
