@@ -14,10 +14,15 @@ IS_ON: int = 0
 
 def toggle_is_on(val: int) -> int:
     """
-    Update IS_ON value
+    Convert 1 to 0 and vice versa.
+    Valid val: 1, 0.
+    Trow error in case of invalid val.
     :param val:
     :return:
     """
+    if val not in (0, 1):
+        raise ValueError(f"Invalid parameter: {val}! Only 1 and 0 allowed.")
+
     return 1 if val == 0 else 0
 
 
