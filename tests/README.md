@@ -18,48 +18,52 @@ Flake8 is a wrapper around these tools:
 - pycodestyle
 - Ned Batchelder's McCabe script
 
-**2. pylint:** analyses your code without actually running it. It checks for errors,
-enforces a coding standard, looks for code smells, and can make suggestions about how
-the code could be refactored.
+**2. pylint:** analyses your code without actually running it. It checks for
+errors, enforces a coding standard, looks for code smells, and can make
+suggestions about how the code could be refactored.
 
-**3. mypy:** is an optional static type checker for Python that aims to combine the
-benefits of dynamic (or "duck") typing and static typing. Mypy combines the expressive
-power and convenience of Python with a powerful type system and compile-time type checking.
+**3. mypy:** is an optional static type checker for Python that aims to combine
+the benefits of dynamic (or "duck") typing and static typing. Mypy combines the
+expressive power and convenience of Python with a powerful type system and
+compile-time type checking.
 
 **4. Markdown lint:** A tool to check markdown files and flag style issues.
 
 ## Automated Testing
 ![Test Automation Pyramid](https://github.com/ikostan/pico/blob/master/img/TestAutomationPyramid.png)
 
-Automation testing is ideal for repetitive tasks and produces more consistent results
-than the manual process, as people inevitably risk missing details or performing checks
-inconsistently when asked to do the same steps over and over again.
+Automation testing is ideal for repetitive tasks and produces more consistent
+results than the manual process, as people inevitably risk missing details or
+performing checks inconsistently when asked to do the same steps over and over
+again.
 
 ### Unit Testing
 
-Unit tests rightly form the basis of the testing pyramid. These tests are designed to
-ensure your code works as you expect by addressing the smallest possible unit of behavior.
-For teams that have decided to invest in writing unit tests, developers typically take
-responsibility for writing them as they write the code.
+Unit tests rightly form the basis of the testing pyramid. These tests are
+designed to ensure your code works as you expect by addressing the smallest
+possible unit of behavior. For teams that have decided to invest in writing unit
+tests, developers typically take responsibility for writing them as they write
+the code.
 
 ### Component Testing
 
-As the name suggests, Component testing involves analyzing multiple functions and code
-modules before they form software. It is a black box testing technique that evaluates the
-application without considering the code information.
+As the name suggests, Component testing involves analyzing multiple functions
+and code modules before they form software. It is a black box testing technique
+that evaluates the application without considering the code information.
 
 ### Component Testing vs Unit Testing: Key Differences
 
-While Component testing and Unit testing are done in the different stages of SDLC,
-they are closely related, but technically both are different. Here’s a table for you
-to easily understand Component testing vs Unit testing:
+While Component testing and Unit testing are done in the different stages of
+SDLC, they are closely related, but technically both are different. Here’s a table
+for you to easily understand Component testing vs Unit testing:
 
 ![Component Testing vs Unit Testing](https://github.com/ikostan/pico/blob/master/img/component_vs_unit.webp)
 
 ### Integration Testing
 
-With integration tests, you ensure that multiple parts of your software interact with each
-other as expected, such as the interaction between some application code and a database.
+With integration tests, you ensure that multiple parts of your software interact
+with each other as expected, such as the interaction between some application code
+and a database.
 
 ### E2E Testing
 
@@ -104,16 +108,18 @@ humans, and there is a chance of human errors.
 
 ### Test Environments
 
-Both performance and end-to-end tests require environments that are very similar to
-production and may require build test data. For an automated testing regime to provide
-confidence in the software under test, it’s important for build tests to be run in the
-same way each time, and that includes ensuring test environments remain consistent between
-runs (although they should be updated to match production when changes are applied there).
+Both performance and end-to-end tests require environments that are very similar
+to production and may require build test data. For an automated testing regime to
+provide confidence in the software under test, it’s important for build tests to
+be run in the same way each time, and that includes ensuring test environments
+remain consistent between runs (although they should be updated to match production
+when changes are applied there).
 
 ### Code Coverage
 
-Code coverage is a metric that can help you understand how much of your source is tested.
-It's a very useful metric that can help you assess the quality of your test suite.
+Code coverage is a metric that can help you understand how much of your source is
+tested. It's a very useful metric that can help you assess the quality of your test
+suite.
 
 ![Codecov Sunburst](https://codecov.io/gh/ikostan/pico/graphs/sunburst.svg?token=UV5L6GPUG8)
 
