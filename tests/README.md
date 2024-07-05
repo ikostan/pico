@@ -4,9 +4,10 @@
 
 ## Static Code Analysis
 
-Static code analysis consists of a series of automated checks performed on source code.
-A static analysis tool scans code for common known errors and vulnerabilities,
-such as memory leaks or buffer overflows. The analysis can also enforce coding standards.
+Static code analysis consists of a series of automated checks performed on
+source code. A static analysis tool scans code for common known errors and
+vulnerabilities, such as memory leaks or buffer overflows. The analysis can
+also enforce coding standards.
 
 ### Tools:
 
@@ -63,38 +64,43 @@ other as expected, such as the interaction between some application code and a d
 ### E2E Testing
 
 Also known as full-stack tests, end-to-end tests look at the entire application.
-While they can be run through the GUI, they don’t have to be; an API call can also exercise
-multiple parts of the system (although APIs can also be checked with integration tests).
-The testing pyramid recommends having a smaller number of these tests, not only because they
-take longer to run but also because they tend to be brittle.
+While they can be run through the GUI, they don’t have to be; an API call can also
+exercise multiple parts of the system (although APIs can also be checked with
+integration tests). The testing pyramid recommends having a smaller number of
+these tests, not only because they take longer to run but also because they tend
+to be brittle.
 
 ### System Testing
 
-System Testing is carried out on the whole system in the context of either system requirement
-specifications or functional requirement specifications or in contest of both. System testing
-tests the design and behavior of the system and also the expectations of the customer. 
+System Testing is carried out on the whole system in the context of either system
+requirement specifications or functional requirement specifications or in contest
+of both. System testing tests the design and behavior of the system and also the
+expectations of the customer. 
 
 ### Difference Between System Testing and E2E Testing
 
-System Testing is a type of testing that is performed on the complete system or software
-application to evaluate its behavior and performance. It is generally conducted after the
-completion of the integration testing phase and is carried out in a production-like environment.
-The primary objective of System Testing is to identify defects or bugs that may have been missed
-during the earlier phases of testing and ensure that the system meets the specified requirements.
+System Testing is a type of testing that is performed on the complete system or
+software application to evaluate its behavior and performance. It is generally
+conducted after the completion of the integration testing phase and is carried
+out in a production-like environment. The primary objective of System Testing is
+to identify defects or bugs that may have been missed during the earlier phases
+of testing and ensure that the system meets the specified requirements.
 
-On the other hand, End-to-end Testing is a type of testing that evaluates the entire software
-system, including its integration with other systems or external interfaces. It is typically
-performed in a simulated production environment and involves testing the software from the user’s
-perspective. The objective of End-to-end Testing is to ensure that the software system meets the
-customer’s requirements and expectations and that all components work together seamlessly.
+On the other hand, End-to-end Testing is a type of testing that evaluates the
+entire software system, including its integration with other systems or external
+interfaces. It is typically performed in a simulated production environment and
+involves testing the software from the user’s perspective. The objective of
+End-to-end Testing is to ensure that the software system meets the customer’s
+requirements and expectations and that all components work together seamlessly.
 
 ### Manual Testing
 
-It is a technique to test the software that is carried out using the functions and features of
-an application. In manual software testing, a tester tests the software by following a set of
-predefined test cases. In this testing, testers make test cases for the codes, test the software,
-and give the final report about that software. Manual testing is time-consuming because it is done
-by humans, and there is a chance of human errors.
+It is a technique to test the software that is carried out using the functions
+and features of an application. In manual software testing, a tester tests the
+software by following a set of predefined test cases. In this testing, testers
+make test cases for the codes, test the software, and give the final report
+about that software. Manual testing is time-consuming because it is done by
+humans, and there is a chance of human errors.
 
 ### Test Environments
 
