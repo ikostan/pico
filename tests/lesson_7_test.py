@@ -3,10 +3,9 @@ Test suite for lesson 7 and 8.
 """
 
 import unittest
-from lessons.lesson_7_and_8.main import (  # pylint: disable=import-error
-    # all_led_off,
+# pylint: disable=import-error
+from lessons.lesson_7_and_8.main import (
     value_to_color,
-    # turn_led_on,
     converter
 )
 
