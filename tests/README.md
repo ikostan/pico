@@ -28,7 +28,7 @@ power and convenience of Python with a powerful type system and compile-time typ
 **4. Markdown lint:** A tool to check markdown files and flag style issues.
 
 ## Automated Testing
-![Test Automation Pyramid](https://github.com/ikostan/pico/blob/master/img/TestAutomationPyramid.gif)
+![Test Automation Pyramid](https://github.com/ikostan/pico/blob/master/img/TestAutomationPyramid.png)
 
 Automation testing is ideal for repetitive tasks and produces more consistent results
 than the manual process, as people inevitably risk missing details or performing checks
@@ -53,7 +53,7 @@ While Component testing and Unit testing are done in the different stages of SDL
 they are closely related, but technically both are different. Here’s a table for you
 to easily understand Component testing vs Unit testing:
 
-![Component Testing vs Unit Testing](https://github.com/ikostan/pico/blob/master/img/component_vs_unit.gif)
+![Component Testing vs Unit Testing](https://github.com/ikostan/pico/blob/master/img/component_vs_unit.webp)
 
 ### Integration Testing
 
