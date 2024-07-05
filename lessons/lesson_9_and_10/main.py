@@ -12,7 +12,7 @@ from machine import (PWM, Pin)  # pylint: disable=import-error
 class VoltageError(Exception):
     """
     Custom exception.
-    Raises an error with regards to voltage input.
+    Raises an error in regard to voltage input.
     """
 
     def __init__(self, message) -> None:
