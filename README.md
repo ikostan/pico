@@ -5,9 +5,13 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/10d3376c6ce70ffc363a/maintainability)](https://codeclimate.com/github/ikostan/pico/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/10d3376c6ce70ffc363a/test_coverage)](https://codeclimate.com/github/ikostan/pico/test_coverage)
 
+## About
+
 In this series of video lessons we will learn how to
 build projects using the Raspberry Pi Pico W. Full Raspberry Pi Pico W
 lessons list is [here](https://github.com/ikostan/pico/tree/master/lessons).
+
+### Raspberry Pi Pico W
 
 ![Raspberry Pi Pico W Case](https://github.com/ikostan/pico/blob/master/img/Raspberry-Pi-Pico-Case.png)
 
@@ -27,7 +31,7 @@ The Pico W is a great choice for IoT projects, and it’s priced at just $6! If 
 
 [Repo stats with RepoTracker](https://repo-tracker.com/r/gh/ikostan/pico?utm_source=github-stats)
 
-## Source materials
+### Source materials
 
 [Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5)
 by [Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
