@@ -4,11 +4,13 @@ Unit testing lessons 3 and 4.
 
 import unittest
 from unittest.mock import MagicMock
-from lessons.lesson_3_and_4.main import (  # pylint: disable=import-error
-    get_val,        # pylint: disable=import-error
-    NUMBERS,        # pylint: disable=import-error
-    PINS,           # pylint: disable=import-error
-    set_pin_val,    # pylint: disable=import-error
+# pylint: disable=import-error
+from lessons.lesson_3_and_4.main import (
+    get_val,
+    NUMBERS,
+    PINS,
+    set_pin_val,
+    set_all_pins
 )
 
 
@@ -16,6 +18,32 @@ class Lesson3and4TestCase(unittest.TestCase):
     """
     Lessons 3 and 4 test case.
     """
+
+    def test_set_all_pins_off(self):
+        """
+        Testing set_all_pins function.
+        Turn off all pins.
+        :return:
+        """
+        val = (0, 0, 0, 0)
+        set_all_pins(val)
+        for p in PINS:
+            p.value = MagicMock()
+            p.value.return_value = 0
+            self.assertEqual(p.value(), 0)
+
+    def test_set_all_pins_on(self):
+        """
+        Testing set_all_pins function.
+        Turn on all pins
+        :return:
+        """
+        val = (1, 1, 1, 1)
+        set_all_pins(val)
+        for p in PINS:
+            p.value = MagicMock()
+            p.value.return_value = 1
+            self.assertEqual(p.value(), 1)
 
     def test_set_pin_value_off(self):
         """
