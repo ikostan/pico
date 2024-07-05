@@ -6,14 +6,22 @@ import unittest
 # pylint: disable=import-error
 from lessons.lesson_7_and_8.main import (
     value_to_color,
-    converter
+    converter,
+    all_led_off
 )
 
 
-class Lesson7TestCase(unittest.TestCase):
+class Lesson7And8TestCase(unittest.TestCase):
     """
     Test case for lesson 7 and 8.
     """
+
+    def test_all_led_off(self):
+        """
+        Verify that all_led_off returns None.
+        :return:
+        """
+        self.assertIsNone(all_led_off())
 
     def test_value_to_color_return_type(self):
         """
