@@ -2,7 +2,7 @@
 
 [![codecov](https://codecov.io/gh/ikostan/pico/branch/master/graph/badge.svg?token=UV5L6GPUG8)](https://codecov.io/gh/ikostan/pico)
 
-## Static code analysis
+## Static Code Analysis
 
 Static code analysis consists of a series of automated checks performed on source code.
 A static analysis tool scans code for common known errors and vulnerabilities,
