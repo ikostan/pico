@@ -11,6 +11,7 @@ omit =
     venv/*
     *.gif
     *.html
+    /tests/*
 
 [report]
 ; Regexes for lines to exclude from consideration
