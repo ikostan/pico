@@ -5,7 +5,7 @@ Unit testing for lesson 6
 import unittest
 from unittest.mock import MagicMock
 from machine import Pin  # pylint: disable=import-error
-from lessons.lesson_5.main import (
+from lessons.lesson_6.main import (
     PIN_N,
     LED,
 )
