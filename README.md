@@ -31,7 +31,7 @@ The Pico W is a great choice for IoT projects, and it’s priced at just $6!
 If you’re interested in C/C++ or MicroPython development, you can get started
 with this versatile board. For more details, check out the [official documentation](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html).
 
-[Repo stats with RepoTracker](https://repo-tracker.com/r/gh/ikostan/pico?utm_source=github-stats)
+### [Repo stats with RepoTracker](https://repo-tracker.com/r/gh/ikostan/pico?utm_source=github-stats)
 
 ### Source materials
 
