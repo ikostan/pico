@@ -16,12 +16,19 @@ class MyTestCase(unittest.TestCase):
     Testing led functionality by mocking Pin methods
     """
 
-    def test_pin_n_is_int(self):
+    def test_pin_n_value(self):
         """
         This test exist only for code coverage purposes.
+        Testing that PIN_N val is 14.
         :return:
         """
-        PIN_N = 14
+        self.assertEqual(PIN_N, 14)
+
+    def test_pin_n_data_type(self):
+        """
+        Verify data type (should be int).
+        :return:
+        """
         self.assertIsInstance(PIN_N, int)
 
     def test_led_on(self):
@@ -29,8 +36,6 @@ class MyTestCase(unittest.TestCase):
         Testing led on func by mocking PIN methods.
         :return:
         """
-        PIN_N = 14
-        LED: Pin = Pin(PIN_N, Pin.OUT)
         LED.value = MagicMock()
         LED.value(1)
         LED.value.return_value = 1
@@ -41,8 +46,6 @@ class MyTestCase(unittest.TestCase):
         Testing led off func by mocking PIN methods.
         :return:
         """
-        PIN_N = 14
-        LED: Pin = Pin(PIN_N, Pin.OUT)
         LED.value = MagicMock()
         LED.value(0)
         LED.value.return_value = 0
