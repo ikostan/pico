@@ -28,7 +28,6 @@ power and convenience of Python with a powerful type system and compile-time typ
 **4. Markdown lint:** A tool to check markdown files and flag style issues.
 
 ## Automated Testing
-
 ![Test Automation Pyramid](https://github.com/ikostan/pico/blob/master/img/TestAutomationPyramid.gif)
 
 Automation testing is ideal for repetitive tasks and produces more consistent results
