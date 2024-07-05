@@ -9,13 +9,21 @@ In this series of video lessons we will learn how to
 build projects using the Raspberry Pi Pico W. Full Raspberry Pi Pico W
 lessons list is [here](https://github.com/ikostan/pico/tree/master/lessons).
 
-The Raspberry Pi Pico is a microcontroller board developed by the
-Raspberry Pi Foundation. Released in January 2021, it’s a tiny yet
-powerful device that costs less than $5. Unlike the full-fledged
-Raspberry Pi computers, the Pico is specifically designed for physical
-computing and embedded systems. 
-
 ![Raspberry Pi Pico W Case](https://github.com/ikostan/pico/blob/master/img/Raspberry-Pi-Pico-Case.png)
+
+The Raspberry Pi Pico W is a low-cost, high-performance microcontroller board
+that adds onboard 2.4GHz wireless interfaces (802.11n) while retaining the Pico
+form factor. Here are some key features of the Pico W:
+
+- RP2040 microcontroller chip designed by Raspberry Pi in the United Kingdom.
+- Dual-core Arm Cortex M0+ processor, with a flexible clock running up to 133 MHz.
+- 264kB of SRAM and 2MB of onboard flash memory.
+- USB 1.1 with device and host support.
+- 26 multi-function GPIO pins, along with SPI, I2C, UART, ADC, and PWM channels.
+- Temperature sensor and accelerated floating-point libraries onboard.
+- Drag-and-drop programming using mass storage over USB.
+
+The Pico W is a great choice for IoT projects, and it’s priced at just $6! If you’re interested in C/C++ or MicroPython development, you can get started with this versatile board. For more details, check out the official documentati
 
 [Repo stats with RepoTracker](https://repo-tracker.com/r/gh/ikostan/pico?utm_source=github-stats)
 
