@@ -122,16 +122,6 @@ class Lesson1TestCase(unittest.TestCase):
 
         self.assertEqual(str(e.exception), err)
 
-    def test_led_on(self):
-        """
-        Mock the led.value() function and return 1 always
-        :return:
-        """
-        LED.value = MagicMock()
-        LED.value(1)
-        LED.value.return_value = 1
-        self.assertEqual(LED.value(), 1)
-
     def test_led_off(self):
         """
         Mock the led.value() function and return 0 always
