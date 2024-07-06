@@ -16,8 +16,8 @@ analogOut: PWM = PWM(Pin(PIN_NUM))
 analogOut.freq(1000)
 analogOut.duty_u16(0)
 
-STEPS: int = 50            # n of steps for max brightness
-MAX_READ_VAL: int = 65550  # max potentiometer value
+STEPS: int = 50              # n of steps for max brightness
+MAX_READ_VAL: int = 65550    # max potentiometer value
 CONSTANT: float = 1.248336   # (constant) ** steps = max_read_val
 
 if __name__ == '__main__':
