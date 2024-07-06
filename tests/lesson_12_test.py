@@ -5,7 +5,7 @@ Test suite for lesson 12.
 import io
 from contextlib import redirect_stdout
 import unittest
-from unittest.mock import MagicMock
+# from unittest.mock import MagicMock
 # pylint: disable=import-error
 from lessons.lesson_12.main import (
     colors,
@@ -15,7 +15,7 @@ from lessons.lesson_12.main import (
     pwms_off,
     initial_setup,
     led_on,
-    get_color
+    # get_color
 )
 
 
