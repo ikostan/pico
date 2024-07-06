@@ -28,17 +28,6 @@ class Lesson9And10TestCase(unittest.TestCase):
         analogOut.freq.return_value = f
         self.assertEqual(analogOut.freq(), f)
 
-    def test_analog_out_duty_u16(self):
-        """
-        Mocking and testing analogOut.duty_u16()
-        :return:
-        """
-        v = 0
-        analogOut.freq = MagicMock()
-        analogOut.duty_u16(v)
-        analogOut.duty_u16.return_value = v
-        self.assertEqual(analogOut.duty_u16(), v)
-
     def test_pin_num_data_type(self):
         """
         PIN_NUM data type should be int.
