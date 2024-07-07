@@ -121,7 +121,7 @@ class Lesson12TestCase(unittest.TestCase):
         self.assertTrue(txt in f.getvalue())
 
     @patch('builtins.input', return_value="eXiT")
-    def test_get_color_exit_mixed(self, mock_input):
+    def test_get_color_exit_mixed(self, mock_input):  # pylint: disable=W0613
         """
         Verify that get_color returns exit
         on eXiT as user input
@@ -131,7 +131,7 @@ class Lesson12TestCase(unittest.TestCase):
         self.assertTrue(result, 'exit')
 
     @patch('builtins.input', return_value="rEd")
-    def test_get_color_red_mixed(self, mock_input):
+    def test_get_color_red_mixed(self, mock_input):  # pylint: disable=W0613
         """
         Verify that get_color returns red
         on rEd as user input
@@ -141,7 +141,7 @@ class Lesson12TestCase(unittest.TestCase):
         self.assertTrue(result, 'red')
 
     @patch('builtins.input', side_effect=["sergtry", 'wHitE'])
-    def test_get_color_invalid_input(self, mock_input):
+    def test_get_color_invalid_input(self, mock_input):  # pylint: disable=W0613
         """
         Verify that get_color returns
         error message on invalid input and white
