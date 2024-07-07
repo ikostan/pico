@@ -24,15 +24,17 @@ led_blue.freq(1000)
 led_blue.duty_u16(0)
 
 
-while True:
-    READ_R: int = pot_red.read_u16()  # pylint: disable=E1111
-    READ_G: int = pot_green.read_u16()  # pylint: disable=E1111
-    READ_B: int = pot_blue.read_u16()  # pylint: disable=E1111
+if __name__ == '__main__':
 
-    led_red.duty_u16(READ_R)
-    led_green.duty_u16(READ_G)
-    led_blue.duty_u16(READ_B)
+    while True:
+        READ_R: int = pot_red.read_u16()  # pylint: disable=E1111
+        READ_G: int = pot_green.read_u16()  # pylint: disable=E1111
+        READ_B: int = pot_blue.read_u16()  # pylint: disable=E1111
 
-    print(f"R: {READ_R}, G: {READ_G}, B: {READ_B}")
+        led_red.duty_u16(READ_R)
+        led_green.duty_u16(READ_G)
+        led_blue.duty_u16(READ_B)
 
-    sleep(0.3)
+        print(f"R: {READ_R}, G: {READ_G}, B: {READ_B}")
+
+        sleep(0.3)
