@@ -5,7 +5,7 @@ Test suite for lesson 12.
 import io
 from contextlib import redirect_stdout
 import unittest
-# from unittest.mock import MagicMock
+from unittest.mock import patch
 # pylint: disable=import-error
 from lessons.lesson_12.main import (
     colors,
@@ -15,7 +15,7 @@ from lessons.lesson_12.main import (
     pwms_off,
     initial_setup,
     led_on,
-    # get_color
+    get_color,
 )
 
 
@@ -119,6 +119,45 @@ class Lesson12TestCase(unittest.TestCase):
             led_on(color)
 
         self.assertTrue(txt in f.getvalue())
+
+    @patch('builtins.input', return_value="eXiT")
+    def test_get_color_exit_mixed(self, mock_input):
+        """
+        Verify that get_color returns exit
+        on eXiT as user input
+        :param mock_input:
+        :return:
+        """
+        result = get_color()
+        self.assertTrue(result, 'exit')
+
+    @patch('builtins.input', return_value="rEd")
+    def test_get_color_red_mixed(self, mock_input):
+        """
+        Verify that get_color returns red
+        on rEd as user input
+        :param mock_input:
+        :return:
+        """
+        result = get_color()
+        self.assertTrue(result, 'red')
+
+    @patch('builtins.input', side_effect=["sergtry", 'wHitE'])
+    def test_get_color_invalid_input(self, mock_input):
+        """
+        Verify that get_color returns red
+        on rEd as user input
+        :param mock_input:
+        :return:
+        """
+        txt: str = ("\nPlease choose your color only from the listed options "
+                    "or type 'exit' to stop the execution.")
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = get_color()
+
+        self.assertTrue(txt in f.getvalue())
+        self.assertTrue(result, 'white')
 
 
 if __name__ == '__main__':
