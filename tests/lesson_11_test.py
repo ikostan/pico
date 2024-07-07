@@ -52,7 +52,7 @@ class Lesson11TestCase(unittest.TestCase):
         :return:
         """
         v = 0
-        analogOut.freq = MagicMock()
+        analogOut.duty_u16 = MagicMock()
         analogOut.duty_u16(v)
         analogOut.duty_u16.return_value = v
         self.assertEqual(analogOut.duty_u16(), v)
@@ -62,7 +62,7 @@ class Lesson11TestCase(unittest.TestCase):
         MAX_READ_VAL value should be equal to 65550.
         :return:
         """
-        self.assertEqual(STEPS, 65550)
+        self.assertEqual(MAX_READ_VAL, 65550)
 
     def test_max_read_val_data_type(self):
         """
