@@ -14,9 +14,9 @@ class Lesson13TestCase(unittest.TestCase):
     """
     Test case for lesson 13.
     """
-    def test_led_red_duty_u16(self):
+    def test_led_red_freq(self):
         """
-        Mocking and testing analogOut.duty_u16()
+        Mocking and testing led_red.freq()
         :return:
         """
         f = 1000
