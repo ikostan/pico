@@ -1,4 +1,4 @@
-name: Flkake8
+name: Flake8
 
 on:
   pull_request_target:
