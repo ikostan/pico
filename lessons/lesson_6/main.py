@@ -13,7 +13,8 @@ if __name__ == '__main__':
     LED.value(0)
 
     while True:
-        CMD_INPUT: str = input("What would you like LED to be (On/Off/Toggle)? ")
+        CMD_INPUT: str = input("What would you like LED "
+                               "to be (On/Off/Toggle)? ")
         print(CMD_INPUT)
         if CMD_INPUT.lower() == 'on':
             LED.value(1)
