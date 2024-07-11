@@ -28,13 +28,17 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install pytest
+          pip install -r requirements.txt
         uses: snyk/actions/python-3.10@master
         # continue-on-error: true # To make sure that SARIF upload gets called
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           #args: --skip-unresolved=true
-          command: python -m pip install --upgrade pip setuptools wheel
+          #command: python -m pip install --upgrade pip setuptools wheel
           args: --file=requirements.txt
         # Runs Snyk Code (SAST) analysis and uploads result into GitHub.
         # Use || true to not fail the pipeline
