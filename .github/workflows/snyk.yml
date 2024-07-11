@@ -24,7 +24,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-        # For Snyk Open Source you must first set up the development environment for your application's dependencies
+      - name: Authenticate your machine to associate it with your Snyk Account
+        run:
+          snyk auth
+        # For Snyk Open Source you must first set up the development environment
+        # for your application's dependencies
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.10@master
         env:
