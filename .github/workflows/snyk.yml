@@ -1,0 +1,55 @@
+# The Snyk Action will fail when vulnerabilities are found.
+# This would prevent the SARIF upload action from running,
+# so we need to introduce a continue-on-error option.
+# SOURCE: https://github.com/snyk/actions/tree/master/python-3.10
+
+name: "Snyk for a new build"
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+  workflow_call:
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    timeout-minutes: ${{ (matrix.language == 'swift' && 120) || 360 }}
+    permissions:
+      # required for all workflows
+      security-events: write
+
+      # required to fetch internal or private Snuk packs
+      packages: read
+
+      # only required for workflows in private repositories
+      actions: read
+      contents: read
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+        - language: python
+          build-mode: none
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Check to make sure that the module is in your Python path
+      run: |
+        echo $PYTHONPATH
+    - name: Run Snyk to check for vulnerabilities
+      uses: snyk/actions/python-3.10@master
+      continue-on-error: true # To make sure that SARIF upload gets called
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_API }}
+      with:
+        args: --sarif-file-output=snyk.sarif
+    - name: Upload result to GitHub Code Scanning
+      uses: github/codeql-action/upload-sarif@v2
+      with:
+        sarif_file: snyk.sarif
