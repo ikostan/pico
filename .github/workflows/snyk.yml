@@ -14,6 +14,9 @@ on:
       - synchronize
       - reopened
   workflow_call:
+    secrets:
+      snyk_token:
+        required: true
 
 jobs:
   snyk:
@@ -27,9 +30,9 @@ jobs:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.10@master
-        continue-on-error: true # To make sure that SARIF upload gets called
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        # continue-on-error: true # To make sure that SARIF upload gets called
+        with:
+          token: ${{ secrets.snyk_token }}
       - name: Check to make sure that the module is in your Python path
         run: |
           echo $PYTHONPATH
