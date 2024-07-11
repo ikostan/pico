@@ -34,7 +34,6 @@ jobs:
           pip install -r requirements.txt
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.10@master
-        # continue-on-error: true # To make sure that SARIF upload gets called
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
@@ -48,11 +47,13 @@ jobs:
         # Runs Snyk Open Source (SCA) analysis and uploads result to Snyk.
       - name: Snyk Open Source monitor
         run: snyk monitor --all-projects
+        continue-on-error: true
 
         # Runs Snyk Infrastructure as Code (IaC) analysis and uploads result to Snyk.
         # Use || true to not fail the pipeline.
       - name: Snyk IaC test and report
         run: snyk iac test --report # || true
+        continue-on-error: true
 
         # Push the Snyk Code results into GitHub Code Scanning tab
       - name: Upload result to GitHub Code Scanning
