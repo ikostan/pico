@@ -35,7 +35,7 @@ jobs:
         with:
           token: ${{ secrets.snyk_token }}
           args: --skip-unresolved=true
-          run: |
+          command: |
             python -m pip install --upgrade pip setuptools wheel
             pip install -r requirements.txt
             python --version
