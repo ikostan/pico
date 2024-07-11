@@ -17,7 +17,6 @@ on:
     secrets:
       snyk_token:
         required: true
-
 jobs:
   snyk:
     permissions:
@@ -31,6 +30,8 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.10@master
         # continue-on-error: true # To make sure that SARIF upload gets called
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           token: ${{ secrets.snyk_token }}
       - name: Check to make sure that the module is in your Python path
