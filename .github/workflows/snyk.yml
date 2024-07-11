@@ -39,8 +39,6 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --skip-unresolved=true
-          command: pip install -r requirements.txt
-          #args: --file=requirements.txt
         # Runs Snyk Code (SAST) analysis and uploads result into GitHub.
         # Use || true to not fail the pipeline
       - name: Snyk Code test
