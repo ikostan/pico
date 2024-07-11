@@ -2,6 +2,7 @@
 # This would prevent the SARIF upload action from running,
 # so we need to introduce a continue-on-error option.
 # SOURCE: https://github.com/snyk/actions/tree/master/python-3.10
+# https://github.com/ikostan/pico/new/master?filename=.github%2Fworkflows%2Fsnyk-security.yml&workflow_template=code-scanning%2Fsnyk-security
 
 name: "Snyk for a new build"
 
@@ -14,7 +15,7 @@ on:
       - reopened
   workflow_call:
 
- jobs:
+jobs:
   snyk:
     permissions:
       contents: read # for actions/checkout to fetch code
