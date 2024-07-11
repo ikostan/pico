@@ -35,7 +35,7 @@ jobs:
         with:
           # token: ${{ secrets.snyk_token }}
           #args: --skip-unresolved=true
-          command: python3 -m pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && python --version
+          command: python3 -m pip install --upgrade pip setuptools wheel && python3 -m pip install -r requirements.txt && python3 -m --version
         # Runs Snyk Code (SAST) analysis and uploads result into GitHub.
         # Use || true to not fail the pipeline
       - name: Snyk Code test
