@@ -29,7 +29,7 @@ jobs:
         uses: snyk/actions/python-3.10@master
         env:
           # This is where you will need to introduce the Snyk API token created with your Snyk account
-          SNYK_TOKEN: ${{ secrets.SNYK_API }}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
         # For example for Node
         #- uses: actions/setup-node@v3
