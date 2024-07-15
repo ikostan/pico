@@ -44,16 +44,16 @@ jobs:
           snyk --version
 
       - name: The snyk auth command authenticates your machine to associate the Snyk CLI with your Snyk account.
-        run:
-          snyk config set api=SNYK_TOKEN
-          snyk auth SNYK_TOKEN
+        run: |
+          snyk config set api=SNYK_TOKEN -d
+          snyk auth SNYK_TOKEN -d
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
       - name: Snyk Code test
         run: |
-          snyk auth SNYK_TOKEN
-          snyk test --all-projects
+          snyk auth SNYK_TOKEN -d
+          snyk test --all-projects -d
         # snyk code test --sarif  > results.sarif -d
         continue-on-error: true
         env:
