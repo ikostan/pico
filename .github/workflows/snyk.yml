@@ -32,17 +32,15 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install pytest
           pip install -r requirements.txt
+      - name: Install Snyk with standalone executables
+        run: |
+          curl --compressed https://static.snyk.io/cli/latest/snyk-linux -o snyk
+          chmod +x ./snyk
+          mv ./snyk /usr/local/bin/
+
       - name: check which version of the Snyk CLI you have installed by running
         run:
           snyk --version
-      - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/python-3.10@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          args: --skip-unresolved=true
-        # Runs Snyk Code (SAST) analysis and uploads result into GitHub.
-        # Use || true to not fail the pipeline
       - name: Snyk Code test
         run: snyk code test --sarif  > results.sarif
         continue-on-error: true
