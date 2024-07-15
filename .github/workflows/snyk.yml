@@ -16,7 +16,8 @@ on:
   workflow_call:
     secrets:
       snyk_token:
-        required: true
+        description: 'A Snyk token passed from the caller workflow'
+        required: false
 jobs:
   snyk:
     permissions:
@@ -25,6 +26,8 @@ jobs:
       actions: read # only required for a private repository by
                     # github/codeql-action/upload-sarif to get the Action run status
     runs-on: ubuntu-latest
+    env:
+      snyk_token: ${{ secrets.SNYK_TOKEN }}
     steps:
       - uses: actions/checkout@master
       - name: Install dependencies
@@ -50,9 +53,7 @@ jobs:
 
       - name: The snyk auth command authenticates your machine to associate the Snyk CLI with your Snyk account.
         run:
-          snyk auth SNYK_TOKEN
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          snyk auth token
 
       - name: Snyk Code test
         run: |
