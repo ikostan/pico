@@ -53,8 +53,6 @@ jobs:
           snyk auth snyk_token
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          token: ${{ secrets.snyk_token }}
 
       - name: Snyk Code test
         run: |
