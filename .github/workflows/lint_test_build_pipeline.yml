@@ -54,3 +54,5 @@ jobs:
       - codecov
       - codeclimate
     uses: ikostan/pico/.github/workflows/snyk.yml@master
+    secrets:
+      snyk_token: ${{ secrets.SNYK_TOKEN }}
