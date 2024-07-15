@@ -53,7 +53,7 @@ jobs:
 
       - name: The snyk auth command authenticates your machine to associate the Snyk CLI with your Snyk account.
         run: |
-          print(snyk_token)
+          echo snyk_token
           snyk auth snyk_token
 
       - name: Snyk Code test
