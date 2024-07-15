@@ -46,7 +46,7 @@ jobs:
       - name: The snyk auth command authenticates your machine to associate the Snyk CLI with your Snyk account.
         run:
           snyk auth snyk_token
-        with:
+        env:
           snyk_token: ${{ secrets.SNYK_TOKEN }}
 
       - name: Snyk Code test
