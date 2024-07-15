@@ -33,13 +33,18 @@ jobs:
           python -m pip install pytest
           pip install -r requirements.txt
 
+      - name: Check to make sure that the module is in your Python path
+        run: |
+          echo $PYTHONPATH
+          python --version
+
       - name: Install Snyk with standalone executables
         run: |
           curl --compressed https://static.snyk.io/cli/latest/snyk-linux -o snyk
           chmod +x ./snyk
           mv ./snyk /usr/local/bin/
 
-      - name: check which version of the Snyk CLI you have installed by running
+      - name: Check which version of the Snyk CLI you have installed by running
         run:
           snyk --version
 
@@ -48,6 +53,8 @@ jobs:
           snyk auth snyk_token
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          token: ${{ secrets.snyk_token }}
 
       - name: Snyk Code test
         run: |
