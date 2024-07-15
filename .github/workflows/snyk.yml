@@ -56,8 +56,6 @@ jobs:
           echo snyk_token
           echo SNYK_TOKEN
           snyk auth SNYK_TOKEN
-        with:
-          token: ${{ secrets.snyk_token }}
 
       - name: Snyk Code test
         run: |
