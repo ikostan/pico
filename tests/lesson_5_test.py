@@ -4,7 +4,6 @@ Unit testing for lesson 5
 
 import unittest
 from unittest.mock import MagicMock
-# pylint: disable=import-error
 from lessons.lesson_5.main import (
     PIN_READ,
     SLOPE,
