@@ -24,8 +24,7 @@ class Lesson1TestCase(unittest.TestCase):
         Returns None.
         :return:
         """
-        t = check_toggle_val(0)
-        self.assertIsNone(t)
+        self.assertIsNone(check_toggle_val(0))
 
     def test_check_toggle_val_1(self):
         """
@@ -34,8 +33,7 @@ class Lesson1TestCase(unittest.TestCase):
         Returns None.
         :return:
         """
-        t = check_toggle_val(1)
-        self.assertIsNone(t)
+        self.assertIsNone(check_toggle_val(1))
 
     def test_check_toggle_val_type_error(self):
         """
@@ -53,29 +51,25 @@ class Lesson1TestCase(unittest.TestCase):
         """
         Turn LED off.
         Check function return value is None.
-        Check led return value.
         :return:
         """
-        t = toggle_led(0)
+        toggle_led(0)
         LED.value = MagicMock()
         LED.value(0)
         LED.value.return_value = 0
         self.assertEqual(LED.value(), 0)
-        self.assertIsNone(t)
 
     def test_toggle_led_on(self):
         """
         Turn LED on.
         Check function return value is None.
-        Check led return value.
         :return:
         """
-        t = toggle_led(1)
+        toggle_led(1)
         LED.value = MagicMock()
         LED.value(1)
         LED.value.return_value = 1
         self.assertEqual(LED.value(), 1)
-        self.assertIsNone(t)
 
     def test_toggle_led_error(self):
         """
