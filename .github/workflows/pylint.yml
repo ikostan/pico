@@ -33,8 +33,7 @@ jobs:
     - name: Get/Export current directory
       run: |
         pwd
-        export PYTHONPATH=$PYTHONPATH:./pico
-        export PYTHONPATH=$PYTHONPATH:./pico/lessons
+        export PYTHONPATH=$PYTHONPATH:./lessons
     - name: Check to make sure that the module is in your Python path
       run: |
         echo $PYTHONPATH
