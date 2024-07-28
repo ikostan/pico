@@ -4,10 +4,8 @@ Test suite for lesson 1.
 
 import unittest
 from unittest.mock import MagicMock
-from .lessons.lesson_1.main import Led
-
 from lessons.lesson_1.main import (
-    #LED,
+    LED,
     toggle_is_on,
     toggle_led,
     check_toggle_val
