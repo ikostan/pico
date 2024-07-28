@@ -33,7 +33,9 @@ jobs:
     - name: Get/Export current directory
       run: |
         pwd
-        export PYTHONPATH=.:./lessons/lesson_1:$PYTHONPATH
+        export PYTHONPATH=.:$PYTHONPATH
+        export PYTHONPATH=$PYTHONPATH:./lessons
+        export PYTHONPATH=$PYTHONPATH:./tests
     - name: Check to make sure that the module is in your Python path
       run: |
         echo $PYTHONPATH
