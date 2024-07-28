@@ -3,7 +3,6 @@ Test suite for lesson 7 and 8.
 """
 
 import unittest
-# pylint: disable=import-error
 from lessons.lesson_7_and_8.main import (
     value_to_color,
     converter,
