@@ -34,6 +34,5 @@ jobs:
       env:
         CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
-        token: ${{ secrets.cc_test_reporter_id }}
         coverageCommand: pytest --cov=./ --cov-report=xml
         debug: true
