@@ -34,7 +34,7 @@ jobs:
       run: |
         pwd
         export PYTHONPATH=.:$PYTHONPATH
-        export PYTHONPATH=$PYTHONPATH:./pico
+        export PYTHONPATH=$PYTHONPATH:./lessons
     - name: Check to make sure that the module is in your Python path
       run: |
         echo $PYTHONPATH
