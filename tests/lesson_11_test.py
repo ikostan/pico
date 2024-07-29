@@ -4,6 +4,7 @@ Test suite for lesson 11.
 
 import unittest
 from unittest.mock import MagicMock
+# pylint: disable=import-error
 from lessons.lesson_11.main import (
     PIN_NUM,
     analogOut,

@@ -6,6 +6,7 @@ import io
 from contextlib import redirect_stdout
 import unittest
 from unittest.mock import patch
+# pylint: disable=import-error
 from lessons.lesson_12.main import (
     colors,
     pins,

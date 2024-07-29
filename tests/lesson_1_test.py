@@ -4,6 +4,7 @@ Test suite for lesson 1.
 
 import unittest
 from unittest.mock import MagicMock
+# pylint: disable=import-error
 from lessons.lesson_1.main import (
     LED,
     toggle_is_on,

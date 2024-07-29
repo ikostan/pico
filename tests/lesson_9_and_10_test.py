@@ -4,6 +4,7 @@ Test suite for lesson 9 and 10.
 
 import unittest
 from unittest.mock import MagicMock
+# pylint: disable=import-error
 from lessons.lesson_9_and_10.main import (
     VoltageError,
     analogOut,

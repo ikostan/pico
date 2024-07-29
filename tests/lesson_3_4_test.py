@@ -4,6 +4,7 @@ Unit testing lessons 3 and 4.
 
 import unittest
 from unittest.mock import MagicMock
+# pylint: disable=import-error
 from lessons.lesson_3_and_4.main import (
     get_val,
     NUMBERS,
