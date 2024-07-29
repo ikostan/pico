@@ -37,12 +37,14 @@ jobs:
     - name: Check to make sure that the module is in your Python path
       run: |
         echo $PYTHONPATH
-    - name: Try to import a module
-      run:
-        python -c "from lessons.lesson_1.main import LED; print(LED.value())"
+    - name: Import test -> try to import a module
+      run: |
+        python -c "import os; print(os.getcwd())"
+        python -c "from lessons.lesson_1.main import LED; print('LED value -> ', LED.value())"
     - name: Version check
       run: |
         pylint --version
     - name: Analysing the code with pylint
       run: |
+        python -c "import os; print(os.getcwd())"
         python -m pylint $(git ls-files '*.py')
