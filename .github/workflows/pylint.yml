@@ -39,7 +39,7 @@ jobs:
         echo $PYTHONPATH
     - name: Try to import a module
       run:
-        python -c "from lessons.lesson_1.main import LED"
+        python -c "from lessons.lesson_1.main import LED; print(LED.value())"
     - name: Version check
       run: |
         pylint --version
