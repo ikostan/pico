@@ -1,2 +1,11 @@
 [MASTER]
-init-hook='sys.path = list(); sys.path.append("./Lib/site-packages/")'
+; init-hook='import sys; sys.path.append("./venv/lib/python3.8/site-packages")'
+
+; or
+init-hook='import sys; sys.path.append(f"./venv/lib/python{sys.version[:3]}/site-packages");'
+
+; or
+;init-hook='from distutils.sysconfig import get_python_lib; sys.path.append(get_python_lib())'
+
+; or
+; init-hook='import site; sys.path.append(site.getsitepackages()[0])'
