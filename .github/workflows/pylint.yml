@@ -33,10 +33,13 @@ jobs:
     - name: Get/Export current directory
       run: |
         pwd
-        export PYTHONPATH=$PYTHONPATH:./lessons/lesson_11
+        export PYTHONPATH=$PYTHONPATH:
     - name: Check to make sure that the module is in your Python path
       run: |
         echo $PYTHONPATH
+    - name: Try to import a module
+      run:
+        python -c "from lessons.lesson_1.main import LED"
     - name: Version check
       run: |
         pylint --version
