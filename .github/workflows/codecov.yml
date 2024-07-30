@@ -35,6 +35,7 @@ jobs:
         pip install pytest-cov
     - name: Generate coverage report
       run: |
+        python -c "import os; print(os.getcwd())"
         python -m pytest --cov=./ --cov-report=xml
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4.4.1
