@@ -46,7 +46,7 @@ jobs:
     - name: Unitest with pytest
       run: |
         python -m pytest tests/ -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov-fail-under=80 --cov=lessons --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
-    - name: Upload pytest test results
+    - name: Upload pytest test artifacts
       uses: actions/upload-artifact@v4
       with:
           # Name of the artifact to upload.
@@ -60,7 +60,7 @@ jobs:
           # Does not fail if the artifact does not exist.
           # Optional. Default is 'false'
           overwrite: False
-    - name: Upload pytest coverage
+    - name: Upload pytest coverage artifacts
       uses: actions/upload-artifact@v4
       with:
         name: pytest-coverage-${{ matrix.os }}-${{ matrix.python-version }}
