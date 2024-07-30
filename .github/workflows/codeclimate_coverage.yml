@@ -38,5 +38,5 @@ jobs:
       env:
         CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
       with:
-        coverageCommand: python -m pytest tests/ -v --cov=lessons --cov-report=xml
+        coverageCommand: python -m pytest tests/ -v --cov-report term-missing --cov=lessons --cov-report=xml
         debug: true
