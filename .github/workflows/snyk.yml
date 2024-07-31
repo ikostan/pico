@@ -55,6 +55,7 @@ jobs:
           echo "$snyk_token"
           echo "$SNYK_TOKEN"
           snyk auth SNYK_TOKEN
+          snyk auth snyk_token
         with:
           token: ${{ secrets.snyk_token }}
 
