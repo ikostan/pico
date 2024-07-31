@@ -56,6 +56,8 @@ jobs:
           echo "$snyk_token"
           echo "$SNYK_TOKEN"
           snyk auth SNYK_TOKEN
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
       - name: Snyk Code test
         run: |
