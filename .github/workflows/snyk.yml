@@ -35,6 +35,14 @@ jobs:
         with:
           args: --sarif-file-output=snyk.sarif --skip-unresolved
           command: fix --file=requirements.txt
+      - name: Run Snyk to fix vulnerabilities
+        uses: snyk/actions/python@master
+        env:
+          token: ${{ secrets.snyk_token }}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        continue-on-error: true # To make sure that SARIF upload gets called
+        with:
+          command: fix --file=requirements.txt
         # Push the Snyk Code results into GitHub Code Scanning tab
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v3
