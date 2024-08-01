@@ -30,6 +30,7 @@ jobs:
         uses: snyk/actions/python@master
         env:
           token: ${{ secrets.snyk_token }}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true # To make sure that SARIF upload gets called
         with:
           args: --sarif-file-output=snyk.sarif
