@@ -54,7 +54,6 @@ jobs:
         run: |
           echo "$token"
           snyk auth token
-                env:
         env:
           token: ${{ secrets.snyk_token }}
 
