@@ -29,10 +29,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true # To make sure that SARIF upload gets called
         with:
-          run: |
-            python -m pip install --upgrade pip setuptools wheel
-            pip install -r requirements.txt
-          args: --sarif-file-output=snyk.sarif
+          args: --sarif-file-output=snyk.sarif --skip-unresolved
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v3
         with:
