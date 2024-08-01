@@ -26,14 +26,10 @@ jobs:
           run: |
             python -m pip install --upgrade pip setuptools wheel
             pip install -r requirements.txt
-      - name: Run Snyk Authentication
+      - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python@master
         env:
           token: ${{ secrets.snyk_token }}
-        with:
-          command: snyk auth token
-      - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/python@master
         continue-on-error: true # To make sure that SARIF upload gets called
         with:
           args: --sarif-file-output=snyk.sarif
