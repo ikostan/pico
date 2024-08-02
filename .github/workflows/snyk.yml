@@ -22,6 +22,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      # If you want to send data to Snyk, and be alerted when new vulnerabilities are discovered,
+      # you can run Snyk monitor like so:
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/python-3.10@master
+        env:
+          token: ${{ secrets.snyk_token }}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+            command: monitor
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/python-3.10@master
         env:
@@ -29,7 +38,6 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true # To make sure that SARIF upload gets called
         with:
-          base: master
           args: --sarif-file-output=snyk.sarif --file=requirements.txt --package-manager=pip --skip-unresolved
         # Push the Snyk Code results into GitHub Code Scanning tab
       - name: Upload result to GitHub Code Scanning
