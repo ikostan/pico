@@ -40,15 +40,11 @@ jobs:
         env:
           token: ${{ secrets.snyk_token }}
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-      - name: Check setuptools version
-        run:
+      - name: Check/Upgrade setuptools version
+        run: |
+          python -m pip uninstall pip setuptools
+          python -m pip install setuptools
           python -m pip show setuptools
-      - name: Run Snyk to fix vulnerabilities
-        run:
-          snyk fix --file=requirements.txt --package-manager=pip
-        env:
-          token: ${{ secrets.snyk_token }}
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - name: Run Snyk to check for vulnerabilities
         run: |
           python -m pip show setuptools
