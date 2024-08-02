@@ -54,7 +54,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true # To make sure that SARIF upload gets called
         with:
-          run:
+          command:
             # Check setup version
             python -m pip show setuptools
           args: --sarif-file-output=snyk.sarif --skip-unresolved
