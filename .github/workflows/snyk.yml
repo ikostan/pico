@@ -22,6 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
+      - name: Check python version
+        run:
+          python --version
       - name: Uninstall old setuptools
         run:
           python -m pip uninstall setuptools --isolated
