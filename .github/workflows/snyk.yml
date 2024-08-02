@@ -48,15 +48,14 @@ jobs:
         run: |
           pip install -r requirements.txt
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/python@master
+        uses: snyk/actions/python3.12@master
         env:
           token: ${{ secrets.snyk_token }}
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true # To make sure that SARIF upload gets called
         with:
-          command:
-            # Check setup version
-            python -m pip show setuptools
+          command: fix # adding this option to run snyk fix
+          base: master
           args: --sarif-file-output=snyk.sarif --skip-unresolved
         # Push the Snyk Code results into GitHub Code Scanning tab
       - name: Upload result to GitHub Code Scanning
