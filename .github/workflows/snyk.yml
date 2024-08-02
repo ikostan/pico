@@ -30,7 +30,9 @@ jobs:
       # If you want to send data to Snyk, and be alerted when new
       # vulnerabilities are discovered, you can run Snyk monitor like so:
       - name: Run Snyk to send data to Snyk
-        run:
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
           snyk monitor
         env:
           token: ${{ secrets.snyk_token }}
