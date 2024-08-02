@@ -29,7 +29,6 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true # To make sure that SARIF upload gets called
         with:
-          command: fix # adding this option to run snyk fix
           base: master
           args: --sarif-file-output=snyk.sarif --file=requirements.txt --package-manager=pip --skip-unresolved
         # Push the Snyk Code results into GitHub Code Scanning tab
