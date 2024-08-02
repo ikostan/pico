@@ -42,8 +42,9 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - name: Run Snyk to check for vulnerabilities and fix them
         run: |
-          snyk test --sarif-file-output=snyk.sarif --file=requirements.txt --package-manager=pip --skip-unresolved
+          python -m pip show setuptools
           snyk fix
+          snyk test --sarif-file-output=snyk.sarif --file=requirements.txt --package-manager=pip --skip-unresolved
         env:
           token: ${{ secrets.snyk_token }}
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
