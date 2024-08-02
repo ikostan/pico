@@ -42,6 +42,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       - name: Check/Upgrade setuptools version
         run: |
+          python --version
           python -m pip uninstall pip setuptools
           python -m pip install setuptools
           python -m pip show setuptools
