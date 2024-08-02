@@ -30,7 +30,7 @@ jobs:
             python-version: '3.x'
             # Optional - x64 or x86 architecture, defaults to x64
             architecture: 'x64'
-                  # You can test your matrix by printing the current Python version
+        # You can test your matrix by printing the current Python version
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
       - name: Uninstall old setuptools
@@ -54,6 +54,9 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true # To make sure that SARIF upload gets called
         with:
+          run:
+            # Check setup version
+            python -m pip show setuptools
           args: --sarif-file-output=snyk.sarif --skip-unresolved
         # Push the Snyk Code results into GitHub Code Scanning tab
       - name: Upload result to GitHub Code Scanning
