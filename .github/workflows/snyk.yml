@@ -21,10 +21,18 @@ jobs:
                              # github/codeql-action/upload-sarif to get the Action run status
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Check python version
-        run:
-          python --version
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        # This is the version of the action for setting up Python, not the Python version.
+        uses: actions/setup-python@v5
+        with:
+            # Semantic version range syntax or exact version of a Python version
+            python-version: '3.x'
+            # Optional - x64 or x86 architecture, defaults to x64
+            architecture: 'x64'
+                  # You can test your matrix by printing the current Python version
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
       - name: Uninstall old setuptools
         run:
           python -m pip uninstall setuptools --isolated
