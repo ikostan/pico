@@ -9,6 +9,9 @@ jobs:
   markdown-lint:
     name: Markdown Lint
     uses: ikostan/pico/.github/workflows/markdown-lint.yml@master
+  yaml-lint:
+    name: Markdown Lint
+    uses: ikostan/pico/.github/workflows/yamllint.yml@master
   flake8:
     name: Lint with flake8
     uses: ikostan/pico/.github/workflows/flake8.yml@master
@@ -25,6 +28,7 @@ jobs:
       - pylint
       - markdown-lint
       - mypy
+      - yaml-lint
     uses: ikostan/pico/.github/workflows/pytest.yml@master
   codecov:
     name: Codecov GitHub Action
