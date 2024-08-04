@@ -57,17 +57,15 @@ jobs:
         with:
             # Name of the artifact to upload.
             # Optional. Default is 'artifact'
-            name:
-              # yamllint disable-line rule:line-length
-              pytest-results-${{ matrix.os }}-${{ matrix.python-version }}
-            path:
-              # yamllint disable-line rule:line-length
-              junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml
-            # If true, an artifact with a matching name will be deleted before
-            # a new one is uploaded. If false, the action will fail if an artifact
-            # for the given name already exists. Does not fail if the artifact
-            # does not exist. Optional. Default is 'false'
-            overwrite: False
+          name:
+            pytest-results-${{ matrix.os }}-${{ matrix.python-version }}
+          path:
+            junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml
+          # If true, an artifact with a matching name will be deleted before
+          # a new one is uploaded. If false, the action will fail if an
+          # artifact for the given name already exists. Does not fail if
+          # the artifact does not exist. Optional. Default is 'false'
+          overwrite: False
       - name: Upload pytest coverage artifacts
         uses: actions/upload-artifact@v4
         with:
