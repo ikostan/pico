@@ -42,7 +42,8 @@ jobs:
       - name: Import test -> try to import a module
         run: |
           python -c "import os; print(os.getcwd())"
-          python -c "from lessons.lesson_1.main import LED; print('LED value -> ', LED.value())"
+          python -c "from lessons.lesson_1.main import LED; " \
+          "print('LED value -> ', LED.value())"
       - name: Version check
         run: |
           pylint --version
