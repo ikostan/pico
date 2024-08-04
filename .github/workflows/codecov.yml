@@ -18,31 +18,33 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        python-version: [ "3.12" ]
+        python-version: ["3.12"]
     steps:
-    - uses: actions/checkout@main
-    - name: Setup Python
-      uses: actions/setup-python@main
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install prerequisites
-      run: |
-        python -m pip install --upgrade pip setuptools wheel
-        pip install -r requirements.txt
-    - name: Install pytest, pytest-cov
-      run: |
-        pip install pytest
-        pip install pytest-cov
-    - name: Generate coverage report
-      run: |
-        python -c "import os; print(os.getcwd())"
-        python -m pytest tests/ -v --cov-report term-missing --cov=lessons --cov-report=xml
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v4.4.1
-      with:
-        token: ${{ secrets.codecov_token }}
-        files: coverage.xml
-        fail_ci_if_error: true # optional (default = false)
-        verbose: true # optional (default = false)
-        attempt_limit: 5
-        attempt_delay: 30000
+      - uses: actions/checkout@main
+      - name: Setup Python
+        uses: actions/setup-python@main
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install prerequisites
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install -r requirements.txt
+      - name: Install pytest, pytest-cov
+        run: |
+          pip install pytest
+          pip install pytest-cov
+      - name: Generate coverage report
+        run: |
+          python -c "import os; print(os.getcwd())"
+          python -m pytest tests/ -v \
+            --cov-report term-missing \
+            --cov=lessons --cov-report=xml
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4.4.1
+        with:
+          token: ${{ secrets.codecov_token }}
+          files: coverage.xml
+          fail_ci_if_error: true # optional (default = false)
+          verbose: true # optional (default = false)
+          attempt_limit: 5
+          attempt_delay: 30000
