@@ -1,3 +1,4 @@
+---
 name: Flake8
 
 on:
@@ -18,11 +19,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
-      # This is the version of the action for setting up Python, not the Python version.
+      # This is the version of the action for setting up Python,
+      # not the Python version.
       uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
-    # You can test your matrix by printing the current Python version
+    # You can test your matrix by printing the current
+    # Python version
     - name: Display Python version
       run: python -c "import sys; print(sys.version)"
     - name: Install dependencies
@@ -36,6 +39,8 @@ jobs:
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --doctests --show-source --statistics
+        flake8 . --count --select=E9,F63,F7,F82 \
+          --doctests --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --max-complexity=10 --max-line-length=127 --benchmark --show-source --statistics
+        flake8 . --count --max-complexity=10 --max-line-length=127 \
+          --benchmark --show-source --statistics
