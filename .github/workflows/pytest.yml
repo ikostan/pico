@@ -45,16 +45,13 @@ jobs:
           python -m pip install pytest
           pip install -r requirements.txt
       - name: Version check
-        run: |
+        run:
           pytest --version
       - name: Unitest with pytest
-        run: |
-          # yamllint disable rule:line-length
-          python -m pytest tests/ -v -rP --doctest-modules \
-            --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml \
-            --cov-report term-missing --cov-fail-under=80 --cov=lessons \
-            --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
-          # yamllint enable rule:line-length
+        # yamllint disable rule:line-length
+        run:
+          python -m pytest tests/ -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov-fail-under=80 --cov=lessons --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
+        # yamllint enable rule:line-length
       - name: Upload pytest test artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -63,8 +60,6 @@ jobs:
             name:
               # yamllint disable-line rule:line-length
               pytest-results-${{ matrix.os }}-${{ matrix.python-version }}
-            # A file, directory or wildcard pattern that describes
-            # what to upload Required.
             path:
               # yamllint disable-line rule:line-length
               junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml
