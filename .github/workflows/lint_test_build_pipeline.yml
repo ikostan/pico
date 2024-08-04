@@ -10,7 +10,7 @@ jobs:
     name: Markdown Lint
     uses: ikostan/pico/.github/workflows/markdown-lint.yml@master
   yaml-lint:
-    name: Markdown Lint
+    name: YAML Lint
     uses: ikostan/pico/.github/workflows/yamllint.yml@master
   flake8:
     name: Lint with flake8
