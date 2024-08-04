@@ -1,3 +1,7 @@
+---
+Linting with MyPy
+https://yamllint.readthedocs.io/en/stable/quickstart.html
+---
 name: MyPy
 
 on:
