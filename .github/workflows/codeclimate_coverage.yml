@@ -12,15 +12,14 @@ on:
     secrets:
       cc_test_reporter_id:
         required: true
-jobs:
 
+jobs:
   run:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest]
         python-version: ["3.8"]
-
     steps:
       - uses: actions/checkout@main
       - name: Setup Python

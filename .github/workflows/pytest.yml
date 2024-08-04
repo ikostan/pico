@@ -16,15 +16,13 @@ on:
   workflow_call:
 
 jobs:
-  pytest:
-
+  build:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
         os: [macos-latest, windows-latest]
         python-version: ["3.8", "3.X"]
-
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}

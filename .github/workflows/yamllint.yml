@@ -10,7 +10,7 @@ on:
   workflow_call:
 
 jobs:
-  yaml-lint:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
