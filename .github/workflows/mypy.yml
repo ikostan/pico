@@ -11,11 +11,13 @@ on:
   workflow_call:
 
 jobs:
-  build:
+  mypy-lint:
+
     runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: ["3.x"]
+
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}

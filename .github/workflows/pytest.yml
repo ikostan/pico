@@ -16,7 +16,7 @@ on:
   workflow_call:
 
 jobs:
-  build:
+  pytest:
 
     runs-on: ${{ matrix.os }}
     strategy:
