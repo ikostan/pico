@@ -1,5 +1,8 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+---
+# This workflow will install Python dependencies, run tests
+# and lint with a variety of Python versions
+# For more information see:
+# https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
 name: Unitest with pytest
 
@@ -45,7 +48,10 @@ jobs:
         pytest --version
     - name: Unitest with pytest
       run: |
-        python -m pytest tests/ -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov-fail-under=80 --cov=lessons --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
+        python -m pytest tests/ -v -rP --doctest-modules \
+          --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml \
+        --cov-report term-missing --cov-fail-under=80 --cov=lessons \
+        --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
     - name: Upload pytest test artifacts
       uses: actions/upload-artifact@v4
       with:
@@ -65,15 +71,19 @@ jobs:
       with:
         name: pytest-coverage-${{ matrix.os }}-${{ matrix.python-version }}
         path: test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
-        # The retention-days value cannot exceed the retention limit set by the repository,
-        # organization, or enterprise.
-        # You can define a custom retention period for individual artifacts created by a workflow.
-        # When using a workflow to create a new artifact, you can use retention-days with the upload-artifact action.
+        # The retention-days value cannot exceed the retention
+        # limit set by the repository, organization, or enterprise.
+        # You can define a custom retention period for individual
+        # artifacts created by a workflow. When using a workflow to
+        # create a new artifact, you can use retention-days with the
+        # upload-artifact action.
         retention-days: 7
-        # If true, an artifact with a matching name will be deleted before a new one is uploaded.
-        # If false, the action will fail if an artifact for the given name already exists.
+        # If true, an artifact with a matching name will be deleted
+        # before a new one is uploaded. If false, the action will
+        # fail if an artifact for the given name already exists.
         # Does not fail if the artifact does not exist.
         # Optional. Default is 'false'
         overwrite: False
-      # Use always() to always run this step to publish test results when there are test failures
+      # Use always() to always run this step to publish test results
+      # when there are test failures
       if: ${{ always() }}
