@@ -31,7 +31,7 @@ jobs:
         # Source: https://github.com/actions/setup-python
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
           check-latest: true
       - name: Install python prerequisites
         run:
@@ -53,17 +53,17 @@ jobs:
           python -m pip show setuptools
       - name: Run Snyk to check for vulnerabilities
         # yamllint disable rule:line-length
-        run: |
-          python -m pip show setuptools
+        run:
           snyk test --sarif-file-output=snyk.sarif --file=requirements.txt --package-manager=pip
         # yamllint enable rule:line-length
         env:
           token: ${{ secrets.snyk_token }}
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         # To make sure that SARIF upload gets called
-        continue-on-error: true
+        #continue-on-error: true
         # Push the Snyk Code results into GitHub Code Scanning tab
       - name: Upload result to GitHub Code Scanning
+        if: success() || failure()
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: snyk.sarif
