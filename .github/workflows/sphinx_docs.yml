@@ -41,9 +41,9 @@ jobs:
           sphinx-build --version
           sphinx-build docs _build --verbose
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         # yamllint disable rule:line-length
-        if: ${{ github.event_name == 'workflow_call' && github.ref == 'refs/heads/master' }}
+        # if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
         # yamllint enable rule:line-length
         with:
           publish_branch: gh-pages
