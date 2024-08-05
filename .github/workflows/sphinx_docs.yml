@@ -1,0 +1,42 @@
+---
+# https://coderefinery.github.io/documentation/gh_workflow/
+name: Deploy Sphinx documentation to GitHub Pages
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+  workflow_call:
+    secrets:
+      sphinx_token:
+        description:
+          'A Sphinx token passed from the caller workflow'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - name: Install dependencies
+        run: |
+          pip install sphinx sphinx_rtd_theme myst_parser
+      - name: Sphinx build
+        run: |
+          sphinx-build doc _build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        with:
+          publish_branch: gh-pages
+          token: ${{ secrets.sphinx_token }}
+          sphinx_token: ${{ secrets.SPHINX_TOKEN }}
+          publish_dir: _build/
+          force_orphan: true
