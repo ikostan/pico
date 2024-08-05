@@ -36,7 +36,7 @@ jobs:
           sphinx-build --version
           pwd
           ls
-          cd ./docs
+          cd docs
           pwd
           ls
           sphinx-build docs _build --verbose
