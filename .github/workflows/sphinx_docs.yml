@@ -40,6 +40,8 @@ jobs:
           pwd
           ls
           sphinx-build . _build --verbose
+          cd _build
+          ls
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         # yamllint disable rule:line-length
