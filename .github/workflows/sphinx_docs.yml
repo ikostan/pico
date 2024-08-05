@@ -34,20 +34,28 @@ jobs:
       - name: Sphinx build
         run: |
           sphinx-build --version
+          echo '=============================='
           pwd
+          echo '=============================='
           ls
+          echo '=============================='
           cd docs
+          echo '=============================='
           pwd
+          echo '=============================='
           ls
+          echo '=============================='
           sphinx-build . _build --verbose
+          echo '=============================='
           cd _build
+          echo '=============================='
+          ls
+          echo '=============================='
+          cd ..
+          echo '=============================='
           ls
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
-        run: |
-          cd ..
-          pwd
-          ls
         with:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
