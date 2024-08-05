@@ -47,7 +47,6 @@ jobs:
         # yamllint enable rule:line-length
         with:
           publish_branch: gh-pages
-          token: ${{ secrets.sphinx_token }}
-          sphinx_token: ${{ secrets.SPHINX_TOKEN }}
+          sphinx_token: ${{ secrets.sphinx_token }}
           publish_dir: _build/
           force_orphan: true
