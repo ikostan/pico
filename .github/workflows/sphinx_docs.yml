@@ -35,7 +35,7 @@ jobs:
         run: |
           sphinx-build --version
           pwd
-          cd ~/docs
+          cd /docs
           pwd
           sphinx-build docs _build --verbose
       - name: Deploy to GitHub Pages
