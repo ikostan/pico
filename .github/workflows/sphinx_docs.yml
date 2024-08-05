@@ -34,7 +34,9 @@ jobs:
       - name: Sphinx build
         run: |
           sphinx-build --version
+          python -c "pwd"
           python -c "cd .\docs\"
+          python -c "pwd"
           sphinx-build docs _build --verbose
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
