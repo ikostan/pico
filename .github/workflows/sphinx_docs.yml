@@ -35,8 +35,10 @@ jobs:
         run: |
           sphinx-build --version
           pwd
-          cd /docs
+          ls
+          cd ./docs
           pwd
+          ls
           sphinx-build docs _build --verbose
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
