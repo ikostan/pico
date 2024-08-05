@@ -39,7 +39,7 @@ jobs:
           echo '=============================='
           ls
           echo '=============================='
-          sphinx-build docs _build --verbose
+          sphinx-build docs docs/_build --verbose
           echo '=============================='
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
