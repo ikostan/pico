@@ -67,4 +67,3 @@ jobs:
       - snyk
       - codeql
     uses: ikostan/pico/.github/workflows/sphinx_docs.yml@master
-    
