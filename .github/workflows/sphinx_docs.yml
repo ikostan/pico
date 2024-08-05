@@ -39,25 +39,13 @@ jobs:
           echo '=============================='
           ls
           echo '=============================='
-          cd docs
+          sphinx-build docs _build --verbose
           echo '=============================='
-          pwd
-          echo '=============================='
-          ls
-          echo '=============================='
-          sphinx-build . _build --verbose
-          echo '=============================='
-          cd _build
-          echo '=============================='
-          ls
-          echo '=============================='
-          cd ..
-          echo '=============================='
-          ls
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/_build/
-          force_orphan: true
+          force_orphan: false
+          keep_files: true
