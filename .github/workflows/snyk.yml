@@ -60,9 +60,11 @@ jobs:
           token: ${{ secrets.snyk_token }}
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         # To make sure that SARIF upload gets called
-        #continue-on-error: true
+        # continue-on-error: true
         # Push the Snyk Code results into GitHub Code Scanning tab
       - name: Upload result to GitHub Code Scanning
+        # Run a github-actions step, even if the previous step fails,
+        # while still failing the job
         if: success() || failure()
         uses: github/codeql-action/upload-sarif@v3
         with:
