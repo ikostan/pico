@@ -67,5 +67,4 @@ jobs:
       - snyk
       - codeql
     uses: ikostan/pico/.github/workflows/sphinx_docs.yml@master
-    secrets:
-      sphinx_token: ${{ secrets.SPHINX_TOKEN }}
+    
