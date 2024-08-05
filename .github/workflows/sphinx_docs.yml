@@ -22,9 +22,17 @@ permissions:
 jobs:
   docs:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ "3.x" ]
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Set up Python ${{ matrix.python-version }}
+        # This is the version of the action for setting up Python,
+        # not the Python version.
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
           pip install sphinx sphinx_rtd_theme myst_parser
@@ -35,7 +43,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         # yamllint disable rule:line-length
-        if: ${{ github.event_name == 'workflow_call' && github.ref == 'refs/heads/main' }}
+        if: ${{ github.event_name == 'workflow_call' && github.ref == 'refs/heads/master' }}
         # yamllint enable rule:line-length
         with:
           publish_branch: gh-pages
