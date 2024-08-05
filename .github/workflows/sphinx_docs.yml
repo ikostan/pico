@@ -39,7 +39,7 @@ jobs:
           cd docs
           pwd
           ls
-          sphinx-build docs _build --verbose
+          sphinx-build . _build --verbose
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         # yamllint disable rule:line-length
