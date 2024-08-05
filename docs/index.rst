@@ -15,7 +15,4 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
-   img
-   lessons
-   tests
-   WOKWI
+   modules
