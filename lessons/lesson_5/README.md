@@ -2,7 +2,7 @@
 
 ![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/potentiometer_read.gif)
 
-[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
+[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 
 ## Description
 

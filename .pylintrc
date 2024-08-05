@@ -1,3 +1,2 @@
 [MASTER]
 init-hook='import sys; sys.path.append(".")'
-ignore-patterns=**/WOKWI/**

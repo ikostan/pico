@@ -1,4 +1,4 @@
-pico.WOKWI package
+pico.wokwi package
 ==================
 
 Subpackages
@@ -7,13 +7,13 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   pico.WOKWI.wokwi_pico
-   pico.WOKWI.wokwi_pico_w
+   pico.wokwi.wokwi_pico
+   pico.wokwi.wokwi_pico_w
 
 Module contents
 ---------------
 
-.. automodule:: pico.WOKWI
+.. automodule:: pico.wokwi
    :members:
    :undoc-members:
    :show-inheritance:

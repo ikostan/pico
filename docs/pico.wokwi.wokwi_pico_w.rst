@@ -1,13 +1,13 @@
-pico.WOKWI.wokwi\_pico\_w package
+pico.wokwi.wokwi\_pico\_w package
 =================================
 
 Submodules
 ----------
 
-pico.WOKWI.wokwi\_pico\_w.main module
+pico.wokwi.wokwi\_pico\_w.main module
 -------------------------------------
 
-.. automodule:: pico.WOKWI.wokwi_pico_w.main
+.. automodule:: pico.wokwi.wokwi_pico_w.main
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ pico.WOKWI.wokwi\_pico\_w.main module
 Module contents
 ---------------
 
-.. automodule:: pico.WOKWI.wokwi_pico_w
+.. automodule:: pico.wokwi.wokwi_pico_w
    :members:
    :undoc-members:
    :show-inheritance:

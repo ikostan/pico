@@ -2,7 +2,7 @@
 
 ![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/pwm.gif)
 
-[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/WOKWI)
+[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 
 ## [Raspberry Pi Pico W LESSON 9: Getting Analog Output Using PWM (Pulse Width Modulation)](https://www.youtube.com/watch?v=GXA1Y6lA14A&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=12)
 
