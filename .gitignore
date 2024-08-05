@@ -6,4 +6,4 @@ __pycache__/
 .idea/
 .vscode/
 .venv/
-.docs/
+.docs/_build/
