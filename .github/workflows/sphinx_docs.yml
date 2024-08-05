@@ -35,7 +35,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         # yamllint disable rule:line-length
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        if: ${{ github.event_name == 'workflow_call' && github.ref == 'refs/heads/main' }}
         # yamllint enable rule:line-length
         with:
           publish_branch: gh-pages
