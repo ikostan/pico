@@ -44,14 +44,12 @@ jobs:
           ls
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
-        # yamllint disable rule:line-length
-        # if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-        # yamllint enable rule:line-length
+        run: |
+          cd ..
+          pwd
+          ls
         with:
-          run: |
-            pwd
-            ls
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: /docs/_build/
+          publish_dir: ./docs/_build/
           force_orphan: true
