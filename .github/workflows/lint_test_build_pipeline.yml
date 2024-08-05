@@ -61,3 +61,11 @@ jobs:
     uses: ikostan/pico/.github/workflows/snyk.yml@master
     secrets:
       snyk_token: ${{ secrets.SNYK_TOKEN }}
+  sphinx:
+    name: Deploy Sphinx documentation
+    needs:
+      - snyk
+      - codeql
+    uses: ikostan/pico/.github/workflows/sphinx_docs.yml@master
+    secrets:
+      sphinx_token: ${{ secrets.SPHINX_TOKEN }}
