@@ -1,11 +1,11 @@
 lessons.lesson\_1 package
 =========================
 
-README
-======
+.. toctree::
+   :maxdepth: 4
 
-.. include:: ../lessons/lesson_1/README.md
-   :parser: myst_parser.sphinx_
+   lessons.lesson_1.readme
+   lessons.lesson_1
 
 Submodules
 ----------
