@@ -9,6 +9,7 @@ Subpackages
 
    wokwi.wokwi_pico
    wokwi.wokwi_pico_w
+   README.md
 
 Module contents
 ---------------
