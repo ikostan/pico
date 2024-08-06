@@ -14,7 +14,9 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
-   modules
+   lessons
+   tests
+   wokwi
    README.md
 
 Indices and tables
