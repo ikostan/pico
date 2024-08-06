@@ -1,32 +1,16 @@
 tests package
 =============
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tests.readme
+
 Submodules
 ----------
-
-tests.lesson\_11\_test module
------------------------------
-
-.. automodule:: tests.lesson_11_test
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-tests.lesson\_12\_test module
------------------------------
-
-.. automodule:: tests.lesson_12_test
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-tests.lesson\_13\_test module
------------------------------
-
-.. automodule:: tests.lesson_13_test
-   :members:
-   :undoc-members:
-   :show-inheritance:
 
 tests.lesson\_1\_test module
 ----------------------------
@@ -80,6 +64,30 @@ tests.lesson\_9\_and\_10\_test module
 -------------------------------------
 
 .. automodule:: tests.lesson_9_and_10_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.lesson\_11\_test module
+-----------------------------
+
+.. automodule:: tests.lesson_11_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.lesson\_12\_test module
+-----------------------------
+
+.. automodule:: tests.lesson_12_test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tests.lesson\_13\_test module
+-----------------------------
+
+.. automodule:: tests.lesson_13_test
    :members:
    :undoc-members:
    :show-inheritance:
