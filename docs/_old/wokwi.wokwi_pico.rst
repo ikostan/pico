@@ -1,13 +1,13 @@
-lessons.lesson\_1 package
+wokwi.wokwi\_pico package
 =========================
 
 Submodules
 ----------
 
-lessons.lesson\_1.main module
+wokwi.wokwi\_pico.main module
 -----------------------------
 
-.. automodule:: lessons.lesson_1.main
+.. automodule:: wokwi.wokwi_pico.main
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ lessons.lesson\_1.main module
 Module contents
 ---------------
 
-.. automodule:: lessons.lesson_1
+.. automodule:: wokwi.wokwi_pico
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,6 +1,14 @@
 tests package
 =============
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tests.readme
+
 Submodules
 ----------
 
@@ -83,7 +91,6 @@ tests.lesson\_13\_test module
    :members:
    :undoc-members:
    :show-inheritance:
-
 
 Module contents
 ---------------

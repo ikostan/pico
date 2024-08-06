@@ -7,6 +7,7 @@
 
 import os
 import sys
+import pathlib
 sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
@@ -32,3 +33,37 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+# Include README.md in sphinx documentation
+# Source:
+# https://www.lieret.net/2021/05/20/include-readme-sphinx/
+
+# My current workaround is to add the following in conf.py:
+
+# Add recommonmark to the list of extensions
+# Set source_suffix = [".rst", ".md"]
+# Add the following snippet:
+
+source_suffix = [".rst", ".md"]
+
+# The readme that already exists
+readme_path = pathlib.Path(**file**).parent.resolve().parent / "README.md"
+
+# We copy a modified version here
+readme_target = pathlib.Path(**file**).parent / "readme.md"
+
+# Change the title to "Readme"
+with readme_target.open("w") as outf:
+    outf.write(
+        "\n".join(
+            ["Readme",
+             "======",])
+    )
+    lines = []
+    for line in readme_path.read_text().split("\n"):
+        # Skip title, because we now use "Readme"
+        # Could also simply exclude first line for the same effect
+        if line.startswith("# "):
+            continue
+        lines.append(line)
+    outf.write("\n".join(lines))
