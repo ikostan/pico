@@ -17,8 +17,7 @@ documentation for details.
    lessons
    tests
    wokwi
-
-.. include:: ../README.md
+   ../README.md
 
 Indices and tables
 ==================
