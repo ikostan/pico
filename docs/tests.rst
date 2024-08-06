@@ -1,6 +1,12 @@
 tests package
 =============
 
+README
+======
+
+.. include:: ../tests/README.md
+   :parser: myst_parser.sphinx_
+
 Submodules
 ----------
 

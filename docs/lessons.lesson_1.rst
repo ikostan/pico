@@ -1,6 +1,12 @@
 lessons.lesson\_1 package
 =========================
 
+README
+======
+
+.. include:: ../lessons/lesson_1/README.md
+   :parser: myst_parser.sphinx_
+
 Submodules
 ----------
 
