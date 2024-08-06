@@ -1,5 +1,4 @@
 README
 ======
-```{include} ../README.md
-:relative-images:
-```
+
+.. literalinclude:: ../README.md
