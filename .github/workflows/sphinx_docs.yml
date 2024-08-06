@@ -37,6 +37,7 @@ jobs:
           python -m pip install sphinx
           python -m pip install sphinx_rtd_theme
           python -m pip install myst_parser
+          python -m pip install commonmark
       - name: Check Sphinx version
         run: |
           sphinx-build --version
