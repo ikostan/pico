@@ -47,10 +47,11 @@ html_static_path = ['_static']
 source_suffix = [".rst", ".md"]
 
 # The readme that already exists
-readme_path = pathlib.Path(**file**).parent.resolve().parent / "README.md"
+path = '../README.md'
+readme_path = pathlib.Path(path).parent.resolve().parent / "README.md"
 
 # We copy a modified version here
-readme_target = pathlib.Path(**file**).parent / "readme.md"
+readme_target = pathlib.Path(path).parent / "readme.md"
 
 # Change the title to "Readme"
 with readme_target.open("w") as outf:
