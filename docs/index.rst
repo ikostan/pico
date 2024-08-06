@@ -18,8 +18,7 @@ documentation for details.
    tests
    wokwi
 
-.. include:: ../README.md
-   :parser: myst_parser.sphinx_
+.. mdinclude:: ../README.md
 
 Indices and tables
 ==================
