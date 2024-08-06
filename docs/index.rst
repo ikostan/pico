@@ -17,7 +17,10 @@ documentation for details.
    lessons
    tests
    wokwi
-   ../README.md
+
+```{include} ../README.md
+:relative-images:
+```
 
 Indices and tables
 ==================
