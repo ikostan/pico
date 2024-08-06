@@ -1,5 +1,5 @@
-pico package
-============
+wokwi package
+=============
 
 Subpackages
 -----------
@@ -7,13 +7,13 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   pico.lessons
-   pico.tests
+   wokwi.wokwi_pico
+   wokwi.wokwi_pico_w
 
 Module contents
 ---------------
 
-.. automodule:: pico
+.. automodule:: wokwi
    :members:
    :undoc-members:
    :show-inheritance:
