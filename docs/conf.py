@@ -1,6 +1,5 @@
 # pylint: skip-file
 
-
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -9,6 +8,7 @@
 import os
 import sys
 import pathlib
+from pathlib import Path
 sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
@@ -48,19 +48,22 @@ html_static_path = ['_static']
 source_suffix = [".rst", ".md"]
 
 # The readme that already exists
-path = '../README.md'
+path = Path('../README.md')
 readme_path = pathlib.Path(path).parent.resolve().parent / "README.md"
 
 # We copy a modified version here
-readme_target = pathlib.Path(path).parent / "readme.md"
+doc_path = Path('../docs/')
+readme_target = pathlib.Path(doc_path).parent / "readme.md"
 
 # Change the title to "Readme"
 with readme_target.open("w") as outf:
+    
     outf.write(
         "\n".join(
             ["Readme",
              "======",])
     )
+
     lines = []
     for line in readme_path.read_text().split("\n"):
         # Skip title, because we now use "Readme"
@@ -68,4 +71,5 @@ with readme_target.open("w") as outf:
         if line.startswith("# "):
             continue
         lines.append(line)
+
     outf.write("\n".join(lines))
