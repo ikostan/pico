@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="README" href="tests.readme.html" />
+    <link rel="next" title="wokwi package" href="wokwi.html" />
     <link rel="prev" title="lessons.lesson_13 package" href="lessons.lesson_13.html" /> 
 </head>
 
@@ -46,16 +46,15 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="conf.html">conf module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="readme.html">README</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lessons.html">lessons package</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">tests package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="tests.readme.html">README</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_1_test">tests.lesson_1_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_1_test.Lesson1TestCase"><code class="docutils literal notranslate"><span class="pre">Lesson1TestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_1_test.Lesson1TestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">Lesson1TestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_1_test.Lesson1TestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">Lesson1TestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_1_test.Lesson1TestCase.test_check_toggle_val_0"><code class="docutils literal notranslate"><span class="pre">Lesson1TestCase.test_check_toggle_val_0()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_1_test.Lesson1TestCase.test_check_toggle_val_1"><code class="docutils literal notranslate"><span class="pre">Lesson1TestCase.test_check_toggle_val_1()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_1_test.Lesson1TestCase.test_check_toggle_val_type_error"><code class="docutils literal notranslate"><span class="pre">Lesson1TestCase.test_check_toggle_val_type_error()</span></code></a></li>
@@ -72,6 +71,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_2_test">tests.lesson_2_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_2_test.Lesson2TestCase"><code class="docutils literal notranslate"><span class="pre">Lesson2TestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_2_test.Lesson2TestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">Lesson2TestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_2_test.Lesson2TestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">Lesson2TestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_2_test.Lesson2TestCase.test_led_off"><code class="docutils literal notranslate"><span class="pre">Lesson2TestCase.test_led_off()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_2_test.Lesson2TestCase.test_led_on"><code class="docutils literal notranslate"><span class="pre">Lesson2TestCase.test_led_on()</span></code></a></li>
 </ul>
@@ -80,6 +81,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_3_4_test">tests.lesson_3_4_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_3_4_test.Lesson3and4TestCase"><code class="docutils literal notranslate"><span class="pre">Lesson3and4TestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_3_4_test.Lesson3and4TestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">Lesson3and4TestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_3_4_test.Lesson3and4TestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">Lesson3and4TestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_3_4_test.Lesson3and4TestCase.test_get_val_false"><code class="docutils literal notranslate"><span class="pre">Lesson3and4TestCase.test_get_val_false()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_3_4_test.Lesson3and4TestCase.test_get_val_return_type"><code class="docutils literal notranslate"><span class="pre">Lesson3and4TestCase.test_get_val_return_type()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_3_4_test.Lesson3and4TestCase.test_get_val_true"><code class="docutils literal notranslate"><span class="pre">Lesson3and4TestCase.test_get_val_true()</span></code></a></li>
@@ -97,6 +100,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_5_test">tests.lesson_5_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_5_test.Lesson5TestCase"><code class="docutils literal notranslate"><span class="pre">Lesson5TestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_5_test.Lesson5TestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">Lesson5TestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_5_test.Lesson5TestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">Lesson5TestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_5_test.Lesson5TestCase.test_voltage_0"><code class="docutils literal notranslate"><span class="pre">Lesson5TestCase.test_voltage_0()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_5_test.Lesson5TestCase.test_voltage_3_3"><code class="docutils literal notranslate"><span class="pre">Lesson5TestCase.test_voltage_3_3()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_5_test.Lesson5TestCase.test_voltage_mid_value"><code class="docutils literal notranslate"><span class="pre">Lesson5TestCase.test_voltage_mid_value()</span></code></a></li>
@@ -106,6 +111,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_6_test">tests.lesson_6_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_6_test.MyTestCase"><code class="docutils literal notranslate"><span class="pre">MyTestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_6_test.MyTestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">MyTestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_6_test.MyTestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">MyTestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_6_test.MyTestCase.test_led_on"><code class="docutils literal notranslate"><span class="pre">MyTestCase.test_led_on()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_6_test.MyTestCase.test_pin_n_data_type"><code class="docutils literal notranslate"><span class="pre">MyTestCase.test_pin_n_data_type()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_6_test.MyTestCase.test_pin_n_value"><code class="docutils literal notranslate"><span class="pre">MyTestCase.test_pin_n_value()</span></code></a></li>
@@ -115,6 +122,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_7and_8_test">tests.lesson_7and_8_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_7and_8_test.Lesson7And8TestCase"><code class="docutils literal notranslate"><span class="pre">Lesson7And8TestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_7and_8_test.Lesson7And8TestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">Lesson7And8TestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_7and_8_test.Lesson7And8TestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">Lesson7And8TestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_7and_8_test.Lesson7And8TestCase.test_all_led_off"><code class="docutils literal notranslate"><span class="pre">Lesson7And8TestCase.test_all_led_off()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_7and_8_test.Lesson7And8TestCase.test_converter_max"><code class="docutils literal notranslate"><span class="pre">Lesson7And8TestCase.test_converter_max()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_7and_8_test.Lesson7And8TestCase.test_converter_mid_range_49"><code class="docutils literal notranslate"><span class="pre">Lesson7And8TestCase.test_converter_mid_range_49()</span></code></a></li>
@@ -137,6 +146,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_9_and_10_test">tests.lesson_9_and_10_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase"><code class="docutils literal notranslate"><span class="pre">Lesson9And10TestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">Lesson9And10TestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">Lesson9And10TestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase.test_analog_out_freq"><code class="docutils literal notranslate"><span class="pre">Lesson9And10TestCase.test_analog_out_freq()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase.test_pin_num_data_type"><code class="docutils literal notranslate"><span class="pre">Lesson9And10TestCase.test_pin_num_data_type()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase.test_pin_num_value"><code class="docutils literal notranslate"><span class="pre">Lesson9And10TestCase.test_pin_num_value()</span></code></a></li>
@@ -147,6 +158,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_11_test">tests.lesson_11_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_11_test.Lesson11TestCase"><code class="docutils literal notranslate"><span class="pre">Lesson11TestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_11_test.Lesson11TestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">Lesson11TestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_11_test.Lesson11TestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">Lesson11TestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_11_test.Lesson11TestCase.test_analog_out_duty_u16"><code class="docutils literal notranslate"><span class="pre">Lesson11TestCase.test_analog_out_duty_u16()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_11_test.Lesson11TestCase.test_constant_data_type"><code class="docutils literal notranslate"><span class="pre">Lesson11TestCase.test_constant_data_type()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_11_test.Lesson11TestCase.test_constant_value"><code class="docutils literal notranslate"><span class="pre">Lesson11TestCase.test_constant_value()</span></code></a></li>
@@ -162,6 +175,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_12_test">tests.lesson_12_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_12_test.Lesson12TestCase"><code class="docutils literal notranslate"><span class="pre">Lesson12TestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_12_test.Lesson12TestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">Lesson12TestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_12_test.Lesson12TestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">Lesson12TestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_12_test.Lesson12TestCase.test_calc_pwm_0"><code class="docutils literal notranslate"><span class="pre">Lesson12TestCase.test_calc_pwm_0()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_12_test.Lesson12TestCase.test_calc_pwm_165"><code class="docutils literal notranslate"><span class="pre">Lesson12TestCase.test_calc_pwm_165()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_12_test.Lesson12TestCase.test_calc_pwm_255"><code class="docutils literal notranslate"><span class="pre">Lesson12TestCase.test_calc_pwm_255()</span></code></a></li>
@@ -181,6 +196,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#module-tests.lesson_13_test">tests.lesson_13_test module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tests.lesson_13_test.Lesson13TestCase"><code class="docutils literal notranslate"><span class="pre">Lesson13TestCase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_13_test.Lesson13TestCase._classSetupFailed"><code class="docutils literal notranslate"><span class="pre">Lesson13TestCase._classSetupFailed</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tests.lesson_13_test.Lesson13TestCase._class_cleanups"><code class="docutils literal notranslate"><span class="pre">Lesson13TestCase._class_cleanups</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tests.lesson_13_test.Lesson13TestCase.test_led_red_freq"><code class="docutils literal notranslate"><span class="pre">Lesson13TestCase.test_led_red_freq()</span></code></a></li>
 </ul>
 </li>
@@ -218,14 +235,6 @@
              
   <section id="tests-package">
 <h1>tests package<a class="headerlink" href="#tests-package" title="Link to this heading"></a></h1>
-<section id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="tests.readme.html">README</a></li>
-</ul>
-</div>
-</section>
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
 </section>
@@ -237,6 +246,16 @@
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_1_test.</span></span><span class="sig-name descname"><span class="pre">Lesson1TestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_1_test.html#Lesson1TestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_1_test.Lesson1TestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Testing led functionality by mocking Pin methods</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_1_test.Lesson1TestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_1_test.Lesson1TestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_1_test.Lesson1TestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_1_test.Lesson1TestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_1_test.Lesson1TestCase.test_check_toggle_val_0">
 <span class="sig-name descname"><span class="pre">test_check_toggle_val_0</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_1_test.html#Lesson1TestCase.test_check_toggle_val_0"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_1_test.Lesson1TestCase.test_check_toggle_val_0" title="Link to this definition"></a></dt>
@@ -329,6 +348,16 @@ Check function return value is None.
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_2_test.</span></span><span class="sig-name descname"><span class="pre">Lesson2TestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_2_test.html#Lesson2TestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_2_test.Lesson2TestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Testing led functionality by mocking Pin methods</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_2_test.Lesson2TestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_2_test.Lesson2TestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_2_test.Lesson2TestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_2_test.Lesson2TestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_2_test.Lesson2TestCase.test_led_off">
 <span class="sig-name descname"><span class="pre">test_led_off</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_2_test.html#Lesson2TestCase.test_led_off"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_2_test.Lesson2TestCase.test_led_off" title="Link to this definition"></a></dt>
@@ -354,6 +383,16 @@ Check function return value is None.
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_3_4_test.</span></span><span class="sig-name descname"><span class="pre">Lesson3and4TestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_3_4_test.html#Lesson3and4TestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_3_4_test.Lesson3and4TestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Lessons 3 and 4 test case.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_3_4_test.Lesson3and4TestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_3_4_test.Lesson3and4TestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_3_4_test.Lesson3and4TestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_3_4_test.Lesson3and4TestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_3_4_test.Lesson3and4TestCase.test_get_val_false">
 <span class="sig-name descname"><span class="pre">test_get_val_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_3_4_test.html#Lesson3and4TestCase.test_get_val_false"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_3_4_test.Lesson3and4TestCase.test_get_val_false" title="Link to this definition"></a></dt>
@@ -449,6 +488,16 @@ set_pin_value function
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_5_test.</span></span><span class="sig-name descname"><span class="pre">Lesson5TestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_5_test.html#Lesson5TestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_5_test.Lesson5TestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Lesson 5 test case</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_5_test.Lesson5TestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_5_test.Lesson5TestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_5_test.Lesson5TestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_5_test.Lesson5TestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_5_test.Lesson5TestCase.test_voltage_0">
 <span class="sig-name descname"><span class="pre">test_voltage_0</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_5_test.html#Lesson5TestCase.test_voltage_0"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_5_test.Lesson5TestCase.test_voltage_0" title="Link to this definition"></a></dt>
@@ -484,6 +533,16 @@ Should be converted to 1.65 volt
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_6_test.</span></span><span class="sig-name descname"><span class="pre">MyTestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_6_test.html#MyTestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_6_test.MyTestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Testing led functionality by mocking Pin methods</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_6_test.MyTestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_6_test.MyTestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_6_test.MyTestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_6_test.MyTestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_6_test.MyTestCase.test_led_on">
 <span class="sig-name descname"><span class="pre">test_led_on</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_6_test.html#MyTestCase.test_led_on"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_6_test.MyTestCase.test_led_on" title="Link to this definition"></a></dt>
@@ -517,6 +576,16 @@ Testing that PIN_N val is 14.
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_7and_8_test.</span></span><span class="sig-name descname"><span class="pre">Lesson7And8TestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_7and_8_test.html#Lesson7And8TestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_7and_8_test.Lesson7And8TestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Test case for lesson 7 and 8.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_7and_8_test.Lesson7And8TestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_7and_8_test.Lesson7And8TestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_7and_8_test.Lesson7And8TestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_7and_8_test.Lesson7And8TestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_7and_8_test.Lesson7And8TestCase.test_all_led_off">
 <span class="sig-name descname"><span class="pre">test_all_led_off</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_7and_8_test.html#Lesson7And8TestCase.test_all_led_off"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_7and_8_test.Lesson7And8TestCase.test_all_led_off" title="Link to this definition"></a></dt>
@@ -640,6 +709,16 @@ Testing that PIN_N val is 14.
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_9_and_10_test.</span></span><span class="sig-name descname"><span class="pre">Lesson9And10TestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_9_and_10_test.html#Lesson9And10TestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Test case for lesson 9 and 10.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_9_and_10_test.Lesson9And10TestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_9_and_10_test.Lesson9And10TestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_9_and_10_test.Lesson9And10TestCase.test_analog_out_freq">
 <span class="sig-name descname"><span class="pre">test_analog_out_freq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_9_and_10_test.html#Lesson9And10TestCase.test_analog_out_freq"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_9_and_10_test.Lesson9And10TestCase.test_analog_out_freq" title="Link to this definition"></a></dt>
@@ -679,6 +758,16 @@ Testing that PIN_N val is 14.
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_11_test.</span></span><span class="sig-name descname"><span class="pre">Lesson11TestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_11_test.html#Lesson11TestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_11_test.Lesson11TestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Test case for lesson 11.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_11_test.Lesson11TestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_11_test.Lesson11TestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_11_test.Lesson11TestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_11_test.Lesson11TestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_11_test.Lesson11TestCase.test_analog_out_duty_u16">
 <span class="sig-name descname"><span class="pre">test_analog_out_duty_u16</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_11_test.html#Lesson11TestCase.test_analog_out_duty_u16"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_11_test.Lesson11TestCase.test_analog_out_duty_u16" title="Link to this definition"></a></dt>
@@ -753,6 +842,16 @@ Testing that PIN_N val is 14.
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_12_test.</span></span><span class="sig-name descname"><span class="pre">Lesson12TestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_12_test.html#Lesson12TestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_12_test.Lesson12TestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Test case for lesson 12.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_12_test.Lesson12TestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_12_test.Lesson12TestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_12_test.Lesson12TestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_12_test.Lesson12TestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_12_test.Lesson12TestCase.test_calc_pwm_0">
 <span class="sig-name descname"><span class="pre">test_calc_pwm_0</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_12_test.html#Lesson12TestCase.test_calc_pwm_0"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_12_test.Lesson12TestCase.test_calc_pwm_0" title="Link to this definition"></a></dt>
@@ -870,6 +969,16 @@ Source:
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.lesson_13_test.</span></span><span class="sig-name descname"><span class="pre">Lesson13TestCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_13_test.html#Lesson13TestCase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_13_test.Lesson13TestCase" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
 <p>Test case for lesson 13.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_13_test.Lesson13TestCase._classSetupFailed">
+<span class="sig-name descname"><span class="pre">_classSetupFailed</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#tests.lesson_13_test.Lesson13TestCase._classSetupFailed" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="tests.lesson_13_test.Lesson13TestCase._class_cleanups">
+<span class="sig-name descname"><span class="pre">_class_cleanups</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#tests.lesson_13_test.Lesson13TestCase._class_cleanups" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.lesson_13_test.Lesson13TestCase.test_led_red_freq">
 <span class="sig-name descname"><span class="pre">test_led_red_freq</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/tests/lesson_13_test.html#Lesson13TestCase.test_led_red_freq"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#tests.lesson_13_test.Lesson13TestCase.test_led_red_freq" title="Link to this definition"></a></dt>
@@ -890,7 +999,7 @@ Source:
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="lessons.lesson_13.html" class="btn btn-neutral float-left" title="lessons.lesson_13 package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="tests.readme.html" class="btn btn-neutral float-right" title="README" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="wokwi.html" class="btn btn-neutral float-right" title="wokwi package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
