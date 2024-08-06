@@ -1,12 +1,19 @@
 lessons package
 ===============
 
+README
+======
+
+.. include:: ../lessons/README.md
+   :parser: myst_parser.sphinx_
+
 Subpackages
 -----------
 
 .. toctree::
    :maxdepth: 4
 
+   lessons.readme
    lessons.lesson_1
    lessons.lesson_2
    lessons.lesson_3_and_4
