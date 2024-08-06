@@ -54,4 +54,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/_build/
           force_orphan: false
-          keep_files: true
+          keep_files: false
