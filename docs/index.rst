@@ -18,7 +18,7 @@ documentation for details.
    tests
    wokwi
 
-.. mdinclude:: ../README.md
+.. include:: ../README.md
 
 Indices and tables
 ==================
