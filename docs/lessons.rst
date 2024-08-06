@@ -17,7 +17,7 @@ Subpackages
    lessons.lesson_6
    lessons.lesson_7_and_8
    lessons.lesson_9_and_10
-   lessons.README.md
+   lessons.README
 
 Module contents
 ---------------
