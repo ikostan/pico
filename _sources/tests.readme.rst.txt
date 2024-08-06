@@ -1,7 +1,6 @@
 README
 ======
 
-.. include:: ../README.md
+.. include:: ../tests/README.md
    :parser: myst_parser.sphinx_
    :relative-images:
-
