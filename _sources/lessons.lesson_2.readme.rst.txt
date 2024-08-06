@@ -1,5 +1,5 @@
 README
 ======
 
-.. include:: ../lessons/lesson_1/README.md
+.. include:: ../lessons/lesson_2/README.md
    :parser: myst_parser.sphinx_

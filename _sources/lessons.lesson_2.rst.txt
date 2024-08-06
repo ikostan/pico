@@ -4,6 +4,15 @@ lessons.lesson\_2 package
 Submodules
 ----------
 
+lessons.lesson\_2.readme module
+-----------------------------
+
+.. automodule:: lessons.lesson_2.readme
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :private-members:
+
 lessons.lesson\_2.main module
 -----------------------------
 
