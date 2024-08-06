@@ -1,9 +1,9 @@
 .. pico documentation master file, created by
-   sphinx-quickstart on Mon Aug  5 21:38:26 2024.
+   sphinx-quickstart on Mon Aug  5 22:10:19 2024.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-pico documentation
+PiPico W Training Documentation
 ==================
 
 Add your content using ``reStructuredText`` syntax. See the
@@ -15,6 +15,7 @@ documentation for details.
    :maxdepth: 4
    :caption: Contents:
 
+   conf
    lessons
    tests
    wokwi
