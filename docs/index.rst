@@ -14,10 +14,10 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
+   readme
    lessons
    tests
    wokwi
-   readme
 
 Indices and tables
 ==================
