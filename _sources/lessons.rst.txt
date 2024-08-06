@@ -8,11 +8,8 @@ Subpackages
    :maxdepth: 4
 
    lessons.readme
-   lessons.lesson_1.readme
    lessons.lesson_1
-   lessons.lesson_2.readme
    lessons.lesson_2
-   lessons.lesson_3_and_4.readme
    lessons.lesson_3_and_4
    lessons.lesson_5
    lessons.lesson_6
