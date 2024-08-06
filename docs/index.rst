@@ -16,6 +16,15 @@ documentation for details.
    :caption: Contents:
 
    conf
+   readme
    lessons
    tests
    wokwi
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
