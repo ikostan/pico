@@ -10,16 +10,6 @@ README
 Submodules
 ----------
 
-tests.readme module
--------------------
-
-.. automodule:: tests.readme
-   :members:
-   :undoc-members:
-   :show-inheritance:
-   :private-members:
-
-
 tests.lesson\_1\_test module
 ----------------------------
 
