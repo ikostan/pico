@@ -5,7 +5,7 @@ Submodules
 ----------
 
 lessons.lesson\_1.readme module
------------------------------
+-------------------------------
 
 .. automodule:: lessons.lesson_1.readme
    :members:
