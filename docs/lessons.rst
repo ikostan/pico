@@ -13,7 +13,7 @@ Subpackages
    lessons.lesson_3_and_4.module
    lessons.lesson_5.module
    lessons.lesson_6.module
-   lessons.lesson_7_and_8
+   lessons.lesson_7_and_8.module
    lessons.lesson_9_and_10
    lessons.lesson_11
    lessons.lesson_12
