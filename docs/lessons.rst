@@ -15,7 +15,7 @@ Subpackages
    lessons.lesson_6.module
    lessons.lesson_7_and_8.module
    lessons.lesson_9_and_10.module
-   lessons.lesson_11
+   lessons.lesson_11.module
    lessons.lesson_12
    lessons.lesson_13
 
