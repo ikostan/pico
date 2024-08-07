@@ -1,12 +1,6 @@
 lessons.lesson\_3\_and\_4 package
 =================================
 
-README
-======
-
-.. include:: ../lessons/lesson_3_and_4/README.md
-   :parser: myst_parser.sphinx_
-
 Submodules
 ----------
 

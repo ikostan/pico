@@ -10,7 +10,7 @@ Subpackages
    lessons.readme
    lessons.lesson_1.module
    lessons.lesson_2.module
-   lessons.lesson_3_and_4
+   lessons.lesson_3_and_4.module
    lessons.lesson_5
    lessons.lesson_6
    lessons.lesson_7_and_8
