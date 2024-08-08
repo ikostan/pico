@@ -42,11 +42,9 @@ jobs:
           python -m pytest tests/ -v --cov-report term-missing --cov=lessons --cov-report=xml
         # yamllint enable rule:line-length
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4.4.1
+        uses: codecov/codecov-action@v4.5.0
         with:
           token: ${{ secrets.codecov_token }}
           files: coverage.xml
           fail_ci_if_error: true  # optional (default = false)
           verbose: true  # optional (default = false)
-          attempt_limit: 5
-          attempt_delay: 30000
