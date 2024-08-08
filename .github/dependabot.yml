@@ -20,6 +20,8 @@ updates:
       - "**"
       - "*/**"
       - "**/"
+      - "*/*"
+      - "**/**"
     schedule:
       interval: "daily"
     # Labels on pull requests for version updates only
