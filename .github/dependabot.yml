@@ -9,7 +9,9 @@
 
 version: 2
 updates:
-  - package-ecosystem: "pip"  # See documentation for possible values
+  # BUG: Dependabot couldn't fetch path-based dependencies (pip)
+  # https://github.com/dependabot/dependabot-core/issues/9554
+  - package-ecosystem: "pip"
     directory: "/"  # Location of package manifests
     schedule:
       interval: "daily"
