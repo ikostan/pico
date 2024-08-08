@@ -12,12 +12,18 @@ updates:
   # BUG: Dependabot couldn't fetch path-based dependencies (pip)
   # https://github.com/dependabot/dependabot-core/issues/9554
   - package-ecosystem: "pip"
-    directory: "/"  # Location of package manifests
+    # Specify the root directories
+    directories:
+      - "/"
+      - "*"  # The location of manifest files using the wildcard character
+      - "**/*"  # All directories from the current layer and below recursively
     schedule:
       interval: "daily"
     # Labels on pull requests for version updates only
     labels:
+      - 'pip'
       - "pip dependencies"
+      - "dependencies"
   # Enable version updates for GitHub actions
   - package-ecosystem: "github-actions"
     directory: "/.github/workflows"
