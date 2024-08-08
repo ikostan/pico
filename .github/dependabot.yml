@@ -17,6 +17,7 @@ updates:
       - "/"
       - "*"  # The location of manifest files using the wildcard character
       - "**/*"  # All directories from the current layer and below recursively
+      - '**'
     schedule:
       interval: "daily"
     # Labels on pull requests for version updates only
