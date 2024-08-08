@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: snyk/actions/setup@master
-        # Source: https://github.com/actions/setup-python
+      # Source: https://github.com/actions/setup-python
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -59,9 +59,9 @@ jobs:
         env:
           token: ${{ secrets.snyk_token }}
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        # To make sure that SARIF upload gets called
-        # continue-on-error: true
-        # Push the Snyk Code results into GitHub Code Scanning tab
+      # To make sure that SARIF upload gets called
+      # continue-on-error: true
+      # Push the Snyk Code results into GitHub Code Scanning tab
       - name: Upload result to GitHub Code Scanning
         # Run a github-actions step, even if the previous step fails,
         # while still failing the job
