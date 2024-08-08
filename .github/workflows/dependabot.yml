@@ -9,12 +9,17 @@
 
 version: 2
 updates:
-- package-ecosystem: "pip" # See documentation for possible values
-  directory: "/" # Location of package manifests
-  schedule:
-    interval: "daily"
-    time: "13:00"
-  groups:
-    python-packages:
-      patterns:
-        - "*"
+  - package-ecosystem: "pip" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+      time: "13:00"
+    groups:
+      python-packages:
+        patterns:
+          - "*"
+  # Enable version updates for GitHub actions
+  - package-ecosystem: "github-actions"
+    directory: "/.github/workflows"
+    schedule:
+      interval: "daily"
