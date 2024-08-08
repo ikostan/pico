@@ -13,12 +13,14 @@ updates:
     directory: "/"  # Location of package manifests
     schedule:
       interval: "daily"
-    groups:
-      python-packages:
-        patterns:
-          - "*"
+    # Labels on pull requests for version updates only
+    labels:
+      - "pip dependencies"
   # Enable version updates for GitHub actions
   - package-ecosystem: "github-actions"
     directory: "/.github/workflows"
     schedule:
       interval: "daily"
+    # Labels on pull requests for version updates only
+    labels:
+      - "GitHub actions versions"
