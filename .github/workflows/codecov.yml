@@ -1,6 +1,7 @@
 ---
 name: Codecov Coverage Report
-on:
+
+on:  # yamllint disable-line rule:truthy
   pull_request_target:
     types:
       - opened
