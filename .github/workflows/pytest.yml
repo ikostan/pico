@@ -49,12 +49,12 @@ jobs:
         # yamllint disable rule:line-length
         run:
           python -m pytest tests/ -v -rP --doctest-modules --junitxml=junit/test-results-${{ matrix.os }}-${{ matrix.python-version }}.xml --cov-report term-missing --cov-fail-under=80 --cov=lessons --cov-report html:test-coverage-${{ matrix.os }}-${{ matrix.python-version }}.html
-        # yamllint enable rule:line-length
+      # yamllint enable rule:line-length
       - name: Upload pytest test artifacts
         uses: actions/upload-artifact@v4
         with:
-            # Name of the artifact to upload.
-            # Optional. Default is 'artifact'
+          # Name of the artifact to upload.
+          # Optional. Default is 'artifact'
           name:
             pytest-results-${{ matrix.os }}-${{ matrix.python-version }}
           path:
@@ -63,7 +63,7 @@ jobs:
           # a new one is uploaded. If false, the action will fail if an
           # artifact for the given name already exists. Does not fail if
           # the artifact does not exist. Optional. Default is 'false'
-          overwrite: False
+          overwrite: false
       - name: Upload pytest coverage artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -83,7 +83,7 @@ jobs:
           # fail if an artifact for the given name already exists.
           # Does not fail if the artifact does not exist.
           # Optional. Default is 'false'
-          overwrite: False
+          overwrite: false
         # Use always() to always run this step to publish test results
         # when there are test failures
         if: ${{ always() }}
