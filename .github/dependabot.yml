@@ -10,7 +10,7 @@
 version: 2
 updates:
   - package-ecosystem: "pip"  # See documentation for possible values
-    directory: "/"  # Location of package manifests
+    directory: "/requirements.txt"  # Location of package manifests
     schedule:
       interval: "daily"
     # Labels on pull requests for version updates only
