@@ -38,7 +38,8 @@ html_theme = 'sphinx_rtd_theme'
 
 # Source:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path
-html_static_path = ['../docs/_static']
+html_static_path = ['_static',
+                    '_static/.htaccess']
 
 source_suffix = {'.rst': 'restructuredtext',
                  '.txt': 'markdown',
