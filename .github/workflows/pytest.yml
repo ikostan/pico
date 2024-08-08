@@ -77,7 +77,7 @@ jobs:
           # artifacts created by a workflow. When using a workflow to
           # create a new artifact, you can use retention-days with the
           # upload-artifact action.
-          retention-days: 7
+          retention-days: 2
           # If true, an artifact with a matching name will be deleted
           # before a new one is uploaded. If false, the action will
           # fail if an artifact for the given name already exists.
