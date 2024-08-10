@@ -18,6 +18,20 @@ updates:
       - "*"  # The location of manifest files using the wildcard character
     schedule:
       interval: "daily"
+    groups:
+      common:
+        patterns:
+          - pip
+          - flake8
+          - mypy
+          - pylint
+      pip-tools:
+        patterns:
+          - pip-tools
+      pipenv:
+        patterns:
+          - pipfile
+          - pipenv
     # Labels on pull requests for version updates only
     labels:
       - 'pip'
