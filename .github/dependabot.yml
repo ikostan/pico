@@ -16,9 +16,8 @@ updates:
     directories:
       - "/"
       - "*"  # The location of manifest files using the wildcard character
-      - "/pico/"
-      - "/pico"
-      - "pico/"
+      - "/.github/"
+      - "/.github/requirements.txt"
     schedule:
       interval: "daily"
     groups:
