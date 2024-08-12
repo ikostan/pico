@@ -9,6 +9,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/10d3376c6ce70ffc363a/maintainability)](https://codeclimate.com/github/ikostan/pico/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/10d3376c6ce70ffc363a/test_coverage)](https://codeclimate.com/github/ikostan/pico/test_coverage)
 [![Dependabot Updates](https://github.com/ikostan/pico/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ikostan/pico/actions/workflows/dependabot/dependabot-updates)
+[![pages-build-deployment](https://github.com/ikostan/pico/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ikostan/pico/actions/workflows/pages/pages-build-deployment)
+[![Dependabot Updates](https://github.com/ikostan/pico/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ikostan/pico/actions/workflows/dependabot/dependabot-updates)
 
 ## About
 
