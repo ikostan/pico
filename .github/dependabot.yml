@@ -16,8 +16,8 @@ updates:
     directories:
       - "/"
       - "*"  # The location of manifest files using the wildcard character
-      - "/.github/"
-      - "/.github/requirements.txt"
+      - "/requirements.txt"
+      - "requirements.txt"
     schedule:
       interval: "daily"
     groups:
