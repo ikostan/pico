@@ -15,8 +15,6 @@ updates:
     # Specify the root directories
     directories:
       - "/"
-      - "*"  # The location of manifest files using the wildcard character
-      - "requirements.txt"
     schedule:
       interval: "daily"
     groups:
@@ -37,7 +35,7 @@ updates:
     labels:
       - 'pip'
       - "pip dependencies"
-      - "dependencies"
+      - "python dependencies"
   # Enable version updates for GitHub actions
   - package-ecosystem: "github-actions"
     directory: "/.github/workflows"
