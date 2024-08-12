@@ -16,7 +16,6 @@ updates:
     directories:
       - "/"
       - "*"  # The location of manifest files using the wildcard character
-      - "/requirements.txt"
       - "requirements.txt"
     schedule:
       interval: "daily"
