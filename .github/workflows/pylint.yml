@@ -51,4 +51,4 @@ jobs:
       - name: Analysing the code with pylint
         run: |
           python -c "import os; print(os.getcwd())"
-          python -m pylint $(git ls-files '*.py')
+          python -m pylint $(git ls-files '*.py') -v
