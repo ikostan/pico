@@ -42,5 +42,4 @@ html_static_path = ['_static',
                     '_static/.htaccess']
 
 source_suffix = {'.rst': 'restructuredtext',
-                 '.txt': 'markdown',
                  '.md': 'markdown'}
