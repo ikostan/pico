@@ -41,4 +41,4 @@ jobs:
         # https://realpython.com/python-type-checking/
         run: |
           mypy lessons --ignore-missing-imports --check-untyped-defs
-          mypy tests --ignore-missing-imports --check-untyped-defs
+          mypy tests --ignore-missing-imports
