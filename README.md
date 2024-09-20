@@ -10,7 +10,6 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/10d3376c6ce70ffc363a/test_coverage)](https://codeclimate.com/github/ikostan/pico/test_coverage)
 [![Dependabot Updates](https://github.com/ikostan/pico/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ikostan/pico/actions/workflows/dependabot/dependabot-updates)
 [![pages-build-deployment](https://github.com/ikostan/pico/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ikostan/pico/actions/workflows/pages/pages-build-deployment)
-[![Dependabot Updates](https://github.com/ikostan/pico/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ikostan/pico/actions/workflows/dependabot/dependabot-updates)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ikostan/pico?color=green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ikostan/pico?color=green)
 
