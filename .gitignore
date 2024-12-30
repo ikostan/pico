@@ -1,9 +1,0 @@
-__pycache__/
-.idea/workspace.xml~
-*.pyc
-.idea/misc.xml
-.vscode/settings.json
-.idea/
-.vscode/
-.venv/
-.docs/_build/
