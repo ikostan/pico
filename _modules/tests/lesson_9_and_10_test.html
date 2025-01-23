@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>tests.lesson_9_and_10_test &mdash; PiPico W Training  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
 
   
@@ -76,9 +76,9 @@
 <span class="sd">Test suite for lesson 9 and 10.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">import</span> <span class="nn">unittest</span>
-<span class="kn">from</span> <span class="nn">unittest.mock</span> <span class="kn">import</span> <span class="n">MagicMock</span>
-<span class="kn">from</span> <span class="nn">lessons.lesson_9_and_10.main</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">unittest</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">unittest.mock</span><span class="w"> </span><span class="kn">import</span> <span class="n">MagicMock</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">lessons.lesson_9_and_10.main</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
     <span class="n">VoltageError</span><span class="p">,</span>
     <span class="n">analogOut</span><span class="p">,</span>
     <span class="n">PIN_NUM</span>
@@ -87,14 +87,14 @@
 
 <div class="viewcode-block" id="Lesson9And10TestCase">
 <a class="viewcode-back" href="../../tests.html#tests.lesson_9_and_10_test.Lesson9And10TestCase">[docs]</a>
-<span class="k">class</span> <span class="nc">Lesson9And10TestCase</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Lesson9And10TestCase</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Test case for lesson 9 and 10.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Lesson9And10TestCase.test_analog_out_freq">
 <a class="viewcode-back" href="../../tests.html#tests.lesson_9_and_10_test.Lesson9And10TestCase.test_analog_out_freq">[docs]</a>
-    <span class="k">def</span> <span class="nf">test_analog_out_freq</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_analog_out_freq</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Mocking and testing analogOut.freq()</span>
 <span class="sd">        :return:</span>
@@ -108,7 +108,7 @@
 
 <div class="viewcode-block" id="Lesson9And10TestCase.test_pin_num_data_type">
 <a class="viewcode-back" href="../../tests.html#tests.lesson_9_and_10_test.Lesson9And10TestCase.test_pin_num_data_type">[docs]</a>
-    <span class="k">def</span> <span class="nf">test_pin_num_data_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_pin_num_data_type</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        PIN_NUM data type should be int.</span>
 <span class="sd">        :return:</span>
@@ -118,7 +118,7 @@
 
 <div class="viewcode-block" id="Lesson9And10TestCase.test_pin_num_value">
 <a class="viewcode-back" href="../../tests.html#tests.lesson_9_and_10_test.Lesson9And10TestCase.test_pin_num_value">[docs]</a>
-    <span class="k">def</span> <span class="nf">test_pin_num_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_pin_num_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        PIN_NUM value should be 16.</span>
 <span class="sd">        :return:</span>
@@ -128,7 +128,7 @@
 
 <div class="viewcode-block" id="Lesson9And10TestCase.test_voltage_error">
 <a class="viewcode-back" href="../../tests.html#tests.lesson_9_and_10_test.Lesson9And10TestCase.test_voltage_error">[docs]</a>
-    <span class="k">def</span> <span class="nf">test_voltage_error</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_voltage_error</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Verify VoltageError message.</span>
 <span class="sd">        :return:</span>

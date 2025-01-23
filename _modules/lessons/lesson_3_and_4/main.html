@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>lessons.lesson_3_and_4.main &mdash; PiPico W Training  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
 
   
@@ -80,8 +80,8 @@
 <span class="sd"># https://www.youtube.com/watch?v=P1dzHNgAtvg&amp;list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&amp;index=4</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>  <span class="c1"># pylint: disable=import-error</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">machine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pin</span>  <span class="c1"># pylint: disable=import-error</span>
 
 <span class="n">PIN1</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
 <span class="n">PIN2</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
@@ -111,7 +111,7 @@
 
 <div class="viewcode-block" id="get_val">
 <a class="viewcode-back" href="../../../lessons.lesson_3_and_4.html#lessons.lesson_3_and_4.main.get_val">[docs]</a>
-<span class="k">def</span> <span class="nf">get_val</span><span class="p">(</span><span class="n">n_val</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_val</span><span class="p">(</span><span class="n">n_val</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Convert TRUE to 1 and FALSE to 0</span>
 <span class="sd">    :param n_val:</span>
@@ -123,7 +123,7 @@
 
 <div class="viewcode-block" id="set_pin_val">
 <a class="viewcode-back" href="../../../lessons.lesson_3_and_4.html#lessons.lesson_3_and_4.main.set_pin_val">[docs]</a>
-<span class="k">def</span> <span class="nf">set_pin_val</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">set_pin_val</span><span class="p">(</span><span class="n">pin</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Set Pin value -&gt; ON/OFF</span>
 <span class="sd">    :param pin:</span>
@@ -136,7 +136,7 @@
 
 <div class="viewcode-block" id="set_all_pins">
 <a class="viewcode-back" href="../../../lessons.lesson_3_and_4.html#lessons.lesson_3_and_4.main.set_all_pins">[docs]</a>
-<span class="k">def</span> <span class="nf">set_all_pins</span><span class="p">(</span><span class="n">pin_vals</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">set_all_pins</span><span class="p">(</span><span class="n">pin_vals</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Set value for all pins</span>
 <span class="sd">    :param pin_vals:</span>

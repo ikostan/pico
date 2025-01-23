@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>tests.lesson_5_test &mdash; PiPico W Training  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
 
   
@@ -76,9 +76,9 @@
 <span class="sd">Unit testing for lesson 5</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">import</span> <span class="nn">unittest</span>
-<span class="kn">from</span> <span class="nn">unittest.mock</span> <span class="kn">import</span> <span class="n">MagicMock</span>
-<span class="kn">from</span> <span class="nn">lessons.lesson_5.main</span> <span class="kn">import</span> <span class="p">(</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">unittest</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">unittest.mock</span><span class="w"> </span><span class="kn">import</span> <span class="n">MagicMock</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">lessons.lesson_5.main</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
     <span class="n">PIN_READ</span><span class="p">,</span>
     <span class="n">SLOPE</span><span class="p">,</span>
     <span class="n">X_MIN</span><span class="p">,</span>
@@ -87,14 +87,14 @@
 
 <div class="viewcode-block" id="Lesson5TestCase">
 <a class="viewcode-back" href="../../tests.html#tests.lesson_5_test.Lesson5TestCase">[docs]</a>
-<span class="k">class</span> <span class="nc">Lesson5TestCase</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Lesson5TestCase</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Lesson 5 test case</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Lesson5TestCase.test_voltage_0">
 <a class="viewcode-back" href="../../tests.html#tests.lesson_5_test.Lesson5TestCase.test_voltage_0">[docs]</a>
-    <span class="k">def</span> <span class="nf">test_voltage_0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_voltage_0</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Reading Analog Voltage -&gt; min value is 96</span>
 <span class="sd">        Should be converted to 0 volt</span>
@@ -109,7 +109,7 @@
 
 <div class="viewcode-block" id="Lesson5TestCase.test_voltage_mid_value">
 <a class="viewcode-back" href="../../tests.html#tests.lesson_5_test.Lesson5TestCase.test_voltage_mid_value">[docs]</a>
-    <span class="k">def</span> <span class="nf">test_voltage_mid_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_voltage_mid_value</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Reading Analog Voltage -&gt; mid-value</span>
 <span class="sd">        Should be converted to 1.65 volt</span>
@@ -124,7 +124,7 @@
 
 <div class="viewcode-block" id="Lesson5TestCase.test_voltage_3_3">
 <a class="viewcode-back" href="../../tests.html#tests.lesson_5_test.Lesson5TestCase.test_voltage_3_3">[docs]</a>
-    <span class="k">def</span> <span class="nf">test_voltage_3_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_voltage_3_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Reading Analog Voltage -&gt; max value is 65535</span>
 <span class="sd">        Should be converted to 3.3 volt</span>
