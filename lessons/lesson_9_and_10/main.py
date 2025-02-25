@@ -5,6 +5,7 @@ https://www.youtube.com/watch?v=GXA1Y6lA14A&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyA
 Raspberry Pi Pico W LESSON 10: Create a Dimmable LED in Micropython
 https://www.youtube.com/watch?v=DJhoUklKidc&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=11
 """
+from builtins import Exception
 from time import sleep
 from machine import (PWM, Pin)  # pylint: disable=import-error
 
