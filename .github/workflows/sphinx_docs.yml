@@ -3,14 +3,6 @@
 name: Deploy Sphinx documentation to GitHub Pages
 
 on:  # yamllint disable-line rule:truthy
-  pull_request_target:
-    branches-ignore:
-      - testing
-    types:
-      - opened
-      - edited
-      - synchronize
-      - reopened
   workflow_call:
 
 permissions:
