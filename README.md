@@ -22,7 +22,7 @@ lessons list is [here](https://github.com/ikostan/pico/tree/master/lessons).
 
 ### Raspberry Pi Pico W
 
-![Raspberry Pi Pico W Case](https://github.com/ikostan/pico/blob/master/img/Raspberry-Pi-Pico-Case.png)
+![PiPico W Picture](https://github.com/ikostan/pico/blob/master/img/Raspberry-Pi-Pico-Case.png)
 
 The Raspberry Pi Pico W is a low-cost, high-performance microcontroller board
 that adds onboard 2.4GHz wireless interfaces (802.11n) while retaining the Pico

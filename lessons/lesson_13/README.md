@@ -1,6 +1,6 @@
 # [Raspberry Pi Pico W LESSON 13: User Specified RGB LED Colors Using Micropython](https://www.youtube.com/watch?v=FLMPjwXqXVw&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=13)
 
-![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/lesson_13.gif)
+![PiPico W Picture](https://github.com/ikostan/pico/blob/master/img/lesson_13.gif)
 
 [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 

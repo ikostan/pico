@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
+          python -m pip install -r requirements.txt
       - name: Install Sphinx
         run: |
           python -m pip install sphinx
@@ -35,14 +35,17 @@ jobs:
           python -m pip install docutils
       - name: Check Sphinx version
         run: |
-          sphinx-build --version
-          sphinx-quickstart --version
+          python -m sphinx-build --version
+          python -m sphinx-quickstart --version
       - name: Check whether MyST parser is available
         run:
           python -c "import myst_parser"
       - name: Sphinx build
         run: |
-          sphinx-build docs docs/_build --verbose
+          python -m sphinx-build docs docs/_build --verbose
+      - name: Fix broken links for Sphinks docs
+        run: |
+          ls
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
