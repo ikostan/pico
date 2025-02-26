@@ -44,8 +44,8 @@ included in all modern versions of Python.
 1. Open CMD
 2. Run:
 ```bash
-python -m sphinx-build --version
-python -m sphinx-quickstart --version
+sphinx-build --version
+sphinx-quickstart --version
 ```
 
 ### Check whether MyST parser is available
@@ -61,7 +61,7 @@ python -c "import myst_parser"
 1. Open CMD
 2. Run:
 ```bash
-python -m sphinx-build docs docs/_build --verbose
+sphinx-build docs docs/_build --verbose
 ```
 
 ### Auto-Generated Python Documentation with Sphinx
