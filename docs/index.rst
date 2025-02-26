@@ -19,7 +19,7 @@ documentation for details.
    lessons
    tests
    wokwi
-   sphinx
+   docs
 
 Indices and tables
 ==================

@@ -1,5 +1,5 @@
-README
-======
+Docs Readme
+===========
 
 .. figure:: ../img/sphinxdoclogo.png
 .. include:: ../docs/README.md

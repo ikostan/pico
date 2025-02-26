@@ -1,5 +1,5 @@
-sphinx docs
-==========
+Docs
+====
 
 Subpackages
 -----------
@@ -7,7 +7,7 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   sphinx.readme
+   docs.readme
 
 Module contents
 ---------------
