@@ -1,6 +1,6 @@
 # Documentation for PiPico W training
 
-![Sphinx Logo](https://github.com/ikostan/pico/blob/master/img/sphinxdoc.png)
+![Sphinx Logo](https://github.com/ikostan/pico/blob/master/img/sphinxdoclogo.png)
 
 ## About
 
