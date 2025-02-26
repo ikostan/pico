@@ -9,6 +9,18 @@ including HTML, LaTeX (for PDF), ePub, Texinfo, and [more](https://www.sphinx-do
 
 Github workflow for creating Sphinx docs can be found [here](https://github.com/ikostan/pico/blob/master/.github/workflows/sphinx_docs.yml).
 
+### Defining document structure
+
+Sphinx comes with a script called sphinx-quickstart that sets up a source
+directory and creates a default conf.py with the most useful configuration
+values from a few questions it asks you.
+
+1. Open CMD:
+2. Run:
+```bash
+sphinx-quickstart
+```
+
 ### Install Sphinx from PyPI package
 
 Sphinx packages are published on the Python Package Index (PyPI).
@@ -17,7 +29,7 @@ included in all modern versions of Python.
 
 1. Open CMD
 2. Run:
-```
+```bash
  python -m pip install -U sphinx
  python -m pip install sphinx_rtd_theme
  python -m pip install --upgrade myst-parser
@@ -29,7 +41,7 @@ included in all modern versions of Python.
 
 1. Open CMD
 2. Run:
-```
+```bash
 python -m sphinx-build --version
 python -m sphinx-quickstart --version
 ```
@@ -37,12 +49,18 @@ python -m sphinx-quickstart --version
 ### Check whether MyST parser is available
 
 1. Open CMD
-2. Run: ```python -c "import myst_parser"```
+2. Run: 
+```bash
+python -c "import myst_parser"
+```
 
 ### Sphinx build
 
 1. Open CMD
-2. Run: ```python -m sphinx-build docs docs/_build --verbose```
+2. Run:
+```bash
+python -m sphinx-build docs docs/_build --verbose
+```
 
 ### Auto-Generated Python Documentation with Sphinx
 
@@ -50,11 +68,25 @@ Step by step:
 
 1. Open CMD
 2. Go to docs directory
-3. Run: ```make clean```
-4. Run: ```sphinx-apidoc -F -P -o . ..```
+3. Run: 
+```bash 
+make clean
+```
+4. Run: 
+```bash
+sphinx-apidoc -F -P -o . ..
+```
 5. Add doc files name into relevant doc rst file
-6. Run: ```make html```
+6. Run: 
+```bash
+make html
+```
 
 ### Online Documentation
 
 Tech documentation is available [here](https://ikostan.github.io/pico/).
+
+### Source list
+
+- [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
+- [Fix missing images when using include directives](https://stackoverflow.com/questions/50261137/docs-missing-images-when-using-include-directives-rst-sphinx)
