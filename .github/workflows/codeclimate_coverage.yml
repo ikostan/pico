@@ -29,7 +29,6 @@ jobs:
       - name: Check pytest version
         run: |
           python -m pytest --version
-          python -m pytest-cov --version
       - name: Check PYTHONPATH
         run: |
           pwd
