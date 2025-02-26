@@ -1,5 +1,7 @@
 # Documentation for PiPico W training
 
+![Sphinx Logo](https://github.com/ikostan/pico/blob/master/img/sphinxdoc.png)
+
 ## About
 
 Sphinx generate documentation in the preferred formats of your audience,
@@ -66,18 +68,18 @@ python -m sphinx-build docs docs/_build --verbose
 
 Step by step:
 
-1. Open CMD
-2. Go to docs directory
-3. Run: 
+- Open CMD
+- Go to `docs` directory
+- Run:
 ```bash 
 make clean
 ```
-4. Run: 
+- Run: 
 ```bash
 sphinx-apidoc -F -P -o . ..
 ```
-5. Add doc files name into relevant doc rst file
-6. Run: 
+- Add doc files name into relevant doc rst file
+- Run: 
 ```bash
 make html
 ```
