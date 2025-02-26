@@ -42,10 +42,10 @@ jobs:
           python -c "import myst_parser"
       - name: Sphinx build
         run: |
-          python -m sphinx-build docs docs/_build --verbose
+          sphinx-build docs docs/_build --verbose
       - name: Fix broken links for Sphinks docs
         run: |
-          ls
+          echo "Not implemented"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
