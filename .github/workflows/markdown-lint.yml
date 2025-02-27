@@ -2,12 +2,6 @@
 name: 'Markdown Lint'
 
 on:  # yamllint disable-line rule:truthy
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - reopened
-      - synchronize
   workflow_call:
 
 permissions:

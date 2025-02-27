@@ -17,8 +17,9 @@ documentation for details.
 
    readme
    lessons
-   tests.module
+   tests
    wokwi
+   docs
 
 Indices and tables
 ==================

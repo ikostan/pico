@@ -1,6 +1,6 @@
 # [Raspberry Pi Pico W LESSON 11: Controlling a Dimmable LED with a Potentiometer](https://www.youtube.com/watch?v=MCo5nXAKyUU&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=12)
 
-![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/11.gif)
+![PiPico W Picture](https://github.com/ikostan/pico/blob/master/img/11.gif)
 
 [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 

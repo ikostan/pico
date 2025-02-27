@@ -1,6 +1,6 @@
 # [Raspberry Pi Pico W LESSON 2: Understanding and Using Breadboards](https://www.youtube.com/watch?v=eGdrtikKc5U&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=2)
 
-![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/wokwi_pi_pico_w_led_breadboard.gif)
+![PiPico W Picture](https://github.com/ikostan/pico/blob/master/img/wokwi_pi_pico_w_led_breadboard.gif)
 
 [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 

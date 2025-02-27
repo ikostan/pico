@@ -1,6 +1,6 @@
 # [Raspberry Pi Pico W LESSON 12: Understanding and Controlling an RGB LED in MicroPython](https://www.youtube.com/watch?v=yZkx-KWbATY&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=16)
 
-![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/12.gif)
+![PiPico W Picture](https://github.com/ikostan/pico/blob/master/img/12.gif)
 
 [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 

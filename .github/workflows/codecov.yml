@@ -2,12 +2,6 @@
 name: Codecov Coverage Report
 
 on:  # yamllint disable-line rule:truthy
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - synchronize
-      - reopened
   # Why is Codecov upload step in GitHub Actions not finding the token?
   # https://stackoverflow.com/questions/78298827/why-is-codecov-upload-step-in-github-actions-not-finding-the-token
   workflow_call:

@@ -1,6 +1,6 @@
 # Raspberry Pi Pico W LESSON 9 and 10: using PWM (Pulse Width Modulation)
 
-![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/pwm.gif)
+![PiPico W Picture](https://github.com/ikostan/pico/blob/master/img/pwm.gif)
 
 [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 

@@ -3,14 +3,6 @@
 name: Deploy Sphinx documentation to GitHub Pages
 
 on:  # yamllint disable-line rule:truthy
-  pull_request_target:
-    branches-ignore:
-      - testing
-    types:
-      - opened
-      - edited
-      - synchronize
-      - reopened
   workflow_call:
 
 permissions:
@@ -33,10 +25,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
+          python -m pip install -r requirements.txt
       - name: Install Sphinx
         run: |
-          python -m pip install sphinx
+          python -m pip install -U sphinx
           python -m pip install sphinx_rtd_theme
           python -m pip install --upgrade myst-parser
           python -m pip install commonmark
@@ -51,6 +43,9 @@ jobs:
       - name: Sphinx build
         run: |
           sphinx-build docs docs/_build --verbose
+      - name: Fix broken links for Sphinx docs
+        run: |
+          echo "Not implemented"
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

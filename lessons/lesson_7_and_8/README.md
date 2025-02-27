@@ -1,6 +1,6 @@
 # [Raspberry Pi Pico W LESSON 7 and 8: Controlling 3 LED with a Potentiometer in Micropython](https://www.youtube.com/watch?v=YqvcSnGd_HQ&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=7)
 
-![PiPico W LED Breadboard](https://github.com/ikostan/pico/blob/master/img/potentiometer_to_led.gif)
+![PiPico W Picture](https://github.com/ikostan/pico/blob/master/img/potentiometer_to_led.gif)
 
 [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 
