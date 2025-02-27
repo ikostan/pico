@@ -22,6 +22,7 @@ author = 'Egor Kostan'
 extensions = ['sphinx.ext.todo',
               'sphinx.ext.viewcode',
               'sphinx.ext.autodoc',
+              'sphinx.ext.autosummary',
               'sphinx.ext.mathjax',
               'myst_parser']
 
