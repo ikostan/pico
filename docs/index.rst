@@ -11,7 +11,6 @@ PiPico W Training Documentation
    :caption: Contents:
 
    readme
-   summary
    lessons
    tests
    wokwi

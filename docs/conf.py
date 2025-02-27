@@ -19,7 +19,8 @@ author = 'Egor Kostan'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.todo',
+extensions = ['sphinx.ext.duration',
+              'sphinx.ext.todo',
               'sphinx.ext.viewcode',
               'sphinx.ext.autodoc',
               'sphinx.ext.autosummary',
