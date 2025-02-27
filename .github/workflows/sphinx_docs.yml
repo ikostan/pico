@@ -43,7 +43,7 @@ jobs:
       - name: Sphinx build
         run: |
           sphinx-build docs docs/_build --verbose
-      - name: Fix broken links for Sphinks docs
+      - name: Fix broken links for Sphinx docs
         run: |
           echo "Not implemented"
       - name: Deploy to GitHub Pages
