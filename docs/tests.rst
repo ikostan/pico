@@ -1,5 +1,5 @@
-tests.module module
-===================
+Testing
+=======
 
 Subpackages
 -----------
