@@ -19,6 +19,7 @@ values from a few questions it asks you.
 
 1. Open CMD:
 2. Run:
+
 ```bash
 sphinx-quickstart
 ```
@@ -31,6 +32,7 @@ included in all modern versions of Python.
 
 1. Open CMD
 2. Run:
+
 ```bash
  python -m pip install -U sphinx
  python -m pip install sphinx_rtd_theme
