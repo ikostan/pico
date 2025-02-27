@@ -43,6 +43,7 @@ included in all modern versions of Python.
 
 1. Open CMD
 2. Run:
+
 ```bash
 sphinx-build --version
 sphinx-quickstart --version
@@ -52,6 +53,7 @@ sphinx-quickstart --version
 
 1. Open CMD
 2. Run: 
+
 ```bash
 python -c "import myst_parser"
 ```
@@ -60,6 +62,7 @@ python -c "import myst_parser"
 
 1. Open CMD
 2. Run:
+
 ```bash
 sphinx-build docs docs/_build --verbose
 ```
@@ -71,15 +74,18 @@ Step by step:
 - Open CMD
 - Go to `docs` directory
 - Run:
+
 ```bash 
 make clean
 ```
 - Run: 
+
 ```bash
 sphinx-apidoc -F -P -o . ..
 ```
 - Add doc files name into relevant doc rst file
 - Run: 
+
 ```bash
 make html
 ```
