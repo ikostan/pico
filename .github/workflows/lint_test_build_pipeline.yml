@@ -2,11 +2,6 @@
 name: Main Build Pipeline
 
 on:  # yamllint disable-line rule:truthy
-  pull_request:
-    branches-ignore:
-      - master
-      - testing
-      - gh-pages
   push:
     branches:
       - master
@@ -46,7 +41,7 @@ jobs:
     secrets:
       codecov_token: ${{ secrets.CODECOV_TOKEN }}
   codeclimate:
-    name: Codeclimate Github Action
+    name: CodeClimate Github Action
     needs:
       - pytest
     uses: ikostan/pico/.github/workflows/codeclimate_coverage.yml@master
