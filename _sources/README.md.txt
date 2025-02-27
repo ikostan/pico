@@ -80,11 +80,13 @@ Step by step:
 ```bash 
 make clean
 ```
+
 - Run: 
 
 ```bash
 sphinx-apidoc -F -P -o . ..
 ```
+
 - Add doc files name into relevant doc rst file
 - Run: 
 
