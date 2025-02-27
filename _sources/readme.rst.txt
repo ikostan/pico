@@ -1,5 +1,5 @@
-README
-======
+About
+=====
 
 .. figure:: ../img/Raspberry-Pi-Pico-Case.png
 .. include:: ../README.md

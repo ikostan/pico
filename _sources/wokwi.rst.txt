@@ -1,5 +1,5 @@
-wokwi package
-=============
+Wokwi
+=====
 
 Subpackages
 -----------
