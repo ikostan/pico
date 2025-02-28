@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.abspath('..'))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'PiPico W Training'
-copyright = '2024, Egor Kostan'
+copyright = '2025, Egor Kostan'
 author = 'Egor Kostan'
 
 # -- General configuration ---------------------------------------------------
