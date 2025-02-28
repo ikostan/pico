@@ -1,6 +1,6 @@
+tests.readme.rst:3: [redirected permanently] https://codecov.io/gh/ikostan/pico to https://app.codecov.io/gh/ikostan/pico
 readme.rst:3: [redirected permanently] https://codeclimate.com/github/ikostan/pico/test_coverage to https://codeclimate.com/github/ikostan/pico
 readme.rst:3: [redirected permanently] https://codeclimate.com/github/ikostan/pico/maintainability to https://codeclimate.com/github/ikostan/pico
-tests.readme.rst:3: [redirected permanently] https://codecov.io/gh/ikostan/pico to https://app.codecov.io/gh/ikostan/pico
 lessons.lesson_12.readme.rst:3: [broken] https://github.com/ikostan/pico/blob/master/img/12.gif: 404 Client Error: Not Found for url: https://github.com/ikostan/pico/blob/master/img/12.gif
 tests.readme.rst:131: [broken] https://www.atlassian.com/continuous-delivery/software-testing/code-coverage#:~:text=There%27s%20no%20silver%20bullet%20in%20code%20coverage%2C%20and,coverage%20is%20a%20good%20goal%20to%20aim%20for.: Anchor '%3A~%3Atext%3DThere%27s%20no%20silver%20bullet%20in%20code%20coverage%2C%20and%2Ccoverage%20is%20a%20good%20goal%20to%20aim%20for.' not found
 readme.rst:39: [redirected with Found] https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html to https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html
