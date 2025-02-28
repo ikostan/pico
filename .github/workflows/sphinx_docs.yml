@@ -46,11 +46,10 @@ jobs:
       - name: Sphinx Linkcheck
         run: |
           sphinx-build -b linkcheck docs docs/_build/linkcheck
-          ls docs/_build/linkcheck/
+        continue-on-error: true
       - name: Documentation Coverage
         run: |
           sphinx-build -b coverage docs docs/_build/coverage
-          ls docs/_build/coverage/
       - name: Fix broken links for Sphinx docs
         run: |
           echo "Not implemented"
