@@ -42,7 +42,7 @@ jobs:
           python -c "import myst_parser"
       - name: Sphinx build
         run: |
-          sphinx-build docs docs/_build --verbose
+          sphinx-build -b coverage . docs docs/_build --verbose
       - name: Fix broken links for Sphinx docs
         run: |
           echo "Not implemented"

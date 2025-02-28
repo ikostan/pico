@@ -11,19 +11,6 @@ including HTML, LaTeX (for PDF), ePub, Texinfo, and [more](https://www.sphinx-do
 
 Github workflow for creating Sphinx docs can be found [here](https://github.com/ikostan/pico/blob/master/.github/workflows/sphinx_docs.yml).
 
-### Defining document structure
-
-Sphinx comes with a script called sphinx-quickstart that sets up a source
-directory and creates a default conf.py with the most useful configuration
-values from a few questions it asks you.
-
-1. Open CMD:
-2. Run:
-
-```bash
-sphinx-quickstart
-```
-
 ### Install Sphinx from PyPI package
 
 Sphinx packages are published on the Python Package Index (PyPI).
@@ -58,6 +45,19 @@ sphinx-quickstart --version
 
 ```bash
 python -c "import myst_parser"
+```
+
+### Defining document structure
+
+Sphinx comes with a script called sphinx-quickstart that sets up a source
+directory and creates a default conf.py with the most useful configuration
+values from a few questions it asks you.
+
+1. Open CMD:
+2. Run:
+
+```bash
+sphinx-quickstart
 ```
 
 ### Sphinx build

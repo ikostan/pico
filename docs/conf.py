@@ -20,6 +20,7 @@ author = 'Egor Kostan'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['sphinx.ext.duration',
+              'sphinx.ext.coverage',
               'sphinx.ext.todo',
               'sphinx.ext.viewcode',
               'sphinx.ext.autodoc',
