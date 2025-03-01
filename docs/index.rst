@@ -10,11 +10,9 @@ PiPico W Training Documentation
    :maxdepth: 4
    :caption: Contents:
 
-   readme
    lessons
    tests
    wokwi
-   docs
 
 Indices and tables
 ==================
