@@ -43,8 +43,8 @@ jobs:
           python -c "import myst_parser"
       - name: Sphinx Build
         run: |
-          sphinx-build ./docs ./docs/_build --verbose
-          ls ./docs/_build/_modules/lessons/lesson_1
+          sphinx-build docs docs/_build --verbose
+          ls docs/_build/
       - name: Sphinx Linkcheck
         run: |
       #    sphinx-build -b linkcheck docs docs/_build/linkcheck
