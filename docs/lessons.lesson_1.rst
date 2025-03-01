@@ -1,23 +1,23 @@
-lessons.lesson_1 package
+lessons.lesson\_1 package
 =========================
 
 Submodules
 ----------
 
-lessons.lesson_1.main module
+lessons.lesson\_1.main module
 -----------------------------
 
 .. automodule:: lessons.lesson_1.main
    :members:
-   :undoc-members:
-   :show-inheritance:
    :private-members:
+   :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: lessons.lesson_1
    :members:
-   :undoc-members:
-   :show-inheritance:
    :private-members:
+   :show-inheritance:
+   :undoc-members:

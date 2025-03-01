@@ -7,23 +7,22 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   lessons.readme
-   lessons.lesson_1.module
-   lessons.lesson_2.module
-   lessons.lesson_3_and_4.module
-   lessons.lesson_5.module
-   lessons.lesson_6.module
-   lessons.lesson_7_and_8.module
-   lessons.lesson_9_and_10.module
-   lessons.lesson_11.module
-   lessons.lesson_12.module
-   lessons.lesson_13.module
+   lessons.lesson_1
+   lessons.lesson_11
+   lessons.lesson_12
+   lessons.lesson_13
+   lessons.lesson_2
+   lessons.lesson_3_and_4
+   lessons.lesson_5
+   lessons.lesson_6
+   lessons.lesson_7_and_8
+   lessons.lesson_9_and_10
 
 Module contents
 ---------------
 
 .. automodule:: lessons
    :members:
-   :undoc-members:
-   :show-inheritance:
    :private-members:
+   :show-inheritance:
+   :undoc-members:
