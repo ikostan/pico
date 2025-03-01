@@ -5,13 +5,10 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# import os
-from pathlib import Path
+import os
 import sys
 import sphinx_pdj_theme
-
-sys.path.insert(0, str(Path('..', 'src').resolve()))
-# sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
