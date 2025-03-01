@@ -44,7 +44,6 @@ jobs:
       - name: Sphinx Build
         run: |
           sphinx-build docs docs/_build --verbose
-          ls docs/_build/
       - name: Sphinx Linkcheck
         run: |
       #    sphinx-build -b linkcheck docs docs/_build/linkcheck

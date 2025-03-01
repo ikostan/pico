@@ -4,7 +4,7 @@ wokwi.wokwi\_pico\_w package
 Submodules
 ----------
 
-wokwi.wokwi\_pico\_w.main module
+wokwi.wokwi_pico_w.main module
 --------------------------------
 
 .. automodule:: wokwi.wokwi_pico_w.main
