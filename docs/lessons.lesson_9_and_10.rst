@@ -1,10 +1,10 @@
-lessons.lesson\_9\_and\_10 package
+lessons.lesson_9_and_10 package
 ==================================
 
 Submodules
 ----------
 
-lessons.lesson\_9\_and\_10.main module
+lessons.lesson_9_and_10.main module
 --------------------------------------
 
 .. automodule:: lessons.lesson_9_and_10.main
