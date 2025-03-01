@@ -1,4 +1,4 @@
-lessons.lesson\_2 module
+lessons.lesson_2 module
 ========================
 
 Subpackages

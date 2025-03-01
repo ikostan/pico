@@ -1,10 +1,10 @@
-lessons.lesson\_2 package
+lessons.lesson_2 package
 =========================
 
 Submodules
 ----------
 
-lessons.lesson\_2.main module
+lessons.lesson_2.main module
 -----------------------------
 
 .. automodule:: lessons.lesson_2.main
