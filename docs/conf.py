@@ -59,4 +59,4 @@ source_suffix = {'.rst': 'restructuredtext',
 # https://pradyunsg.me/furo/customisation/logo/
 html_theme_options = {
     "light_logo": "logo-light-mode.png",
-    "dark_logo": "logo-dark-mode.png",}
+    "dark_logo": "logo-dark-mode.png"}
