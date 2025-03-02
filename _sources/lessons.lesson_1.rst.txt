@@ -4,7 +4,12 @@ Lesson #1
 Submodules
 ----------
 
-lessons.lesson\_1.main module
+Readme
+======
+
+.. mdinclude:: ../lessons/lesson_1/README.md
+
+Lesson #1 main module
 -----------------------------
 
 .. automodule:: lessons.lesson_1.main
