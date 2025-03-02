@@ -46,7 +46,7 @@ jobs:
           sphinx-build docs docs/_build --verbose
       - name: Copy static folder
         run: |
-          cp -r docs/_static > docs/_build/_static
+          cp -r docs/_static docs/_build/_static
       - name: List all static files
         run: |
           ls docs/_build/_static
