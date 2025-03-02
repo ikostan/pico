@@ -5,7 +5,7 @@ Submodules
 ----------
 
 Readme
-======
+------
 
 .. mdinclude:: ../lessons/lesson_1/README.md
 
