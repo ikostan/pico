@@ -40,7 +40,8 @@ exclude_patterns = ['_build',
 
 # PDJ Theme
 # https://sphinx-themes.org/sample-sites/sphinx-pdj-theme/
-html_theme = 'sphinx_pdj_theme'
+# html_theme = 'sphinx_pdj_theme'
+html_theme = 'furo'
 html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
 # Source:
@@ -50,3 +51,10 @@ html_static_path = ['_static',
 
 source_suffix = {'.rst': 'restructuredtext',
                  '.md': 'markdown'}
+
+# Different logos for light and dark mode
+# https://pradyunsg.me/furo/customisation/logo/
+html_theme_options = {
+    "light_logo": "logo-light-mode.png",
+    "dark_logo": "logo-dark-mode.png",
+}
