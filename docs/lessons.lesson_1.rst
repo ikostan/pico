@@ -7,7 +7,8 @@ Submodules
 Readme
 ------
 
-.. mdinclude:: ../lessons/lesson_1/README.md
+.. include:: README.md
+   :parser: myst_parser.sphinx_
 
 Lesson #1 main module
 -----------------------------
