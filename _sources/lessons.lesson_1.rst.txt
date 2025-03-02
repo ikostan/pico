@@ -1,5 +1,5 @@
-lessons.lesson\_1 package
-=========================
+Lesson #1
+=========
 
 Submodules
 ----------

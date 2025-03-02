@@ -1,4 +1,4 @@
-lessons package
+Lessons package
 ===============
 
 Subpackages
