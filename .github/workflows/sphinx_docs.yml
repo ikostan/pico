@@ -41,12 +41,12 @@ jobs:
       - name: Check whether MyST parser is available
         run:
           python -c "import myst_parser"
-      - name: Copy static folder
-        run: |
-          cp -r docs/_static > docs/_build/_static
       - name: Sphinx Build
         run: |
           sphinx-build docs docs/_build --verbose
+      - name: Copy static folder
+        run: |
+          cp -r docs/_static > docs/_build/_static
       - name: List all static files
         run: |
           ls docs/_build/_static
