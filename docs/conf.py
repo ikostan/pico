@@ -44,6 +44,7 @@ exclude_patterns = ['_build',
 # html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
 html_theme = 'furo'
+html_logo = "_static/pi_logo.png"
 
 # Source:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path
