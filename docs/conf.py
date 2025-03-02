@@ -39,9 +39,11 @@ exclude_patterns = ['_build',
 
 # PDJ Theme
 # https://sphinx-themes.org/sample-sites/sphinx-pdj-theme/
+# import sphinx_pdj_theme
 # html_theme = 'sphinx_pdj_theme'
+# html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
+
 html_theme = 'furo'
-html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
 # Source:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path
