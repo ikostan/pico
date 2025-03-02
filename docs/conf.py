@@ -44,12 +44,13 @@ exclude_patterns = ['_build',
 # html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
 html_theme = 'furo'
-html_logo = "pi_logo.jpeg"
+html_logo = "logo.jpeg"
 
 # Source:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path
 html_static_path = ['_static',
-                    '_static/.htaccess']
+                    '_static/.htaccess',
+                    '_static/logo.jpeg']
 
 source_suffix = {'.rst': 'restructuredtext',
                  '.md': 'markdown'}
