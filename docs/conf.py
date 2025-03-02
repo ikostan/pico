@@ -44,7 +44,6 @@ exclude_patterns = ['_build',
 # html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
 
 html_theme = 'furo'
-html_logo = "logo.jpeg"
 
 # Source:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path
@@ -57,5 +56,5 @@ source_suffix = {'.rst': 'restructuredtext',
 # Different logos for light and dark mode
 # https://pradyunsg.me/furo/customisation/logo/
 html_theme_options = {
-    "light_logo": "logo.jpeg",
-    "dark_logo": "logo.jpeg"}
+    "light_logo": "logo.png",
+    "dark_logo": "logo.png"}
