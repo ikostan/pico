@@ -49,8 +49,7 @@ html_logo = "logo.jpeg"
 # Source:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path
 html_static_path = ['_static',
-                    '_static/.htaccess',
-                    '_static/logo.jpeg']
+                    '_static/.htaccess']
 
 source_suffix = {'.rst': 'restructuredtext',
                  '.md': 'markdown'}
@@ -58,5 +57,5 @@ source_suffix = {'.rst': 'restructuredtext',
 # Different logos for light and dark mode
 # https://pradyunsg.me/furo/customisation/logo/
 html_theme_options = {
-    "light_logo": "logo-light-mode.png",
-    "dark_logo": "logo-dark-mode.png"}
+    "light_logo": "logo.jpeg",
+    "dark_logo": "logo.jpeg"}
