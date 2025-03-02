@@ -3,7 +3,7 @@
    :parser: myst_parser.sphinx_
 
 Micropython code
-^^^^^^^^^^^^^^^^
+""""""""""""""""
 
 .. automodule:: lessons.lesson_1.main
    :members:
@@ -12,7 +12,7 @@ Micropython code
    :undoc-members:
 
 Module contents
-^^^^^^^^^^^^^^^
+"""""""""""""""
 
 .. automodule:: lessons.lesson_1
    :members:
