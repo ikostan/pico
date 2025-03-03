@@ -6,9 +6,8 @@
    :aspect: 4:3
    :align: center
 
-""""""""""""""""
 Micropython code
-""""""""""""""""
+----------------
 
 .. automodule:: lessons.lesson_1.main
    :members:
