@@ -5,7 +5,7 @@ Subpackages
 -----------
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
    lessons.readme
    lessons.lesson_1
@@ -18,12 +18,3 @@ Subpackages
    lessons.lesson_11
    lessons.lesson_12
    lessons.lesson_13
-
-Module contents
----------------
-
-.. automodule:: lessons
-   :members:
-   :private-members:
-   :show-inheritance:
-   :undoc-members:
