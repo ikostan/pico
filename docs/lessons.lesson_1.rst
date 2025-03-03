@@ -6,19 +6,11 @@
    :aspect: 4:3
    :align: center
 
+""""""""""""""""
 Micropython code
-----------------
+""""""""""""""""
 
 .. automodule:: lessons.lesson_1.main
-   :members:
-   :private-members:
-   :show-inheritance:
-   :undoc-members:
-
-Module contents
----------------
-
-.. automodule:: lessons.lesson_1
    :members:
    :private-members:
    :show-inheritance:
