@@ -1,11 +1,8 @@
 Lessons package
 ===============
 
-Subpackages
------------
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    lessons.readme
    lessons.lesson_1
