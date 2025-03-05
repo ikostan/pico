@@ -9,6 +9,7 @@
         <title>Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners - PiPico W Training documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=354aac6f" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=302659d7" />
     
     
@@ -178,7 +179,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -207,8 +208,9 @@
 <li class="toctree-l1"><a class="reference internal" href="readme.html">PiPico W Training</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="lessons.html">Lessons package</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Lessons package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="lessons.readme.html">Raspberry Pi Pico W Lessons List</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-lessons.lesson_1.main">Micropython code</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">check_toggle_val()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lessons.lesson_1.main.toggle_is_on"><code class="docutils literal notranslate"><span class="pre">toggle_is_on()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lessons.lesson_1.main.toggle_led"><code class="docutils literal notranslate"><span class="pre">toggle_led()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="lessons.lesson_2.html">lessons.lesson_2 package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lessons.lesson_3_and_4.html">lessons.lesson_3_and_4 package</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lessons.lesson_5.html">lessons.lesson_5 package</a></li>
@@ -260,13 +262,15 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="raspberry-pi-pico-w-lesson-1-write-your-first-program-for-absolute-beginners">
+          <blockquote>
+<div><div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">README</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">YOUTUBE</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">MICROPYTHON CODE</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><section id="raspberry-pi-pico-w-lesson-1-write-your-first-program-for-absolute-beginners">
 <h1><a class="reference external" href="https://www.youtube.com/watch?v=SL4_oU9t8Ss&amp;amp;list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&amp;amp;index=1">Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners</a><a class="headerlink" href="#raspberry-pi-pico-w-lesson-1-write-your-first-program-for-absolute-beginners" title="Link to this heading">¶</a></h1>
 <p><img alt="PiPico W Picture" src="https://github.com/ikostan/pico/blob/master/img/wokwi_pi_pico_w_led.gif" /></p>
 <p><a class="reference external" href="https://github.com/ikostan/pico/tree/master/wokwi">MicroPython Simulation in Wokwi for VS Code</a></p>
@@ -287,11 +291,9 @@ by <a class="reference external" href="https://www.youtube.com/c/mcwhorpj/playli
 </section>
 </section>
 </section>
-<div class="video_wrapper align-center" style="text-align: center">
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="video_wrapper align-center" style="text-align: center">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/SL4_oU9t8Ss" style="border: 0; height: 450px; width: 560px">
-</iframe></div><section id="module-lessons.lesson_1.main">
-<span id="micropython-code"></span><h1>Micropython code<a class="headerlink" href="#module-lessons.lesson_1.main" title="Link to this heading">¶</a></h1>
-<p>Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners
+</iframe></div></div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p id="module-lessons.lesson_1.main">Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners
 <a class="reference external" href="https://www.youtube.com/watch?v=SL4_oU9t8Ss&amp;list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5">https://www.youtube.com/watch?v=SL4_oU9t8Ss&amp;list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5</a></p>
 <dl class="py function">
 <dt class="sig sig-object py" id="lessons.lesson_1.main.check_toggle_val">
@@ -318,7 +320,8 @@ Raises exception in case of invalid val.
 :return:</p>
 </dd></dl>
 
-</section>
+</div></div>
+</div></blockquote>
 
         </article>
       </div>
@@ -363,36 +366,8 @@ Raises exception in case of invalid val.
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            On this page
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners</a><ul>
-<li><a class="reference internal" href="#description">Description</a><ul>
-<li><a class="reference internal" href="#source-material">Source material</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#module-lessons.lesson_1.main">Micropython code</a><ul>
-<li><a class="reference internal" href="#lessons.lesson_1.main.check_toggle_val"><code class="docutils literal notranslate"><span class="pre">check_toggle_val()</span></code></a></li>
-<li><a class="reference internal" href="#lessons.lesson_1.main.toggle_is_on"><code class="docutils literal notranslate"><span class="pre">toggle_is_on()</span></code></a></li>
-<li><a class="reference internal" href="#lessons.lesson_1.main.toggle_led"><code class="docutils literal notranslate"><span class="pre">toggle_led()</span></code></a></li>
-</ul>
-</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>
@@ -401,5 +376,6 @@ Raises exception in case of invalid val.
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=5fa4622c"></script>
+    <script src="_static/tabs.js?v=3030b3cb"></script>
     </body>
 </html>
