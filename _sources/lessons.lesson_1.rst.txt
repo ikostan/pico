@@ -11,5 +11,5 @@
 
     .. tab:: MICROPYTHON CODE
 
-        .. literalinclude:: ../../lessons/lesson_1/main.py
+        .. literalinclude:: ../lessons/lesson_1/main.py
            :language: python
