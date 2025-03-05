@@ -4,33 +4,6 @@ tests package
 Submodules
 ----------
 
-tests.lesson\_11\_test module
------------------------------
-
-.. automodule:: tests.lesson_11_test
-   :members:
-   :private-members:
-   :show-inheritance:
-   :undoc-members:
-
-tests.lesson\_12\_test module
------------------------------
-
-.. automodule:: tests.lesson_12_test
-   :members:
-   :private-members:
-   :show-inheritance:
-   :undoc-members:
-
-tests.lesson\_13\_test module
------------------------------
-
-.. automodule:: tests.lesson_13_test
-   :members:
-   :private-members:
-   :show-inheritance:
-   :undoc-members:
-
 tests.lesson\_1\_test module
 ----------------------------
 
@@ -89,6 +62,33 @@ tests.lesson\_9\_and\_10\_test module
 -------------------------------------
 
 .. automodule:: tests.lesson_9_and_10_test
+   :members:
+   :private-members:
+   :show-inheritance:
+   :undoc-members:
+
+tests.lesson\_11\_test module
+-----------------------------
+
+.. automodule:: tests.lesson_11_test
+   :members:
+   :private-members:
+   :show-inheritance:
+   :undoc-members:
+
+tests.lesson\_12\_test module
+-----------------------------
+
+.. automodule:: tests.lesson_12_test
+   :members:
+   :private-members:
+   :show-inheritance:
+   :undoc-members:
+
+tests.lesson\_13\_test module
+-----------------------------
+
+.. automodule:: tests.lesson_13_test
    :members:
    :private-members:
    :show-inheritance:
