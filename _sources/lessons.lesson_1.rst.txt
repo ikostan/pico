@@ -9,6 +9,11 @@
            :aspect: 4:3
            :align: center
 
+    .. tab:: ANIMATION
+
+        .. image:: wokwi_pi_pico_w_led.gif
+           :alt: Raspberry Pi Pico W
+
     .. tab:: MICROPYTHON CODE
 
         .. literalinclude:: ../lessons/lesson_1/main.py
