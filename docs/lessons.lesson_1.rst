@@ -11,8 +11,5 @@
 
     .. tab:: MICROPYTHON CODE
 
-        .. toctree::
-           :maxdepth: 1
-           :caption: Contents:
-
-           lessons.lesson_1.main
+        .. literalinclude:: ../../lessons/lesson_1/main.py
+           :language: python
