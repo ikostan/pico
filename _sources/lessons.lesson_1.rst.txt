@@ -1,9 +1,7 @@
+.. include:: ../lessons/lesson_1/README.md
+    :parser: myst_parser.sphinx_
+
  .. tabs::
-
-    .. tab:: README
-
-        .. include:: ../lessons/lesson_1/README.md
-           :parser: myst_parser.sphinx_
 
     .. tab:: YOUTUBE
 
@@ -11,7 +9,7 @@
            :aspect: 4:3
            :align: center
 
-    .. code-tab:: MICROPYTHON CODE
+    .. tab:: MICROPYTHON CODE
 
         .. automodule:: lessons.lesson_1.main
            :members:
