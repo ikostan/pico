@@ -1,9 +1,6 @@
 .. include:: ../lessons/lesson_1/README.md
     :parser: myst_parser.sphinx_
 
-
-
-
 .. tabs::
 
     .. tab:: YOUTUBE
@@ -15,6 +12,6 @@
     .. tab:: MICROPYTHON CODE
 
         .. automodule:: lessons.lesson_1.main
+           :members:
            :private-members:
            :show-inheritance:
-           :undoc-members:
