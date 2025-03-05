@@ -11,5 +11,6 @@
 
     .. tab:: MICROPYTHON CODE
 
-        .. automodule:: lessons.lesson_1.main
-           :members:
+        .. toctree::
+           :maxdepth: 1
+           :caption: Contents:
