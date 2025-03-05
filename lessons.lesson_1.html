@@ -272,13 +272,14 @@
 <p><a class="reference external" href="https://github.com/ikostan/pico/tree/master/wokwi">MicroPython Simulation in Wokwi for VS Code</a></p>
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Link to this heading">¶</a></h2>
-<p>In this introductory video, I will show you how to install micropython on the Raspberry
-Pi Pico W, I will show you how to install Thonny, the IDE, on your PC. Thonny will
-allow you to interact with the Pico W. Then in today’s short introductory video,
-you will write your first four programs, and will get a homework assignment. This
-class is for absolute beginners, and I do not assume you already understand the
-material I am presenting. My goal is not to ‘Show Off’, but to genuinely teach you
-how you can do this type of work and projects on your own.</p>
+<p>This video will walk you through the process of setting up MicroPython
+on your Raspberry Pi Pico W and installing Thonny, a user-friendly development
+environment, on your computer. With Thonny, you’ll be able to communicate directly
+with your Pico W. During this brief introductory session, you’ll create your first
+four programs and be given a homework task to complete. The class is perfect for
+total beginners—no prior experience is needed. My aim is to empower you with
+the skills to tackle these kinds of projects on your own, in a supportive and
+approachable way.</p>
 <p><a class="reference external" href="https://wokwi.com/projects/399258088215189505">Same project on WOKWI</a></p>
 <section id="source-material">
 <h3>Source material<a class="headerlink" href="#source-material" title="Link to this heading">¶</a></h3>
@@ -288,7 +289,7 @@ by <a class="reference external" href="https://www.youtube.com/c/mcwhorpj/playli
 </section>
 </section>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">YOUTUBE</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">MICROPYTHON CODE</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="video_wrapper align-center" style="text-align: center">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">YOUTUBE</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">MICROPYTHON CODE</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">WOKWI DIAGRAM</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="video_wrapper align-center" style="text-align: center">
 <iframe allowfullscreen="true" src="https://www.youtube.com/embed/SL4_oU9t8Ss" style="border: 0; height: 450px; width: 560px">
 </iframe></div></div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners</span>
@@ -342,6 +343,42 @@ by <a class="reference external" href="https://www.youtube.com/c/mcwhorpj/playli
         <span class="n">toggle_led</span><span class="p">(</span><span class="n">IS_ON</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)</span>
         <span class="n">IS_ON</span> <span class="o">=</span> <span class="n">toggle_is_on</span><span class="p">(</span><span class="n">IS_ON</span><span class="p">)</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Egor Kostan&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;editor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wokwi&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;parts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;board-pi-pico-w&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pico&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;top&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;left&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;attrs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;env&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;micropython-20231227-v1.22.0&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wokwi-led&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;led1&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;top&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-22.8</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;left&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-101.8</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;attrs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;color&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;flip&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;wokwi-resistor&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;r1&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;top&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">90.35</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;left&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-86.4</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;attrs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;220000&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;connections&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;led1:C&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;pico:GND.1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;yellow&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;v0&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;r1:1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;led1:A&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;v0&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">],</span>
+<span class="w">    </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;r1:2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;pico:GP6&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;v0&quot;</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">]</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;dependencies&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div></div>
