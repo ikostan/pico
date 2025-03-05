@@ -11,7 +11,7 @@
 
     .. tab:: ANIMATION
 
-        .. image:: wokwi_pi_pico_w_led.gif
+        .. image:: ../img/wokwi_pi_pico_w_led.gif
            :alt: Raspberry Pi Pico W
 
     .. tab:: MICROPYTHON CODE
