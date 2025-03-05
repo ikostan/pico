@@ -6,13 +6,14 @@
 
 ## Description
 
-In this introductory video, I will show you how to install micropython on the Raspberry
-Pi Pico W, I will show you how to install Thonny, the IDE, on your PC. Thonny will 
-allow you to interact with the Pico W. Then in today's short introductory video,
-you will write your first four programs, and will get a homework assignment. This
-class is for absolute beginners, and I do not assume you already understand the
-material I am presenting. My goal is not to 'Show Off', but to genuinely teach you
-how you can do this type of work and projects on your own.
+This video will walk you through the process of setting up MicroPython 
+on your Raspberry Pi Pico W and installing Thonny, a user-friendly development 
+environment, on your computer. With Thonny, you’ll be able to communicate directly 
+with your Pico W. During this brief introductory session, you’ll create your first 
+four programs and be given a homework task to complete. The class is perfect for 
+total beginners—no prior experience is needed. My aim is to empower you with 
+the skills to tackle these kinds of projects on your own, in a supportive and 
+approachable way.
 
 [Same project on WOKWI](https://wokwi.com/projects/399258088215189505)
 

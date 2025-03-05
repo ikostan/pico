@@ -13,3 +13,8 @@
 
         .. literalinclude:: ../lessons/lesson_1/main.py
            :language: python
+
+    .. tab:: WOKWI DIAGRAM
+
+        .. literalinclude:: ../lessons/lesson_1/diagram.json
+           :language: json
