@@ -26,7 +26,8 @@ extensions = ['sphinx.ext.duration',
               'sphinx.ext.autodoc',
               'sphinx.ext.mathjax',
               'myst_parser',
-              'sphinxcontrib.youtube']
+              'sphinxcontrib.youtube',
+              'sphinx_tabs.tabs']
 
 templates_path = ['_templates']
 

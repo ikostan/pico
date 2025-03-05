@@ -34,6 +34,7 @@ jobs:
           python -m pip install commonmark
           python -m pip install docutils
           python -m pip install sphinxcontrib-youtube
+          python -m pip install sphinx-tabs
       - name: Check Sphinx version
         run: |
           sphinx-build --version
