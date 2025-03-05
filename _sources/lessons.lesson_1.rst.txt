@@ -13,5 +13,3 @@
 
         .. automodule:: lessons.lesson_1.main
            :members:
-           :private-members:
-           :show-inheritance:
