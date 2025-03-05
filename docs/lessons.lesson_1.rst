@@ -14,3 +14,5 @@
         .. toctree::
            :maxdepth: 1
            :caption: Contents:
+
+           lessons.lesson_1.main
