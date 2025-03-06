@@ -44,7 +44,7 @@ jobs:
           python -c "import myst_parser"
       - name: Sphinx Build
         run: |
-          sphinx-build docs docs/_build --verbose
+          sphinx-build -b linkcheck docs docs/_build/linkcheck coverage docs docs/_build/coverage --verbose
       - name: Copy static folder
         run: |
           cp -r docs/_static docs/_build/_static
