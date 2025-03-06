@@ -36,4 +36,4 @@ jobs:
           sphinx-lint -v --list
       - name: Lint RST files
         run: |
-          sphinx-lint -v -e all .\docs
+          sphinx-lint -v -e all docs
