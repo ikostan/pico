@@ -25,6 +25,15 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
+      - name: Install Sphinx and extensions
+        run: |
+          python -m pip install -U sphinx
+          python -m pip install furo
+          python -m pip install --upgrade myst-parser
+          python -m pip install commonmark
+          python -m pip install docutils
+          python -m pip install sphinxcontrib-youtube
+          python -m pip install sphinx-tabs
       - name: Install RST Lint
         run: |
           python -m pip install restructuredtext_lint
