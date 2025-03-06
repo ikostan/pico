@@ -33,4 +33,4 @@ jobs:
           rst-lint --version
       - name: Lint RST files
         run: |
-          rst-lint /docs
+          rst-lint docs
