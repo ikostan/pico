@@ -42,23 +42,19 @@ jobs:
       - name: Check whether MyST parser is available
         run:
           python -c "import myst_parser"
-      - name: Sphinx Build
+      - name: Documentation Coverage
         run: |
-          sphinx-build -b linkcheck docs docs/_build/linkcheck \
-          coverage docs docs/_build/coverage --verbose
+          sphinx-build --verbose -b coverage docs docs/_build/coverage
+      - name: Sphinx Build and Sphinx Linkcheck
+        run: |
+          sphinx-build --verbose -b linkcheck docs docs/_build/linkcheck
       - name: Copy static folder
         run: |
           cp -r docs/_static docs/_build/_static
       - name: List all static files
         run: |
           ls docs/_build/_static
-      - name: Sphinx Linkcheck
-        run: |
-      #    sphinx-build -b linkcheck docs docs/_build/linkcheck
         continue-on-error: true
-      - name: Documentation Coverage
-        run: |
-       #   sphinx-build -b coverage docs docs/_build/coverage
       - name: Fix broken links for Sphinx docs
         run: |
           echo "Not implemented"
