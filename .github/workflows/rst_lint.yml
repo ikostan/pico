@@ -30,7 +30,7 @@ jobs:
           python -m pip install restructuredtext_lint
       - name: Check RST Lint Version
         run: |
-          python -m rst-lint --version
+          rst-lint --version
       - name: Lint RST files
         run: |
-          python -m rst-lint /docs
+          rst-lint /docs
