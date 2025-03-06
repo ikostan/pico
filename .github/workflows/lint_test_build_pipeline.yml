@@ -18,6 +18,9 @@ jobs:
   yaml-lint:
     name: YAML Lint
     uses: ikostan/pico/.github/workflows/yamllint.yml@master
+  rst-lint:
+    name: RST Lint
+    uses: ikostan/pico/.github/workflows/rst_lint.yml@master
   flake8:
     name: Lint with flake8
     uses: ikostan/pico/.github/workflows/flake8.yml@master
@@ -35,6 +38,7 @@ jobs:
       - markdown-lint
       - mypy
       - yaml-lint
+      - rst-lint
     uses: ikostan/pico/.github/workflows/pytest.yml@master
   codecov:
     name: Codecov GitHub Action

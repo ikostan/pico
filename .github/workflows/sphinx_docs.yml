@@ -59,11 +59,6 @@ jobs:
       - name: Fix broken links for Sphinx docs
         run: |
           echo "Not implemented"
-      - name: RST lint
-        run: |
-          python -m pip install restructuredtext_lint
-          python -m rst-lint --version
-          python -m rst-lint /docs
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
