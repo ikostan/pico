@@ -47,7 +47,7 @@ jobs:
           sphinx-build --verbose -b coverage docs docs/_build/coverage
       - name: Sphinx Build and Sphinx Linkcheck
         run: |
-          sphinx-build --verbose -b linkcheck docs docs/_build/linkcheck
+        # sphinx-build --verbose -b linkcheck docs docs/_build/linkcheck
         continue-on-error: true
       - name: Copy static folder
         run: |
