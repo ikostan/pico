@@ -23,12 +23,10 @@ approachable way.
 | 3 | Capacitor  | Smooths out voltage fluctuations to stabilize the circuit.                 | 10µF, 16V (electrolytic)     |
 | 4 | Breadboard | A solder-less platform for building and testing the circuit layout.        | 400 tie-points, 2.54mm pitch |
 | 5 |    Wire    | Connects components on the breadboard to complete the circuit.             | 22 AWG, solid core           |
-<!-- markdownlint-enable MD013 -->
 
 #### [Check it out on WOKWI](https://wokwi.com/projects/399258088215189505)
 
 #### [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 
-#### Source material
-
-[Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5) by [Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
+#### Based on [Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5) by [Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
+<!-- markdownlint-enable MD013 -->
