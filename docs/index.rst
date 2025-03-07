@@ -14,7 +14,6 @@ PiPico W Training Documentation
    lessons
    tests
    wokwi
-   docs
 
 Indices and tables
 ==================

@@ -42,6 +42,9 @@ jobs:
       - name: Check whether MyST parser is available
         run:
           python -c "import myst_parser"
+      - name: Documentation Build
+        run: |
+          sphinx-build --verbose docs docs/_build
       - name: Documentation Coverage
         run: |
           sphinx-build --verbose -b coverage docs docs/_build/coverage
