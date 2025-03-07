@@ -1,4 +1,0 @@
-readme.rst:3: [redirected permanently] https://codeclimate.com/github/ikostan/pico/test_coverage to https://codeclimate.com/github/ikostan/pico
-readme.rst:3: [redirected permanently] https://codeclimate.com/github/ikostan/pico/maintainability to https://codeclimate.com/github/ikostan/pico
-README.md:99: [broken] https://ikostan.github.io/pico/: 404 Client Error: Not Found for url: https://ikostan.github.io/pico/
-readme.rst:39: [redirected with Found] https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html to https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html
