@@ -1,8 +1,6 @@
 # [Raspberry Pi Pico W LESSON 1: Write Your First Program for Absolute Beginners](https://www.youtube.com/watch?v=SL4_oU9t8Ss&list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5&index=1)
 
-![PiPico W Picture](https://github.com/ikostan/pico/blob/master/img/wokwi_pi_pico_w_led.gif)
-
-[MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
+![PiPico W Animation](https://ikostan.github.io/pico/_images/wokwi_pi_pico_w_led.gif)
 
 ## Description
 
@@ -27,9 +25,10 @@ approachable way.
 | 5 |    Wire    | Connects components on the breadboard to complete the circuit.             | 22 AWG, solid core           |
 <!-- markdownlint-enable MD013 -->
 
-[Same project on WOKWI](https://wokwi.com/projects/399258088215189505)
+#### [Check it out on WOKWI](https://wokwi.com/projects/399258088215189505)
 
-### Source material
+#### [MicroPython Simulation in Wokwi for VS Code](https://github.com/ikostan/pico/tree/master/wokwi)
 
-[Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5)
-by [Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
+#### Source material
+
+[Raspberry Pi Pico W Lessons for Absolute Beginners](https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5) by [Paul McWhorter](https://www.youtube.com/c/mcwhorpj/playlists)
