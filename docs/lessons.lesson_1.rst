@@ -9,6 +9,12 @@
            :aspect: 4:3
            :align: center
 
+    .. tab:: HARDWARE
+
+        1. Pi Pico W
+        2. LED
+        3. Some wire
+
     .. tab:: ANIMATION
 
         .. image:: ../img/wokwi_pi_pico_w_led.gif
