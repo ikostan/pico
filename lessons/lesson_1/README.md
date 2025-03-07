@@ -15,6 +15,16 @@ total beginners—no prior experience is needed. My aim is to empower you with
 the skills to tackle these kinds of projects on your own, in a supportive and 
 approachable way.
 
+### Hardware
+
+| # | Component  | Description                                                                | Tech Spec                    |
+|:-:|:----------:|:---------------------------------------------------------------------------|:-----------------------------|
+| 1 | Pi Pico W  | A microcontroller board with Wi-Fi capability, used to control the LED.    | 3.3V operation, RP2040 CPU   |
+| 2 |    LED     | A light-emitting diode that blinks on and off as controlled by the Pico W. | 2V forward voltage, 20mA     |
+| 3 | Capacitor  | Smooths out voltage fluctuations to stabilize the circuit.                 | 10µF, 16V (electrolytic)     |
+| 4 | Breadboard | A solder-less platform for building and testing the circuit layout.        | 400 tie-points, 2.54mm pitch |
+| 5 |    Wire    | Connects components on the breadboard to complete the circuit.             | 22 AWG, solid core           |
+
 [Same project on WOKWI](https://wokwi.com/projects/399258088215189505)
 
 ### Source material
