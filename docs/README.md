@@ -107,7 +107,7 @@ sphinx-apidoc -F -P -o . ..
 make html
 ```
 </details>
-
+---
 ### Online Documentation
 
 Detailed tech documentation is available [here](https://ikostan.github.io/pico/).
