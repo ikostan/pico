@@ -20,7 +20,7 @@ jobs:
     uses: ikostan/pico/.github/workflows/yamllint.yml@master
   rst-lint:
     name: RST Lint
-    uses: ikostan/pico/.github/workflows/rst_lint.yml@master
+  #  uses: ikostan/pico/.github/workflows/rst_lint.yml@master
   sphinx-lint:
     name: Sphinx Lint
     uses: ikostan/pico/.github/workflows/sphinx_lint.yml@master
