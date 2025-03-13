@@ -107,6 +107,7 @@ sphinx-apidoc -F -P -o . ..
 make html
 ```
 </details>
+
 ---
 ### Online Documentation
 
