@@ -35,7 +35,8 @@ included in all modern versions of Python.
 
 <details>
   <summary>Check Sphinx version</summary>
-:-
+  
+
 1. Open CMD
 2. Run:
 
@@ -47,7 +48,8 @@ sphinx-quickstart --version
 
 <details>
   <summary>Check whether MyST parser is available</summary>
-:-
+  
+
 1. Open CMD
 2. Run: 
 
@@ -58,7 +60,8 @@ python -c "import myst_parser"
 
 <details>
   <summary>Defining document structure</summary>
-:-
+  
+
 Sphinx comes with a script called sphinx-quickstart that sets up a source
 directory and creates a default conf.py with the most useful configuration
 values from a few questions it asks you.
@@ -73,7 +76,8 @@ sphinx-quickstart
 
 <details>
   <summary>Sphinx build</summary>
-:-
+  
+
 1. Open CMD
 2. Run:
 
@@ -84,7 +88,8 @@ sphinx-build docs docs/_build --verbose
 
 <details>
   <summary>Auto-Generated Python Documentation with Sphinx</summary>
-:-
+  
+
 Step by step:
 
 - Open CMD
@@ -111,7 +116,8 @@ make html
 
 <details>
   <summary>Furo theme</summary>
-:-
+  
+
 A clean customisable Sphinx documentation theme.
 
 Furo is distributed on PyPI. To use the theme in your Sphinx project:
@@ -131,7 +137,8 @@ html_theme = "furo"
 
 <details>
   <summary>Markdown support</summary>
-:-
+  
+
 To configure your Sphinx project for Markdown support, proceed as follows:
 
 1. Install the Markdown parser MyST-Parser:
