@@ -32,8 +32,9 @@ included in all modern versions of Python.
 ```
 </details>
 
-### Check Sphinx version
-
+<details>
+  <summary>Check Sphinx version</summary>
+<br>
 1. Open CMD
 2. Run:
 
@@ -41,18 +42,22 @@ included in all modern versions of Python.
 sphinx-build --version
 sphinx-quickstart --version
 ```
+</details>
 
-### Check whether MyST parser is available
-
+<details>
+  <summary>Check whether MyST parser is available</summary>
+<br>
 1. Open CMD
 2. Run: 
 
 ```bash
 python -c "import myst_parser"
 ```
+</details>
 
-### Defining document structure
-
+<details>
+  <summary>Defining document structure</summary>
+<br>
 Sphinx comes with a script called sphinx-quickstart that sets up a source
 directory and creates a default conf.py with the most useful configuration
 values from a few questions it asks you.
@@ -63,18 +68,22 @@ values from a few questions it asks you.
 ```bash
 sphinx-quickstart
 ```
+</details>
 
-### Sphinx build
-
+<details>
+  <summary>Sphinx build</summary>
+<br>
 1. Open CMD
 2. Run:
 
 ```bash
 sphinx-build docs docs/_build --verbose
 ```
+</details>
 
-### Auto-Generated Python Documentation with Sphinx
-
+<details>
+  <summary>Auto-Generated Python Documentation with Sphinx</summary>
+<br>
 Step by step:
 
 - Open CMD
@@ -97,6 +106,7 @@ sphinx-apidoc -F -P -o . ..
 ```bash
 make html
 ```
+</details>
 
 ### Online Documentation
 
