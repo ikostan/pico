@@ -16,7 +16,7 @@ Github workflow for creating Sphinx docs can be found [here](https://github.com/
 
 <details>
   <summary>Install Sphinx from PyPI package</summary>
-:-
+
 Sphinx packages are published on the Python Package Index (PyPI).
 The preferred tool for installing packages from PyPI is pip, which is
 included in all modern versions of Python.
@@ -35,7 +35,6 @@ included in all modern versions of Python.
 
 <details>
   <summary>Check Sphinx version</summary>
-  
 
 1. Open CMD
 2. Run:
@@ -48,7 +47,6 @@ sphinx-quickstart --version
 
 <details>
   <summary>Check whether MyST parser is available</summary>
-  
 
 1. Open CMD
 2. Run: 
@@ -60,7 +58,6 @@ python -c "import myst_parser"
 
 <details>
   <summary>Defining document structure</summary>
-  
 
 Sphinx comes with a script called sphinx-quickstart that sets up a source
 directory and creates a default conf.py with the most useful configuration
@@ -76,7 +73,6 @@ sphinx-quickstart
 
 <details>
   <summary>Sphinx build</summary>
-  
 
 1. Open CMD
 2. Run:
@@ -88,7 +84,6 @@ sphinx-build docs docs/_build --verbose
 
 <details>
   <summary>Auto-Generated Python Documentation with Sphinx</summary>
-  
 
 Step by step:
 
@@ -116,7 +111,6 @@ make html
 
 <details>
   <summary>Furo theme</summary>
-  
 
 A clean customisable Sphinx documentation theme.
 
@@ -137,7 +131,6 @@ html_theme = "furo"
 
 <details>
   <summary>Markdown support</summary>
-  
 
 To configure your Sphinx project for Markdown support, proceed as follows:
 
