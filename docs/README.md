@@ -112,7 +112,7 @@ make html
 <details>
   <summary>Furo theme</summary>
 <br>
-A clean customisable [Sphinx documentation theme](https://pradyunsg.me/furo/).
+A clean customisable Sphinx documentation theme.
 
 Furo is distributed on PyPI. To use the theme in your Sphinx project:
 
@@ -125,6 +125,8 @@ pip install furo
 html_theme = "furo"
 ```
 3. Your Sphinx documentation’s HTML pages will now be generated with this theme!
+
+[Source](https://pradyunsg.me/furo/)
 </details>
 
 ---
