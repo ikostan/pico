@@ -129,6 +129,35 @@ html_theme = "furo"
 [Source](https://pradyunsg.me/furo/)
 </details>
 
+<details>
+  <summary>Markdown support</summary>
+<br>
+To configure your Sphinx project for Markdown support, proceed as follows:
+
+1. Install the Markdown parser MyST-Parser:
+```bash
+pip install --upgrade myst-parser
+```
+2. Add myst_parser to the list of configured extensions:
+```bash
+extensions = ['myst_parser']
+```
+3. If you want to use Markdown files with extensions other than .md, 
+   adjust the source_suffix variable. The following example configures
+   Sphinx to parse all files with the extensions .md and .txt as Markdown:
+```bash
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
+```
+4. You can further configure MyST-Parser to allow custom syntax that 
+   standard CommonMark doesn’t support. Read more in the MyST-Parser documentation.
+
+[Source](https://www.sphinx-doc.org/en/master/usage/markdown.html)
+</details>
+
 ---
 ### Online Documentation
 
@@ -138,3 +167,4 @@ Detailed tech documentation is available [here](https://ikostan.github.io/pico/)
 
 - [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
 - [Fix missing images when using include directives](https://stackoverflow.com/questions/50261137/docs-missing-images-when-using-include-directives-rst-sphinx)
+- [Intro to Documentation with Sphinx and reStructuredText’s documentation](https://sphinx-intro-tutorial.readthedocs.io/en/latest/index.html)
