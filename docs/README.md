@@ -16,7 +16,7 @@ Github workflow for creating Sphinx docs can be found [here](https://github.com/
 
 <details>
   <summary>Install Sphinx from PyPI package</summary>
-
+<br/>
 Sphinx packages are published on the Python Package Index (PyPI).
 The preferred tool for installing packages from PyPI is pip, which is
 included in all modern versions of Python.
