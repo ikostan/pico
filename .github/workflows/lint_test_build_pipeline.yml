@@ -18,7 +18,7 @@ jobs:
   yaml-lint:
     name: YAML Lint
     uses: ikostan/pico/.github/workflows/yamllint.yml@master
-  #rst-lint:
+  # rst-lint:
   #  name: RST Lint
   #  uses: ikostan/pico/.github/workflows/rst_lint.yml@master
   sphinx-lint:

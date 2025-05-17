@@ -1,3 +1,4 @@
+---
 name: Testing Branch Pipeline
 
 on:  # yamllint disable-line rule:truthy
@@ -22,7 +23,7 @@ jobs:
   yaml-lint:
     name: YAML Lint
     uses: ikostan/pico/.github/workflows/yamllint.yml@testing
-  #rst-lint:
+  # rst-lint:
   #  name: RST Lint
   #  uses: ikostan/pico/.github/workflows/rst_lint.yml@master
   sphinx-lint:
