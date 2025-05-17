@@ -64,23 +64,3 @@ jobs:
     uses: ikostan/pico/.github/workflows/codeclimate_coverage.yml@testing
     secrets:
       cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
-  codeql:
-    name: CodeQL for a new build
-    needs:
-      - codecov
-      - codeclimate
-    uses: ikostan/pico/.github/workflows/codeql.yml@testing
-  snyk:
-    name: Snyk for a new build
-    needs:
-      - codecov
-      - codeclimate
-    uses: ikostan/pico/.github/workflows/snyk.yml@testing
-    secrets:
-      snyk_token: ${{ secrets.SNYK_TOKEN }}
-  sphinx:
-    name: Deploy Sphinx documentation
-    needs:
-      - snyk
-      - codeql
-    uses: ikostan/pico/.github/workflows/sphinx_docs.yml@testing
