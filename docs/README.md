@@ -4,7 +4,7 @@
 
 ## About
 
-Sphinx generate documentation in the preferred formats of your audience,
+Sphinx generates documentation in the preferred formats of your audience,
 including [HTML, LaTeX (for PDF), ePub, Texinfo, and more](https://www.sphinx-doc.org/en/master/index.html#).
 
 ### Sphinx workflow
