@@ -165,10 +165,10 @@ source_suffix = {
 ---
 ### Online Documentation
 
-Detailed tech documentation is available [here](https://ikostan.github.io/pico/).
+[Detailed tech documentation is available here](https://ikostan.github.io/pico/).
 
 ### Source list
 
-- [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
+- [Sphinx Documentation](https://www.sphinx-doc.org/en/master/index.html)
 - [Fix missing images when using include directives](https://stackoverflow.com/questions/50261137/docs-missing-images-when-using-include-directives-rst-sphinx)
 - [Intro to Documentation with Sphinx and reStructuredText’s documentation](https://sphinx-intro-tutorial.readthedocs.io/en/latest/index.html)
