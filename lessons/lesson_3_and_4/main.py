@@ -35,7 +35,7 @@ NUMBERS = {
 }
 
 
-def get_val(n_val):
+def get_val(n_val) -> int:
     """
     Convert TRUE to 1 and FALSE to 0
     :param n_val:
@@ -67,7 +67,7 @@ def set_all_pins(pin_vals: tuple) -> None:
 
 
 if __name__ == '__main__':
-
+    # Main loop
     while True:
         for i, vals in NUMBERS.items():
             set_all_pins(vals)

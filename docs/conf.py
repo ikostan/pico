@@ -13,17 +13,21 @@ sys.path.insert(0, os.path.abspath('..'))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'PiPico W Training'
-copyright = '2024, Egor Kostan'
+copyright = '2025, Egor Kostan'
 author = 'Egor Kostan'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.todo',
+extensions = ['sphinx.ext.duration',
+              'sphinx.ext.coverage',
+              'sphinx.ext.todo',
               'sphinx.ext.viewcode',
               'sphinx.ext.autodoc',
               'sphinx.ext.mathjax',
-              'myst_parser']
+              'myst_parser',
+              'sphinxcontrib.youtube',
+              'sphinx_tabs.tabs']
 
 templates_path = ['_templates']
 
@@ -33,8 +37,15 @@ exclude_patterns = ['_build',
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+# html_theme = 'sphinx_rtd_theme'
 
-html_theme = 'sphinx_rtd_theme'
+# PDJ Theme
+# https://sphinx-themes.org/sample-sites/sphinx-pdj-theme/
+# import sphinx_pdj_theme
+# html_theme = 'sphinx_pdj_theme'
+# html_theme_path = [sphinx_pdj_theme.get_html_theme_path()]
+
+html_theme = 'furo'
 
 # Source:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_static_path
@@ -43,3 +54,9 @@ html_static_path = ['_static',
 
 source_suffix = {'.rst': 'restructuredtext',
                  '.md': 'markdown'}
+
+# Different logos for light and dark mode
+# https://pradyunsg.me/furo/customisation/logo/
+html_theme_options = {
+    "light_logo": "logo.png",
+    "dark_logo": "logo.png"}

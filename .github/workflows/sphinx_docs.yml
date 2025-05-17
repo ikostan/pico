@@ -26,13 +26,15 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
-      - name: Install Sphinx
+      - name: Install Sphinx and extensions
         run: |
           python -m pip install -U sphinx
-          python -m pip install sphinx_rtd_theme
+          python -m pip install furo
           python -m pip install --upgrade myst-parser
           python -m pip install commonmark
           python -m pip install docutils
+          python -m pip install sphinxcontrib-youtube
+          python -m pip install sphinx-tabs
       - name: Check Sphinx version
         run: |
           sphinx-build --version
@@ -40,9 +42,23 @@ jobs:
       - name: Check whether MyST parser is available
         run:
           python -c "import myst_parser"
-      - name: Sphinx build
+      - name: Documentation Build
         run: |
-          sphinx-build docs docs/_build --verbose
+          sphinx-build --verbose docs docs/_build
+      - name: Documentation Coverage
+        run: |
+          sphinx-build --verbose -b coverage docs docs/_build/coverage
+      - name: Sphinx Build and Sphinx Linkcheck
+        run: |
+          sphinx-build --verbose -b linkcheck docs docs/_build/linkcheck
+        continue-on-error: true
+      - name: Copy static folder
+        run: |
+          cp -r docs/_static docs/_build/_static
+      - name: List all static files
+        run: |
+          ls docs/_build/_static
+        continue-on-error: true
       - name: Fix broken links for Sphinx docs
         run: |
           echo "Not implemented"

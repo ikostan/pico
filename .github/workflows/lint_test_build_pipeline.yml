@@ -18,6 +18,12 @@ jobs:
   yaml-lint:
     name: YAML Lint
     uses: ikostan/pico/.github/workflows/yamllint.yml@master
+  #rst-lint:
+  #  name: RST Lint
+  #  uses: ikostan/pico/.github/workflows/rst_lint.yml@master
+  sphinx-lint:
+    name: Sphinx Lint
+    uses: ikostan/pico/.github/workflows/sphinx_lint.yml@master
   flake8:
     name: Lint with flake8
     uses: ikostan/pico/.github/workflows/flake8.yml@master
@@ -35,6 +41,7 @@ jobs:
       - markdown-lint
       - mypy
       - yaml-lint
+      - sphinx-lint
     uses: ikostan/pico/.github/workflows/pytest.yml@master
   codecov:
     name: Codecov GitHub Action
@@ -46,7 +53,7 @@ jobs:
     secrets:
       codecov_token: ${{ secrets.CODECOV_TOKEN }}
   codeclimate:
-    name: Codeclimate Github Action
+    name: CodeClimate Github Action
     needs:
       - pytest
     uses: ikostan/pico/.github/workflows/codeclimate_coverage.yml@master

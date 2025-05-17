@@ -1,23 +1,25 @@
-lessons.lesson\_1 package
-=========================
+.. include:: ../lessons/lesson_1/README.md
+    :parser: myst_parser.sphinx_
 
-Submodules
-----------
+.. tabs::
 
-lessons.lesson\_1.main module
------------------------------
+    .. tab:: YOUTUBE
 
-.. automodule:: lessons.lesson_1.main
-   :members:
-   :undoc-members:
-   :show-inheritance:
-   :private-members:
+        ..  youtube:: SL4_oU9t8Ss
+           :aspect: 4:3
+           :align: center
 
-Module contents
----------------
+    .. tab:: ANIMATION
 
-.. automodule:: lessons.lesson_1
-   :members:
-   :undoc-members:
-   :show-inheritance:
-   :private-members:
+        .. image:: ../img/wokwi_pi_pico_w_led.gif
+           :alt: Raspberry Pi Pico W
+
+    .. tab:: MICROPYTHON CODE
+
+        .. literalinclude:: ../lessons/lesson_1/main.py
+           :language: python
+
+    .. tab:: WOKWI DIAGRAM
+
+        .. literalinclude:: ../lessons/lesson_1/diagram.json
+           :language: json

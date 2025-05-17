@@ -1,4 +1,4 @@
-# PiPico W training
+# PiPico W Training
 
 [![Main Build Pipeline](https://github.com/ikostan/pico/actions/workflows/lint_test_build_pipeline.yml/badge.svg)](https://github.com/ikostan/pico/actions/workflows/lint_test_build_pipeline.yml)
 [![Flake8](https://github.com/ikostan/pico/actions/workflows/flake8.yml/badge.svg)](https://github.com/ikostan/pico/actions/workflows/flake8.yml)
