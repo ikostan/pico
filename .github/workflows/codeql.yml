@@ -17,6 +17,10 @@ name: "CodeQL for a new build"
 on:  # yamllint disable-line rule:truthy
   workflow_call:
 
+permissions:
+  checks: write
+  contents: read
+
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
