@@ -1,0 +1,80 @@
+---
+name: Main Build Pipeline
+
+on:  # yamllint disable-line rule:truthy
+  pull_request:
+    branches-ignore:
+      - master
+      - gh-pages
+  push:
+    branches:
+      - testing
+
+jobs:
+  markdown-lint:
+    name: Markdown Lint
+    uses: ikostan/pico/.github/workflows/markdown-lint.yml@testing
+  yaml-lint:
+    name: YAML Lint
+    uses: ikostan/pico/.github/workflows/yamllint.yml@testing
+  #rst-lint:
+  #  name: RST Lint
+  #  uses: ikostan/pico/.github/workflows/rst_lint.yml@master
+  sphinx-lint:
+    name: Sphinx Lint
+    uses: ikostan/pico/.github/workflows/sphinx_lint.yml@testing
+  flake8:
+    name: Lint with flake8
+    uses: ikostan/pico/.github/workflows/flake8.yml@testing
+  pylint:
+    name: Lint with pylint
+    uses: ikostan/pico/.github/workflows/pylint.yml@testing
+  mypy:
+    name: Python Data Type Checking
+    uses: ikostan/pico/.github/workflows/mypy.yml@testing
+  pytest:
+    name: Unitest with pytest
+    needs:
+      - flake8
+      - pylint
+      - markdown-lint
+      - mypy
+      - yaml-lint
+      - sphinx-lint
+    uses: ikostan/pico/.github/workflows/pytest.yml@testing
+  codecov:
+    name: Codecov GitHub Action
+    needs:
+      - pytest
+    uses: ikostan/pico/.github/workflows/codecov.yml@testing
+    # Why is Codecov upload step in GitHub Actions not finding the token?
+    # https://stackoverflow.com/questions/78298827/why-is-codecov-upload-step-in-github-actions-not-finding-the-token
+    secrets:
+      codecov_token: ${{ secrets.CODECOV_TOKEN }}
+  codeclimate:
+    name: CodeClimate Github Action
+    needs:
+      - pytest
+    uses: ikostan/pico/.github/workflows/codeclimate_coverage.yml@testing
+    secrets:
+      cc_test_reporter_id: ${{ secrets.CC_TEST_REPORTER_ID }}
+  codeql:
+    name: CodeQL for a new build
+    needs:
+      - codecov
+      - codeclimate
+    uses: ikostan/pico/.github/workflows/codeql.yml@testing
+  snyk:
+    name: Snyk for a new build
+    needs:
+      - codecov
+      - codeclimate
+    uses: ikostan/pico/.github/workflows/snyk.yml@testing
+    secrets:
+      snyk_token: ${{ secrets.SNYK_TOKEN }}
+  sphinx:
+    name: Deploy Sphinx documentation
+    needs:
+      - snyk
+      - codeql
+    uses: ikostan/pico/.github/workflows/sphinx_docs.yml@testing
