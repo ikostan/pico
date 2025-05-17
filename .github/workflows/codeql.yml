@@ -17,6 +17,10 @@ name: "CodeQL for a new build"
 on:  # yamllint disable-line rule:truthy
   workflow_call:
 
+permissions:
+  checks: write
+  contents: read
+
 jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
@@ -32,11 +36,11 @@ jobs:
       security-events: write
 
       # required to fetch internal or private CodeQL packs
-      packages: read
+      # packages: read
 
       # only required for workflows in private repositories
-      actions: read
-      contents: read
+      # actions: read
+      # contents: read
 
     strategy:
       fail-fast: false

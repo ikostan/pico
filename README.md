@@ -17,8 +17,8 @@
 ## About
 
 In this series of video lessons we will learn how to
-build projects using the Raspberry Pi Pico W. Full Raspberry Pi Pico W
-lessons list is [here](https://github.com/ikostan/pico/tree/master/lessons).
+build projects using the Raspberry Pi Pico W. Full [Raspberry Pi Pico W
+lessons list is available here](https://github.com/ikostan/pico/tree/master/lessons).
 
 ### Raspberry Pi Pico W
 
@@ -42,7 +42,7 @@ with this versatile board. For more details, check out the [official documentati
 
 ### Documentation
 
-Tech documentation is available [here](https://ikostan.github.io/pico/).
+[Tech documentation is available here](https://ikostan.github.io/pico/).
 
 ### Source materials
 

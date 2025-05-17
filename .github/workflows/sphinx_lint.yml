@@ -5,7 +5,8 @@ on:  # yamllint disable-line rule:truthy
   workflow_call:
 
 permissions:
-  contents: write
+  checks: write
+  contents: read
 
 jobs:
   docs:
