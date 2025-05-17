@@ -5,11 +5,11 @@
 ## About
 
 Sphinx generate documentation in the preferred formats of your audience,
-including HTML, LaTeX (for PDF), ePub, Texinfo, and [more](https://www.sphinx-doc.org/en/master/index.html#).
+including [HTML, LaTeX (for PDF), ePub, Texinfo, and more](https://www.sphinx-doc.org/en/master/index.html#).
 
 ### Sphinx workflow
 
-Github workflow for creating Sphinx docs can be found [here](https://github.com/ikostan/pico/blob/master/.github/workflows/sphinx_docs.yml).
+Github workflow for creating [Sphinx docs can be found here](https://github.com/ikostan/pico/blob/master/.github/workflows/sphinx_docs.yml).
 
 ---
 ### How to instructions...
