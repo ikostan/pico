@@ -33,7 +33,7 @@ jobs:
     name: Python Data Type Checking
     uses: ikostan/pico/.github/workflows/mypy.yml@testing
   pytest:
-    name: Unitest with pytest
+    name: Unit test with pytest
     needs:
       - flake8
       - pylint
