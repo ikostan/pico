@@ -5,11 +5,11 @@
 ## About
 
 Sphinx generate documentation in the preferred formats of your audience,
-including HTML, LaTeX (for PDF), ePub, Texinfo, and [more](https://www.sphinx-doc.org/en/master/index.html#).
+including [HTML, LaTeX (for PDF), ePub, Texinfo, and more](https://www.sphinx-doc.org/en/master/index.html#).
 
 ### Sphinx workflow
 
-Github workflow for creating Sphinx docs can be found [here](https://github.com/ikostan/pico/blob/master/.github/workflows/sphinx_docs.yml).
+Github workflow for creating [Sphinx docs can be found here](https://github.com/ikostan/pico/blob/master/.github/workflows/sphinx_docs.yml).
 
 ---
 ### How to instructions...
@@ -165,10 +165,10 @@ source_suffix = {
 ---
 ### Online Documentation
 
-Detailed tech documentation is available [here](https://ikostan.github.io/pico/).
+[Detailed tech documentation is available here](https://ikostan.github.io/pico/).
 
 ### Source list
 
-- [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
+- [Sphinx Documentation](https://www.sphinx-doc.org/en/master/index.html)
 - [Fix missing images when using include directives](https://stackoverflow.com/questions/50261137/docs-missing-images-when-using-include-directives-rst-sphinx)
 - [Intro to Documentation with Sphinx and reStructuredText’s documentation](https://sphinx-intro-tutorial.readthedocs.io/en/latest/index.html)
