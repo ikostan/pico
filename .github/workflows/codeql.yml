@@ -20,7 +20,6 @@ on:  # yamllint disable-line rule:truthy
 permissions:
   checks: write
   contents: read
-  security-events: write
 
 jobs:
   analyze:
