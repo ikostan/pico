@@ -10,6 +10,10 @@ on:  # yamllint disable-line rule:truthy
     branches:
       - testing
 
+permissions:
+  checks: write
+  contents: read
+
 jobs:
   markdown-lint:
     name: Markdown Lint
