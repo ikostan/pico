@@ -5,8 +5,8 @@ on:  # yamllint disable-line rule:truthy
   workflow_call:
 
 permissions:
+  checks: write
   contents: read
-  pull-requests: read
 
 jobs:
   build:
