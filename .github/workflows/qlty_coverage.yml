@@ -42,8 +42,9 @@ jobs:
           chmod +x /home/runner/.qlty/bin/qlty || echo "Failed to make qlty executable"
           mv /home/runner/.qlty/bin/qlty /usr/local/bin/ || echo "Failed to move qlty to /usr/local/bin"
       - name: "Init Qlty CLI"
+        # Run non-interactively to avoid "IO error: not a terminal" in CI
         run:
-          qlty init
+          qlty init --yes --no
       - name: "Check Qlty CLI Version"
         run:
           qlty version || echo "Qlty CLI not installed correctly"
