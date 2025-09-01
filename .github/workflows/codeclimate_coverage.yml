@@ -41,7 +41,7 @@ jobs:
           ls -l coverage.xml
           cat coverage.xml
       - name: Upload Coverage to Qlty
-        uses: qltysh/qlty-action@latest  # Official Qlty action
+        uses: qltysh/qlty-action@2.2.0  # Official Qlty action
         env:
           QLTY_COVERAGE_TOKEN: ${{ secrets.qlty_reporter_id }}
         with:
