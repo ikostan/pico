@@ -1,10 +1,10 @@
 ---
 name: CodeClimate Coverage Report
 
-on:  # yamllint disable-line rule:truthy
+on:
   workflow_call:
     secrets:
-      cc_test_reporter_id:
+      qlty_reporter_id:  # Updated secret name for Qlty
         required: true
 
 jobs:
@@ -24,8 +24,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
-          python -m pip install pytest
-          python -m pip install pytest-cov
+          python -m pip install pytest pytest-cov
       - name: Check pytest version
         run: |
           python -m pytest --version
@@ -33,13 +32,18 @@ jobs:
         run: |
           pwd
           export PYTHONPATH=.:$PYTHONPATH
-      - name: Upload coverage to Code Climate
-        uses: paambaati/codeclimate-action@main
+      - name: Run Tests and Generate Coverage
+        run: |
+          python -m pytest tests/ -v --cov-report term-missing --cov=lessons --cov-report=xml
+      - name: Verify Coverage Report
+        run: |
+          ls -l coverage.xml
+          cat coverage.xml
+      - name: Upload Coverage to Qlty
+        uses: qlty/code-coverage-action@latest  # Replace with actual Qlty action
         env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+          QLTY_TEST_REPORTER_ID: ${{ secrets.qlty_reporter_id }}  # Replace with actual env variable
         with:
-          # yamllint disable rule:line-length
-          coverageCommand:
-            python -m pytest tests/ -v --cov-report term-missing --cov=lessons --cov-report=xml
-          # yamllint enable rule:line-length
+          coverageFiles: coverage.xml
+          format: cobertura  # Assuming Cobertura XML is supported
           debug: true
