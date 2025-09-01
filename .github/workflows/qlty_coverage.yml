@@ -42,7 +42,9 @@ jobs:
           bash qlty_install.sh || echo "Failed to run Qlty CLI installation script"
           ls -l /home/runner/.qlty/bin/ || echo "Failed to list /home/runner/.qlty/bin/"
           chmod +x /home/runner/.qlty/bin/qlty || echo "Failed to make qlty executable"
-          mv /home/runner/.qlty/bin/qlty /usr/local/bin/ || echo "Failed to move qlty to /usr/local/bin"
+          mkdir -p $HOME/.local/bin
+          mv /home/runner/.qlty/bin/qlty $HOME/.local/bin/ || echo "Failed to move qlty to $HOME/.local/bin"
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
       - name: "Init Qlty CLI"
         # Run non-interactively to avoid "IO error: not a terminal" in CI
         run:
