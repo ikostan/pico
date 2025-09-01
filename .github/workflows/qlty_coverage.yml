@@ -44,7 +44,7 @@ jobs:
       - name: "Init Qlty CLI"
         # Run non-interactively to avoid "IO error: not a terminal" in CI
         run:
-          qlty init --yes --no
+          qlty init --no
       - name: "Check Qlty CLI Version"
         run:
           qlty version || echo "Qlty CLI not installed correctly"
