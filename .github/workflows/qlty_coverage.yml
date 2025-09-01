@@ -1,4 +1,3 @@
-# .github/workflows/codeclimate_coverage.yml
 ---
 name: Qlty Coverage Report
 
@@ -33,6 +32,11 @@ jobs:
         run: |
           pwd
           export PYTHONPATH=.:$PYTHONPATH
+      - name: Check Runner Architecture
+        run: uname -m
+      - name: Install Qlty CLI
+        run: |
+          curl https://qlty.sh | bash
       - name: Run Tests and Generate Coverage
         # yamllint disable rule:line-length
         run: |
@@ -42,9 +46,7 @@ jobs:
           ls -l coverage.xml
           cat coverage.xml
       - name: Upload Coverage to Qlty
-        uses: qltysh/qlty-action/coverage@2.2.0
         env:
           QLTY_COVERAGE_TOKEN: ${{ secrets.qlty_reporter_id }}
-        with:
-          coverageLocations: coverage.xml:cobertura
-          debug: true
+        run: |
+          qlty coverage publish --format cobertura coverage.xml
