@@ -36,7 +36,10 @@ jobs:
         run: uname -m
       - name: Install Qlty CLI
         run: |
-          curl https://qlty.sh | bash
+          curl -L https://qlty.sh
+          chmod +x qlty
+          mv qlty /usr/local/bin/
+          qlty --version || echo "Qlty CLI not installed correctly"
       - name: Run Tests and Generate Coverage
         # yamllint disable rule:line-length
         run: |
@@ -49,4 +52,4 @@ jobs:
         env:
           QLTY_COVERAGE_TOKEN: ${{ secrets.qlty_reporter_id }}
         run: |
-          qlty coverage publish --format cobertura coverage.xml
+          qlty coverage publish --format cobertura coverage.xml --debug
