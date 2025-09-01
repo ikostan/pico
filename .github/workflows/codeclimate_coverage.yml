@@ -42,7 +42,7 @@ jobs:
       - name: Upload Coverage to Qlty
         uses: qlty/code-coverage-action@latest  # Replace with actual Qlty action
         env:
-          QLTY_REPORTER_ID: ${{ secrets.qlty_reporter_id }}  # Replace with actual env variable
+          QLTY_TEST_REPORTER_ID: ${{ secrets.qlty_reporter_id }}  # Replace with actual env variable
         with:
           coverageFiles: coverage.xml
           format: cobertura  # Assuming Cobertura XML is supported
