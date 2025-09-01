@@ -34,7 +34,7 @@ jobs:
           export PYTHONPATH=.:$PYTHONPATH
       - name: Run Tests and Generate Coverage
         # yamllint disable rule:line-length
-        run: |
+        run:
           python -m pytest tests/ -v --cov-report term-missing --cov=lessons --cov-report=xml
       - name: Verify Coverage Report
         run: |
