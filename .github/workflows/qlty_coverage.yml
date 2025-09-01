@@ -1,5 +1,5 @@
 ---
-name: Qlty Coverage Report
+name: "Qlty Coverage Report"
 
 on:  # yamllint disable-line rule:truthy
   workflow_call:
@@ -16,11 +16,11 @@ jobs:
         python-version: ["3.8"]
     steps:
       - uses: actions/checkout@main
-      - name: Setup Python
+      - name: "Setup Python"
         uses: actions/setup-python@main
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install Dependencies
+      - name: "Install Dependencies"
         run: |
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
@@ -28,28 +28,33 @@ jobs:
       - name: Check pytest version
         run: |
           python -m pytest --version
-      - name: Check PYTHONPATH
+      - name: "Check PYTHONPATH"
         run: |
           pwd
           export PYTHONPATH=.:$PYTHONPATH
-      - name: Check Runner Architecture
+      - name: "Check Runner Architecture"
         run: uname -m
-      - name: Install Qlty CLI
+      - name: "Install Qlty CLI"
         # yamllint disable rule:line-length
         run: |
           curl https://qlty.sh | sh || echo "Failed to download Qlty CLI tarball"
+      - name: "iNIT Qlty CLI"
+        run:
           qlty init
-          qlty --version || echo "Qlty CLI not installed correctly"
-      - name: Run Tests and Generate Coverage
+      - name: "Check Qlty CLI Version"
+        run:
+          qlty version
+      - name: "Run Tests and Generate Coverage"
         # yamllint disable rule:line-length
         run: |
           python -m pytest tests/ -v --cov-report term-missing --cov=lessons --cov-report=xml
-      - name: Verify Coverage Report
+      - name: "Verify Coverage Report"
         run: |
           ls -l coverage.xml
           cat coverage.xml
-      - name: Upload Coverage to Qlty
+      - name: "Upload Coverage to Qlty"
         env:
           QLTY_COVERAGE_TOKEN: ${{ secrets.qlty_reporter_id }}
         run: |
+          qlty init
           qlty coverage publish --format cobertura coverage.xml --debug
