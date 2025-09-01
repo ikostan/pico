@@ -38,6 +38,7 @@ jobs:
         # yamllint disable rule:line-length
         run: |
           curl https://qlty.sh | sh || echo "Failed to download Qlty CLI tarball"
+          ls ~/.qlty/bin/qlty
           tar -tvf qlty.tar.xz || echo "Failed to list tarball contents"
           tar -xpJf qlty.tar.xz --strip-components=1 -C . || echo "Failed to extract Qlty CLI"
           ls -l || echo "Failed to list extracted files"
