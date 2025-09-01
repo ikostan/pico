@@ -56,7 +56,7 @@ jobs:
     name: CodeClimate Github Action
     needs:
       - pytest
-    uses: ikostan/pico/.github/workflows/codeclimate_coverage.yml@master
+    uses: ikostan/pico/.github/workflows/qlty_coverage.yml@master
     secrets:
       qlty_reporter_id: ${{ secrets.QLTY_REPORTER_ID }}
   codeql:
