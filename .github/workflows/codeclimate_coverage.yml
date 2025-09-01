@@ -34,6 +34,7 @@ jobs:
           pwd
           export PYTHONPATH=.:$PYTHONPATH
       - name: Run Tests and Generate Coverage
+        # yamllint disable rule:line-length
         run: |
           python -m pytest tests/ -v --cov-report term-missing --cov=lessons --cov-report=xml
       - name: Verify Coverage Report
@@ -41,9 +42,9 @@ jobs:
           ls -l coverage.xml
           cat coverage.xml
       - name: Upload Coverage to Qlty
-        uses: qltysh/qlty-action/coverage@2.2.0  # Updated to specific coverage action
+        uses: qltysh/qlty-action/coverage@2.2.0
         env:
           QLTY_COVERAGE_TOKEN: ${{ secrets.qlty_reporter_id }}
         with:
-          coverageLocations: coverage.xml:cobertura  # Updated input per Qlty pattern
+          coverageLocations: coverage.xml:cobertura
           debug: true
