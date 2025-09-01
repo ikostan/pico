@@ -60,4 +60,4 @@ jobs:
         env:
           QLTY_COVERAGE_TOKEN: ${{ secrets.qlty_reporter_id }}
         run: |
-          qlty coverage publish --format cobertura coverage.xml --debug
+          qlty coverage publish --format cobertura --add-prefix=lessons/ coverage.xml --debug
