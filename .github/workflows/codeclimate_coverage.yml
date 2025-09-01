@@ -1,10 +1,11 @@
+# .github/workflows/codeclimate_coverage.yml
 ---
-name: CodeClimate Coverage Report
+name: Qlty Coverage Report
 
 on:
   workflow_call:
     secrets:
-      qlty_reporter_id:  # Updated secret name for Qlty
+      qlty_reporter_id:
         required: true
 
 jobs:
@@ -33,18 +34,16 @@ jobs:
           pwd
           export PYTHONPATH=.:$PYTHONPATH
       - name: Run Tests and Generate Coverage
-        # yamllint disable rule:line-length
-        run:
+        run: |
           python -m pytest tests/ -v --cov-report term-missing --cov=lessons --cov-report=xml
       - name: Verify Coverage Report
         run: |
           ls -l coverage.xml
           cat coverage.xml
       - name: Upload Coverage to Qlty
-        uses: qltysh/qlty-action@2.2.0  # Official Qlty action
+        uses: qltysh/qlty-action/coverage@2.2.0  # Updated to specific coverage action
         env:
           QLTY_COVERAGE_TOKEN: ${{ secrets.qlty_reporter_id }}
         with:
-          coverage-file: coverage.xml
-          coverage-format: cobertura
+          coverageLocations: coverage.xml:cobertura  # Updated input per Qlty pattern
           debug: true
