@@ -35,6 +35,7 @@ jobs:
       - name: Check Runner Architecture
         run: uname -m
       - name: Install Qlty CLI
+        # yamllint disable rule:line-length
         run: |
           curl -L https://qlty-releases.s3.amazonaws.com/qlty/latest/qlty-x86_64-unknown-linux-gnu.tar.xz -o qlty.tar.xz || echo "Failed to download Qlty CLI tarball"
           tar -xpJf qlty.tar.xz -C . || echo "Failed to extract Qlty CLI"
