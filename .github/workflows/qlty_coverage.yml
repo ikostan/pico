@@ -44,8 +44,8 @@ jobs:
           ls -l || echo "Failed to list extracted files"
           chmod +x qlty || echo "Failed to make qlty executable"
           mv qlty /usr/local/bin/ || echo "Failed to move qlty to /usr/local/bin"
-          qlty init
-          qlty version || echo "Qlty CLI not installed correctly"
+          /home/runner/.qlty/bin/qlty init
+          /home/runner/.qlty/bin/qlty version || echo "Qlty CLI not installed correctly"
       - name: "Run Tests and Generate Coverage"
         # yamllint disable rule:line-length
         run: |
