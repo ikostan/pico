@@ -40,10 +40,10 @@ jobs:
           ls -l coverage.xml
           cat coverage.xml
       - name: Upload Coverage to Qlty
-        uses: qlty/code-coverage-action@latest  # Replace with actual Qlty action
+        uses: qltysh/qlty-action@latest  # Official Qlty action
         env:
-          QLTY_TEST_REPORTER_ID: ${{ secrets.qlty_reporter_id }}  # Replace with actual env variable
+          QLTY_COVERAGE_TOKEN: ${{ secrets.qlty_reporter_id }}
         with:
-          coverageFiles: coverage.xml
-          format: cobertura  # Assuming Cobertura XML is supported
+          coverage-file: coverage.xml
+          coverage-format: cobertura
           debug: true
