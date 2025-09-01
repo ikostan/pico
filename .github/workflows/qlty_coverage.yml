@@ -41,7 +41,11 @@ jobs:
           ls -l /home/runner/.qlty/bin/ || echo "Failed to list /home/runner/.qlty/bin/"
           chmod +x /home/runner/.qlty/bin/qlty || echo "Failed to make qlty executable"
           mv /home/runner/.qlty/bin/qlty /usr/local/bin/ || echo "Failed to move qlty to /usr/local/bin"
+      - name: "Init Qlty CLI"
+        run:
           qlty init
+      - name: "Check Qlty CLI Version"
+        run:
           qlty version || echo "Qlty CLI not installed correctly"
       - name: "Run Tests and Generate Coverage"
         # yamllint disable rule:line-length
@@ -55,5 +59,4 @@ jobs:
         env:
           QLTY_COVERAGE_TOKEN: ${{ secrets.qlty_reporter_id }}
         run: |
-          qlty init
           qlty coverage publish --format cobertura coverage.xml --debug
