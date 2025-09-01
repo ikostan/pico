@@ -7,3 +7,4 @@ vscode/settings.json
 vscode/
 venv/
 docs/_build/*
+.vscode/settings.json
