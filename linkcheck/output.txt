@@ -1,5 +1,5 @@
-readme.rst:3: [redirected permanently] https://codeclimate.com/github/ikostan/pico/maintainability to https://codeclimate.com/github/ikostan/pico
-readme.rst:3: [redirected permanently] https://codeclimate.com/github/ikostan/pico/test_coverage to https://codeclimate.com/github/ikostan/pico
-README.md:173: [broken] https://stackoverflow.com/questions/50261137/docs-missing-images-when-using-include-directives-rst-sphinx: 403 Client Error: Forbidden for url: https://stackoverflow.com/questions/50261137/docs-missing-images-when-using-include-directives-rst-sphinx
-tests.rst:1: [broken] https://stackoverflow.com/questions/69036159/how-to-write-python-unit-test-for-the-print-statement: 403 Client Error: Forbidden for url: https://stackoverflow.com/questions/69036159/how-to-write-python-unit-test-for-the-print-statement
+readme.rst:3: [redirected with Found] https://codeclimate.com/github/ikostan/pico/maintainability to https://qlty.sh/login?returnTo=%2Fgh%2Fikostan%2Fprojects%2Fpico
+readme.rst:3: [redirected with Found] https://codeclimate.com/github/ikostan/pico/test_coverage to https://qlty.sh/login?returnTo=%2Fgh%2Fikostan%2Fprojects%2Fpico
+readme.rst:3: [redirected with Found] https://api.codeclimate.com/v1/badges/10d3376c6ce70ffc363a/maintainability to https://qlty.sh/gh/ikostan/projects/pico/maintainability.svg
+readme.rst:3: [redirected with Found] https://api.codeclimate.com/v1/badges/10d3376c6ce70ffc363a/test_coverage to https://qlty.sh/gh/ikostan/projects/pico/coverage.svg
 readme.rst:39: [redirected with Found] https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html to https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html
