@@ -37,15 +37,12 @@ jobs:
       - name: "Install Qlty CLI"
         # yamllint disable rule:line-length
         run: |
-          curl https://qlty.sh | sh || echo "Failed to download Qlty CLI tarball"
-          ls ~/.qlty/bin/qlty
-          tar -tvf qlty.tar.xz || echo "Failed to list tarball contents"
-          tar -xpJf qlty.tar.xz --strip-components=1 -C . || echo "Failed to extract Qlty CLI"
-          ls -l || echo "Failed to list extracted files"
-          chmod +x qlty || echo "Failed to make qlty executable"
-          mv qlty /usr/local/bin/ || echo "Failed to move qlty to /usr/local/bin"
-          /home/runner/.qlty/bin/qlty init
-          /home/runner/.qlty/bin/qlty version || echo "Qlty CLI not installed correctly"
+          curl -L https://qlty.sh | bash || echo "Failed to run Qlty CLI installation script"
+          ls -l /home/runner/.qlty/bin/ || echo "Failed to list /home/runner/.qlty/bin/"
+          chmod +x /home/runner/.qlty/bin/qlty || echo "Failed to make qlty executable"
+          mv /home/runner/.qlty/bin/qlty /usr/local/bin/ || echo "Failed to move qlty to /usr/local/bin"
+          qlty init
+          qlty version || echo "Qlty CLI not installed correctly"
       - name: "Run Tests and Generate Coverage"
         # yamllint disable rule:line-length
         run: |
