@@ -62,6 +62,6 @@ jobs:
         # Run a github-actions step, even if the previous step fails,
         # while still failing the job
         if: success() || failure()
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: snyk.sarif
